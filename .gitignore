@@ -147,3 +147,21 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# macOS temporary files
+*.swp
+*.swo
+
+# Eleventy / Node.js
+node_modules/
+_site/
+.cache/
