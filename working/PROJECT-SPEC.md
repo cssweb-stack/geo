@@ -1,0 +1,54 @@
+# GEO Website — Approved decisions / working specification
+
+Status: Version 1 approved for prototype. Not approved to replace live WordPress website.
+
+## Stack and workflow
+
+Bootstrap 5, Eleventy 3, Nunjucks for reusable layouts/includes, HTML content files, one `geo.css` in project root, GitHub account `cssweb-stack` repository `geo`, GitHub Actions and GitHub Pages for prototype publishing. Home and university computers run VS Code and GitHub Desktop. Fetch/pull before editing, commit/push after editing.
+
+## Page structure (full-width outer, Bootstrap `.container` inner)
+
+1. Sticky UH Brand Nav: green `#024731`; placeholder `<p>UH Brand and Nav</p>` centered white. Real university branding and search to be negotiated later.
+2. Sticky Unit Name: light gray `#f7f7f7`, department name `Department of Geography and Environment`; desktop site-scoped search field at right; mobile search icon left of hamburger, expandable search input.
+3. Sticky Unit Nav: light gray, 1px solid `#d2d2d2` bottom border. Desktop hover dropdowns where parent labels are not links and use arrow/default cursor; keyboard and mobile toggle support; full menu remains in own include; mobile hamburger button lives in Unit Name include.
+4. Hero: one shared include, page-specific front matter image with fallback `/_media/hero.webp`, background cover/center, desktop/tablet 250px and mobile 180px.
+5. Main: single Bootstrap contained column; H1 driven by page title; four placeholder paragraphs; four image cards after first paragraph; image `/_media/place.webp`; responsive 4 desktop, 2 tablet, 1 mobile; placeholders nonclickable, later individual cards may link.
+6. Footer: UH green background and `/_media/Footer_Watermark_Desktop.png` right-aligned, repeated vertically. Four equal columns desktop/tablet, two-by-two mobile; white placeholder text.
+7. Subfooter: `#2d2d2d`, one centered white paragraph containing UH equality statement, usage policy and 2026 copyright links as supplied.
+
+## Fonts and colors
+
+Inter variable font all weights/styles during development, Bootstrap's default body/heading sizes and spacing, accessible focus outlines. CSS variables: `--uh-green:#024731`, `--text:#222222`, `--light:#ffffff`, `--light-gray:#f7f7f7`, `--dark-gray:#2d2d2d`, `--border-gray:#d2d2d2`. The `--light` variable controls main background and may later change to off-white.
+
+## Navigation
+
+- Home: direct link
+- About GEO: dropdown trigger; Why Study with GEO, Areas of Study, Public Lectures, News
+- Undergraduate: dropdown trigger; GIS Certificate, Minor, Major (BA), GEO BAM, SUST/GEO BAM
+- Graduate: dropdown trigger; Master (MA), Doctorate (PhD), Recipients, Current Cohort, Funding
+- Faculty: direct link to directory
+- Give a Gift: direct link
+- Contact: direct link
+
+The three dropdown headings have no landing pages. Desktop dropdown opens on hover, but must remain keyboard and mobile accessible. Dropdown pages live under their section paths as `.html` URLs. About 18 navigable destinations (3 direct destination sections plus home and 14 submenu pages = 18).
+
+## Faculty and graduate student directories
+
+Faculty directory `/faculty/` uses one structured dataset for names, titles, email, photos and all other information. Faculty member pages are generated automatically as `/faculty/<slug>.html` using Eleventy pagination, not manually duplicated. Graduate cohort `/graduate/current-cohort.html` uses a query loop / Nunjucks iteration without individual student pages; advisors link to the corresponding faculty biography if provided. Actual approved data will be supplied later; v1 uses *obviously fake* sample records.
+
+## Not yet decided / out of scope
+
+- Home page may eventually use a large slideshow instead of standard 250px hero; for Version 1 use standard page.
+- Department remarketing, message, calls to action and final content remain pending chair input.
+- Exact UH search service endpoint needs verification; Version 1 Google site-restricted search is temporary.
+- Real university top bar and required footer content will be supplied later.
+- Exact GA4 insertion, Search Console verification token, URL migration/redirects and production DNS changes happen only with proper approval.
+- Design of faculty and student cards and actual real data will be refined incrementally.
+
+## Assets supplied
+
+`/_media/hero.webp`, `/_media/place.webp`, `/_media/Footer_Watermark_Desktop.png`. Preserve filenames.
+
+## Quality requirements
+
+Semantic HTML; responsive Bootstrap; keyboard and touch operability; WCAG 2.1 AA target; no unnecessary extra frameworks; minimal JavaScript; generate and check output with `npm run build`; no deployment to university domain before review/approval.

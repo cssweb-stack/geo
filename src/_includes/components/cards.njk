@@ -1,0 +1,5 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-4">
+{% for n in [1,2,3,4] %}
+  <div class="col"><article class="card h-100"><img class="card-img-top" src="{{ "/_media/place.webp" | url }}" width="600" height="400" alt="Placeholder for content card {{ n }}" loading="lazy"><div class="card-body"><h2 class="h5 card-title">Card {{ n }}</h2><p class="card-text">Placeholder copy for future departmental content.</p></div></article></div>
+{% endfor %}
+</div>

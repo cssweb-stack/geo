@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sample Faculty One",
+    "slug": "sample-faculty-one",
+    "title": "Faculty Title (placeholder)",
+    "email": "",
+    "office": "Office TBD",
+    "photo": "/_media/place.webp",
+    "bio": "Placeholder biography. Replace this record with approved faculty information.",
+    "research": [
+      "Research area to be confirmed"
+    ],
+    "education": "To be provided",
+    "publications": "To be provided",
+    "courses": "To be provided"
+  },
+  {
+    "name": "Sample Faculty Two",
+    "slug": "sample-faculty-two",
+    "title": "Faculty Title (placeholder)",
+    "email": "",
+    "office": "Office TBD",
+    "photo": "/_media/place.webp",
+    "bio": "Placeholder biography. Replace this record with approved faculty information.",
+    "research": [
+      "Research area to be confirmed"
+    ],
+    "education": "To be provided",
+    "publications": "To be provided",
+    "courses": "To be provided"
+  }
+]

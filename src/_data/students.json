@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Angela Amantite",
+    "program": "MA",
+    "email": "amantite@hawaii.edu",
+    "research": "Behavioral Geography, Sustainable Food Systems, Mental Health, Human Nature Connectedness, Ecotherapy, Integrated Wellness, Experiential Learning",
+    "advisorName": "Krisna Suryanata",
+    "photo": "/_media/students/angela-amantite.webp",
+    "localPhoto": "/_media/students/angela-amantite.webp",
+    "slug": "angela-amantite"
+  },
+  {
+    "name": "Carter Beale",
+    "program": "PhD",
+    "email": "carter45@hawaii.edu",
+    "research": "Environmental Governance, Natural Flood Management, Political Ecology, Social Practice Theory",
+    "advisorName": "Aurora Kagawa-Viviani",
+    "photo": "/_media/students/carter-beale.webp",
+    "localPhoto": "/_media/students/carter-beale.webp",
+    "slug": "carter-beale"
+  },
+  {
+    "name": "Aron Boettcher",
+    "program": "PhD",
+    "email": "aronab@hawaii.edu",
+    "research": "Forests, Carbon, Biomass, Lidar, Imagery, Satellite, Photosynthesis, Machine Learning",
+    "advisorName": "Qi Chen",
+    "photo": "/_media/students/aron-boettcher.webp",
+    "localPhoto": "/_media/students/aron-boettcher.webp",
+    "slug": "aron-boettcher"
+  },
+  {
+    "name": "Natalie Budner",
+    "program": "MA",
+    "email": "nbudner@hawaii.edu",
+    "research": "Political Geography, Migration Studies, Cultural Geography, Border Studies",
+    "advisorName": "Reece Jones",
+    "photo": "/_media/students/natalie-budner.webp",
+    "localPhoto": "/_media/students/natalie-budner.webp",
+    "slug": "natalie-budner"
+  },
+  {
+    "name": "Alexa Buskirk",
+    "program": "MA",
+    "email": "abuskirk@hawaii.edu",
+    "research": "Carbon Sequestration, Blue Carbon, Ecosystem Resilience, Environmental Restoration, Sustainability, Climate Resilience",
+    "advisorName": "David Beilman",
+    "photo": "/_media/students/alexa-buskirk.webp",
+    "localPhoto": "/_media/students/alexa-buskirk.webp",
+    "slug": "alexa-buskirk"
+  },
+  {
+    "name": "Penmai Chongtoua",
+    "program": "PhD",
+    "email": "penmai@hawaii.edu",
+    "research": "Algae Geographies, Land/Sea Connections, Non-Human Agency and Sustainable Aquaculture Development",
+    "advisorName": "Marina Karides",
+    "photo": "/_media/students/penmai-chongtoua.webp",
+    "localPhoto": "/_media/students/penmai-chongtoua.webp",
+    "slug": "penmai-chongtoua"
+  },
+  {
+    "name": "Wiwik Dharmiasih",
+    "program": "PhD",
+    "email": "dawd@hawaii.edu",
+    "research": "Political Ecology, Political Geography, Multi-scale Environmental Governance, Community-based Resource Management, Environmental Peacebuilding, UNESCO World Heritage Sites",
+    "advisorName": "Krisna Suryanata",
+    "photo": "/_media/students/wiwik-dharmiasih.webp",
+    "localPhoto": "/_media/students/wiwik-dharmiasih.webp",
+    "slug": "wiwik-dharmiasih"
+  },
+  {
+    "name": "Veronica Gema Cabebe",
+    "program": "MA",
+    "email": "vcabebe@hawaii.edu",
+    "research": "Cultural Geography, Human Mobility, GIS, Cartography, The Impact of Climate Change on Displacement, Disaster Science, Environmental Discrimination, Park and Protected Area Management Through GIS",
+    "advisorName": "Orhon Myadar",
+    "photo": "/_media/students/veronica-gema-cabebe.webp",
+    "localPhoto": "/_media/students/veronica-gema-cabebe.webp",
+    "slug": "veronica-gema-cabebe"
+  },
+  {
+    "name": "Ashley Clark",
+    "program": "MA",
+    "email": "anclark@hawaii.edu",
+    "research": "Tea Agriculture, Sustainable Farming, Multispecies Interfaces, Ethnography, Taiwan, China",
+    "advisorName": "Hong Jiang",
+    "photo": "/_media/students/ashley-clark.webp",
+    "localPhoto": "/_media/students/ashley-clark.webp",
+    "slug": "ashley-clark"
+  },
+  {
+    "name": "Chrissy Fitchett",
+    "program": "PhD",
+    "email": "cfitch@hawaii.edu",
+    "research": "Climate-Driven Migration, Political Ecology, Pacific Islands, Visual Politics",
+    "advisorName": "Orhon Myadar",
+    "photo": "/_media/students/chrissy-fitchett.webp",
+    "localPhoto": "/_media/students/chrissy-fitchett.webp",
+    "slug": "chrissy-fitchett"
+  },
+  {
+    "name": "Rollan C. Geronimo",
+    "program": "PhD",
+    "email": "rollan@hawaii.edu",
+    "research": "Ecosystem Approaches to Fisheries Management, Climate and Ocean Change Impacts on Marine Resources, GIS, Remote Sensing, Data Visualization, Spatial Pattern Analyses",
+    "advisorName": "Camilo Mora",
+    "photo": "/_media/students/rollan-c-geronimo.webp",
+    "localPhoto": "/_media/students/rollan-c-geronimo.webp",
+    "slug": "rollan-c-geronimo"
+  },
+  {
+    "name": "Michelle Harangody",
+    "program": "PhD",
+    "email": "msharan@hawaii.edu",
+    "research": "Political Ecology, STS, Marine Policy and Conservation, Corals, Tourism, Thailand, Hawaiʻi",
+    "advisorName": "Mary Mostafanezhad",
+    "photo": "/_media/students/michelle-harangody.webp",
+    "localPhoto": "/_media/students/michelle-harangody.webp",
+    "slug": "michelle-harangody"
+  },
+  {
+    "name": "Hunter Heaivilin",
+    "program": "PhD",
+    "email": "huntersh@hawaii.edu",
+    "research": "Political Ecology, Agro-food Systems, Land Use Change and Planning, Climate Change, Pacific Islands",
+    "advisorName": "Krisna Suryanata",
+    "photo": "/_media/students/hunter-heaivilin.webp",
+    "localPhoto": "/_media/students/hunter-heaivilin.webp",
+    "slug": "hunter-heaivilin"
+  },
+  {
+    "name": "Jacqueline Hernandez",
+    "program": "MA",
+    "email": "",
+    "research": "Tropical Montane Ecosystems, Drainage Legacy, Multispectral Imagery, Lidar and Terrain Analysis, Land Cover, Vegetation Change Detection",
+    "advisorName": "David Beilman",
+    "photo": "/_media/students/jacqueline-hernandez.webp",
+    "localPhoto": "/_media/students/jacqueline-hernandez.webp",
+    "slug": "jacqueline-hernandez"
+  },
+  {
+    "name": "Hongyi Jiang",
+    "program": "PhD",
+    "email": "hjiang3@hawaii.edu",
+    "research": "China Studies, Taiwan Studies, Border Studies, National Identities, Railway, Chinese Civil War",
+    "advisorName": "Hong Jiang",
+    "photo": "/_media/students/hongyi-jiang.webp",
+    "localPhoto": "/_media/students/hongyi-jiang.webp",
+    "slug": "hongyi-jiang"
+  },
+  {
+    "name": "Essie Kantha",
+    "program": "MA",
+    "email": "ebkantha@hawaii.edu",
+    "research": "Climate Mobility, Internal Displacement, Climate Change Impacts, Pacific Islands",
+    "advisorName": "Orhon Myadar",
+    "photo": "/_media/students/essie-kantha.webp",
+    "localPhoto": "/_media/students/essie-kantha.webp",
+    "slug": "essie-kantha"
+  },
+  {
+    "name": "Justin Kellum",
+    "program": "MA",
+    "email": "jkellum@hawaii.edu",
+    "research": "Remote Sensing, LiDAR, GIS, Spatial Statistics, Agroforestry, Macadamia Nuts",
+    "advisorName": "Qi Chen",
+    "photo": "/_media/students/justin-kellum.webp",
+    "localPhoto": "/_media/students/justin-kellum.webp",
+    "slug": "justin-kellum"
+  },
+  {
+    "name": "Keegan Kessler",
+    "program": "MA",
+    "email": "keeganak@hawaii.edu",
+    "research": "Indigenous Methodologies, Community Resilience, Cultural Tourism, GIS, Environmental Justice, Mobility Justice, Disaster Studies",
+    "advisorName": "Orhon Myadar",
+    "photo": "/_media/students/keegan-kessler.webp",
+    "localPhoto": "/_media/students/keegan-kessler.webp",
+    "slug": "keegan-kessler"
+  },
+  {
+    "name": "Dalilah Laidin",
+    "program": "PhD",
+    "email": "dalilahn@hawaii.edu",
+    "research": "Cultural Geography, Heritage Landscapes, Critical Tourism Studies, Southeast Asia",
+    "advisorName": "Krisna Suryanata",
+    "photo": "/_media/students/dalilah-laidin.webp",
+    "localPhoto": "/_media/students/dalilah-laidin.webp",
+    "slug": "dalilah-laidin"
+  },
+  {
+    "name": "Amanda Lambert",
+    "program": "MA",
+    "email": "aml7@hawaii.edu",
+    "research": "Remote Sensing, LiDAR, GIS, Imagery, Geospatial Technologies, Environment, Climate Change, Water Quality",
+    "advisorName": "Qi Chen",
+    "photo": "/_media/students/amanda-lambert.webp",
+    "localPhoto": "/_media/students/amanda-lambert.webp",
+    "slug": "amanda-lambert"
+  },
+  {
+    "name": "Karen Lee",
+    "program": "PhD",
+    "email": "karensyl@hawaii.edu",
+    "research": "Remote Sensing, GeoAI, Computer Vision, Geospatial Foundational Models, Climate Change, Adaptive Capacity, GIScience",
+    "advisorName": "Qi Chen",
+    "photo": "/_media/students/karen-lee.webp",
+    "localPhoto": "/_media/students/karen-lee.webp",
+    "slug": "karen-lee"
+  },
+  {
+    "name": "Andrew Lewis",
+    "program": "PhD",
+    "email": "ajl2@hawaii.edu",
+    "research": "Hydrogeology, Springs, Water Policy, Citizen Science, Polycentric Governance of Natural Resources, Indigenous Cultural Significance of Springs",
+    "advisorName": "Aurora Kagawa-Viviani",
+    "photo": "/_media/students/andrew-lewis.webp",
+    "localPhoto": "/_media/students/andrew-lewis.webp",
+    "slug": "andrew-lewis"
+  },
+  {
+    "name": "Randie-Leith Lunn",
+    "program": "MA",
+    "email": "rllunn@hawaii.edu",
+    "research": "Ahupuaʻa Restoration, Traditional Hawaiian Land Management Practices, Sustainability, Island Resource Management",
+    "advisorName": "Marina Karides",
+    "photo": "/_media/students/randie-leith-lunn.webp",
+    "localPhoto": "/_media/students/randie-leith-lunn.webp",
+    "slug": "randie-leith-lunn"
+  },
+  {
+    "name": "Fernando Lopez Oggier",
+    "program": "MA",
+    "email": "lopezogg@hawaii.edu",
+    "research": "Border Dislocation, Geographies of Migration and Resettlement, Spatial Theory, Urban Life, Queer Worldmaking",
+    "advisorName": "Reece Jones",
+    "photo": "/_media/students/fernando-lopez-oggier.webp",
+    "localPhoto": "/_media/students/fernando-lopez-oggier.webp",
+    "slug": "fernando-lopez-oggier"
+  },
+  {
+    "name": "Amiti Maloy",
+    "program": "PhD",
+    "email": "amiti@hawaii.edu",
+    "research": "Blue Economy, Foodscapes, FDA, Social Change, Marine Conservation, Sustainability, Seafood, Labeling, Geographies of Consumption, Sense of Place, Greenwashing, Geopolitics, Ocean and Coastal Studies",
+    "advisorName": "Brian Szuster",
+    "photo": "/_media/students/amiti-maloy.webp",
+    "localPhoto": "/_media/students/amiti-maloy.webp",
+    "slug": "amiti-maloy"
+  },
+  {
+    "name": "Olivia Meyer",
+    "program": "PhD",
+    "email": "oliviacm@hawaii.edu",
+    "research": "Political Ecology, Feminist Geographies, Southeast Asia, Plastic Waste, Climate Justice, Feminist Theory, Social Movements, Thailand",
+    "advisorName": "Mary Mostafanezhad",
+    "photo": "/_media/students/olivia-meyer.webp",
+    "localPhoto": "/_media/students/olivia-meyer.webp",
+    "slug": "olivia-meyer"
+  },
+  {
+    "name": "Duncan Miller",
+    "program": "MA",
+    "email": "wdmiller@hawaii.edu",
+    "research": "Environmental Geography, Environmental Hazards, Climatology, Physical Geography, Geology, Climate Change, Military Geography, Risk, Mitigation, and Response",
+    "advisorName": "Camilo Mora",
+    "photo": "/_media/students/duncan-miller.webp",
+    "localPhoto": "/_media/students/duncan-miller.webp",
+    "slug": "duncan-miller"
+  },
+  {
+    "name": "Heidi Needham",
+    "program": "MA",
+    "email": "hneedham@hawaii.edu",
+    "research": "Ecological Climatology, Climate Change, Climate Models, Natural Resource Management, Science Education, Outreach Activities with Underrepresented Groups",
+    "advisorName": "Tom Giambelluca",
+    "photo": "/_media/students/heidi-needham.webp",
+    "localPhoto": "/_media/students/heidi-needham.webp",
+    "slug": "heidi-needham"
+  },
+  {
+    "name": "Xiaoyun Neo",
+    "program": "PhD",
+    "email": "xneo@hawaii.edu",
+    "research": "Political Ecology, Placemaking, Community Spaces, Environmental Stewardship, Southeast Asia, Urban Agriculture, Human-Environment Relations, Community Resilience",
+    "advisorName": "Mary Mostafanezhad",
+    "photo": "/_media/students/xiaoyun-neo.webp",
+    "localPhoto": "/_media/students/xiaoyun-neo.webp",
+    "slug": "xiaoyun-neo"
+  },
+  {
+    "name": "John Nightingale",
+    "program": "PhD",
+    "email": "john4225@hawaii.edu",
+    "research": "Political Geography, Critical Border Studies, Migration and Health, Humanitarian Responses, Statecraft",
+    "advisorName": "Reece Jones",
+    "photo": "/_media/students/john-nightingale.webp",
+    "localPhoto": "/_media/students/john-nightingale.webp",
+    "slug": "john-nightingale"
+  },
+  {
+    "name": "Marcus Peng",
+    "program": "PhD",
+    "email": "marcuspe@hawaii.edu",
+    "research": "Coastal Management, Ecosystem Service Valuation, Outdoor Recreation, Experimental Methods, Causal Inference",
+    "advisorName": "Brian Szuster",
+    "photo": "/_media/students/marcus-peng.webp",
+    "localPhoto": "/_media/students/marcus-peng.webp",
+    "slug": "marcus-peng"
+  },
+  {
+    "name": "Sebastian Rivero Acosta",
+    "program": "MA",
+    "email": "sriveroa@hawaii.edu",
+    "research": "Political Geography, Geographies of Violence, Migration Policy, US-Mexico Border, State Violence, Asylum",
+    "advisorName": "Reece Jones",
+    "photo": "/_media/students/sebastian-rivero-acosta.webp",
+    "localPhoto": "/_media/students/sebastian-rivero-acosta.webp",
+    "slug": "sebastian-rivero-acosta"
+  },
+  {
+    "name": "Leif Salveson",
+    "program": "MA",
+    "email": "leifsalv@hawaii.edu",
+    "research": "Political Economy, Community Supported Fisheries",
+    "advisorName": "Krisna Suryanata",
+    "photo": "/_media/students/leif-salveson.webp",
+    "localPhoto": "/_media/students/leif-salveson.webp",
+    "slug": "leif-salveson"
+  },
+  {
+    "name": "Abhishek Samrat",
+    "program": "PhD",
+    "email": "asamrat@hawaii.edu",
+    "research": "Remote Sensing, Geospatial Data Science, Applied GeoAI, Landscape Ecology, Ecosystem Restoration, Spatial Epidemiology",
+    "advisorName": "Qi Chen",
+    "photo": "/_media/students/abhishek-samrat.webp",
+    "localPhoto": "/_media/students/abhishek-samrat.webp",
+    "slug": "abhishek-samrat"
+  },
+  {
+    "name": "Kristen Sanfilippo",
+    "program": "PhD",
+    "email": "ksanfili@hawaii.edu",
+    "research": "Climate Change, Climate Modeling, Statistical Downscaling, Rainfall, Hawaiʻi Climate",
+    "advisorName": "Tom Giambelluca",
+    "photo": "/_media/students/kristen-sanfilippo.webp",
+    "localPhoto": "/_media/students/kristen-sanfilippo.webp",
+    "slug": "kristen-sanfilippo"
+  },
+  {
+    "name": "Sophia Somerscales",
+    "program": "MA",
+    "email": "ssomersc@hawaii.edu",
+    "research": "Remote Sensing, GIS, Climate Change, Machine Learning, Land Classification, Object Detection",
+    "advisorName": "Qi Chen",
+    "photo": "/_media/students/sophia-somerscales.webp",
+    "localPhoto": "/_media/students/sophia-somerscales.webp",
+    "slug": "sophia-somerscales"
+  },
+  {
+    "name": "Claire Sremac",
+    "program": "MA",
+    "email": "sremac@hawaii.edu",
+    "research": "Hydroponics, Vertical Agriculture, Sustainable Farming Practices, Container Farming, Urban Agriculture, Precision Agriculture, AgTech Innovation, Eco-Friendly Agriculture, Sustainability in Food",
+    "advisorName": "Marina Karides",
+    "photo": "/_media/students/claire-sremac.webp",
+    "localPhoto": "/_media/students/claire-sremac.webp",
+    "slug": "claire-sremac"
+  },
+  {
+    "name": "Yuko Stender",
+    "program": "PhD",
+    "email": "",
+    "research": "Responses of Coral Reef Communities to Environmental Changes, Coral Reef Recovery From Impacts of Land-Derived Materials, Landscape Ecology, Spatial Statistics, GIS",
+    "advisorName": "David Beilman",
+    "photo": "/_media/students/yuko-stender.webp",
+    "localPhoto": "/_media/students/yuko-stender.webp",
+    "slug": "yuko-stender"
+  },
+  {
+    "name": "Tara Sutton",
+    "program": "MA",
+    "email": "thsutton@hawaii.edu",
+    "research": "Crisis Response Tactics, DoD Host Community Trust, Institutional Trust and Betrayal, Oral History, Trauma-Informed Interviewing, Community-Driven Projects, Community-Centered Research",
+    "advisorName": "Aurora Kagawa-Viviani",
+    "photo": "/_media/students/tara-sutton.webp",
+    "localPhoto": "/_media/students/tara-sutton.webp",
+    "slug": "tara-sutton"
+  },
+  {
+    "name": "Hannah von Hammerstein",
+    "program": "PhD",
+    "email": "hfvh@hawaii.edu",
+    "research": "Coastal & Marine Ecosystems, Effects of Climate Change on Organisms, Climate-driven Species Range Shifts and Their Ecological & Societal Consequences, Eastern Tropical Pacific",
+    "advisorName": "Camilo Mora",
+    "photo": "/_media/students/hannah-von-hammerstein.webp",
+    "localPhoto": "/_media/students/hannah-von-hammerstein.webp",
+    "slug": "hannah-von-hammerstein"
+  },
+  {
+    "name": "Yudan Wang",
+    "program": "PhD",
+    "email": "yudanwan@hawaii.edu",
+    "research": "Political Ecology, Place making, Identity, Belonging, Mobility, Migration, Climate Change",
+    "advisorName": "Hong Jiang",
+    "photo": "/_media/students/yudan-wang.webp",
+    "localPhoto": "/_media/students/yudan-wang.webp",
+    "slug": "yudan-wang"
+  },
+  {
+    "name": "Ivy Wappler",
+    "program": "MA",
+    "email": "iwappler@hawaii.edu",
+    "research": "Agroforestry Transitions, Political Ecology, Diverse Economies, Hawaiʻi",
+    "advisorName": "Mary Mostafanezhad",
+    "photo": "/_media/students/ivy-wappler.webp",
+    "localPhoto": "/_media/students/ivy-wappler.webp",
+    "slug": "ivy-wappler"
+  },
+  {
+    "name": "Kira Webster",
+    "program": "PhD",
+    "email": "kiramw@hawaii.edu",
+    "research": "Climate Change, Terrestrial Ecology, GIS, Climate Effects on Plant Productivity, Food Systems and Security",
+    "advisorName": "Camilo Mora",
+    "photo": "/_media/students/kira-webster.webp",
+    "localPhoto": "/_media/students/kira-webster.webp",
+    "slug": "kira-webster"
+  },
+  {
+    "name": "Laura Williams",
+    "program": "PhD",
+    "email": "lauralw@hawaii.edu",
+    "research": "Political Ecology, Rural Studies, Tourism, Islands, Political Economy, Development",
+    "advisorName": "Mary Mostafanezhad",
+    "photo": "/_media/students/laura-williams.webp",
+    "localPhoto": "/_media/students/laura-williams.webp",
+    "slug": "laura-williams"
+  },
+  {
+    "name": "Yuting Zhou",
+    "program": "PhD",
+    "email": "yutingzh@hawaii.edu",
+    "research": "Political Ecology, Seed Sovereignty, Food Memory, Community-Based Knowledge, Participatory Research, Community Resilience, Gender and Embodiment, Southeast Asia, Thailand",
+    "advisorName": "Mary Mostafanezhad",
+    "photo": "/_media/students/yuting-zhou.webp",
+    "localPhoto": "/_media/students/yuting-zhou.webp",
+    "slug": "yuting-zhou"
+  }
+]

@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: faculty
+  size: 1
+  alias: person
+permalink: "/faculty/{{ person.slug }}.html"
+eleventyComputed:
+  title: "{{ person.name }}"
+---
+<div class="row g-4">
+  <div class="col-md-4"><img class="img-fluid rounded" src="{{ person.photo | url }}" alt="Placeholder portrait of {{ person.name }}" width="600" height="400"></div>
+  <div class="col-md-8"><h2 class="h4">{{ person.title }}</h2><p>{{ person.bio }}</p><dl><dt>Office</dt><dd>{{ person.office }}</dd>{% if person.email %}<dt>Email</dt><dd><a href="mailto:{{ person.email }}">{{ person.email }}</a></dd>{% endif %}<dt>Research interests</dt><dd>{{ person.research | join(", ") }}</dd><dt>Education</dt><dd>{{ person.education }}</dd><dt>Publications</dt><dd>{{ person.publications }}</dd><dt>Courses taught</dt><dd>{{ person.courses }}</dd></dl><p><a href="{{ "/faculty/" | url }}">Back to faculty directory</a></p></div>
+</div>

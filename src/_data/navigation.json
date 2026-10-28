@@ -1,0 +1,100 @@
+[
+  {
+    "label": "Home",
+    "url": "/"
+  },
+  {
+    "label": "About GEO",
+    "children": [
+      {
+        "label": "Why Study with GEO",
+        "url": "/about-geo/why-study-with-geo.html"
+      },
+      {
+        "label": "Areas of Study",
+        "url": "/about-geo/areas-of-study.html"
+      },
+      {
+        "label": "Public Lectures",
+        "url": "/about-geo/public-lectures.html"
+      },
+      {
+        "label": "News",
+        "url": "/about-geo/news.html"
+      }
+    ]
+  },
+  {
+    "label": "Undergraduate",
+    "children": [
+      {
+        "label": "GIS Certificate",
+        "url": "/undergraduate/gis-certificate.html"
+      },
+      {
+        "label": "Minor",
+        "url": "/undergraduate/minor.html"
+      },
+      {
+        "label": "Major (BA)",
+        "url": "/undergraduate/major-ba.html"
+      },
+      {
+        "label": "GEO BAM",
+        "url": "/undergraduate/geo-bam.html"
+      },
+      {
+        "label": "SUST/GEO BAM",
+        "url": "/undergraduate/sust-geo-bam.html"
+      }
+    ]
+  },
+  {
+    "label": "Graduate",
+    "children": [
+      {
+        "label": "Master (MA)",
+        "url": "/graduate/master-ma.html"
+      },
+      {
+        "label": "Doctorate (PhD)",
+        "url": "/graduate/doctorate-phd.html"
+      },
+      {
+        "label": "Recipients",
+        "url": "/graduate/recipients.html"
+      },
+      {
+        "label": "Current Cohort",
+        "url": "/graduate/current-cohort.html"
+      },
+      {
+        "label": "Funding",
+        "url": "/graduate/funding.html"
+      }
+    ]
+  },
+  {
+    "label": "Faculty",
+    "children": [
+      {
+        "label": "Core Faculty",
+        "url": "/faculty/",
+        "icon": "people"
+      },
+      {
+        "label": "Associated Faculty",
+        "url": "/faculty/associated.html",
+        "icon": "people"
+      }
+    ]
+  },
+  {
+    "label": "Give a Gift",
+    "url": "/give-a-gift/"
+  },
+  {
+    "label": "Contact",
+    "url": "/contact/"
+  }
+]
