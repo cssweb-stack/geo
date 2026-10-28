@@ -9,7 +9,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const dataFile = path.join(root, 'src/_data/students.json');
-const imageDir = path.join(root, '_media/students');
+const imageDir = path.join(root, 'src/_media/students');
 const records = JSON.parse(await fs.readFile(dataFile, 'utf8'));
 await fs.mkdir(imageDir, { recursive: true });
 let downloaded = 0;

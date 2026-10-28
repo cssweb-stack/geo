@@ -1,6 +1,6 @@
 # GEO — UH Mānoa Department of Geography and Environment
 
-Prototype v1 using Eleventy 3, Nunjucks includes, Bootstrap 5, and one root `geo.css` file.
+Prototype v1 using Eleventy 3, Nunjucks includes, Bootstrap 5, and one `src/geo.css` file.
 
 ## Run locally
 
@@ -21,8 +21,8 @@ Generated static pages are written to `_site/` (ignored by Git).
 
 ## Important paths
 
-- `geo.css`: all custom CSS, in repository root
-- `_media/`: the three supplied image assets
+- `src/geo.css`: all custom CSS, published as `/geo.css`
+- `src/_media/`: all media assets, published as `/_media/`
 - `src/_includes/components/`: UH bar, department name/search, nav, hero, footer, subfooter, card/sample content
 - `src/_includes/layouts/base.njk`: shared document shell
 - `src/_data/navigation.json`: navigation labels and destinations
@@ -35,7 +35,7 @@ Generated static pages are written to `_site/` (ignored by Git).
 
 ## Website editing
 
-Edit any page's HTML content directly. Use `hero: /_media/your-image.webp` in its front matter to override the shared default. All heroes share the same height and styling from `geo.css`.
+Edit any page's HTML content directly. Use `hero: /_media/your-image.webp` in its front matter to override the shared default. All heroes share the same height and styling from `src/geo.css`.
 
 For faculty, edit the dataset only once: directory cards and generated profile pages use the same records. The present records are clearly labeled placeholders, not real faculty.
 
