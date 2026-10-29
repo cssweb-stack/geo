@@ -1776,11 +1776,15 @@ color: var(--light);
 border-radius: 0.25rem;
 text-align: center;
 }
+
 @media (max-width: 575.98px) {
-.lecture-date {
-flex: 0 0 auto;
+.lecture-entry > .lecture-date {
+flex: none;
 width: 8rem;
 height: 8rem;
+min-height: 0;
+aspect-ratio: 1;
+box-sizing: border-box;
 }
 }
 
