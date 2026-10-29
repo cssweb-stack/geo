@@ -7,8 +7,8 @@
     "label": "About GEO",
     "children": [
       {
-        "label": "Why Study with GEO",
-        "url": "/about-geo/why-study-with-geo.html",
+        "label": "Why Study GEO",
+        "url": "/about-geo/why-study-geo.html",
         "icon": "compass"
       },
       {

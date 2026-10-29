@@ -23,7 +23,7 @@ Inter variable font all weights/styles during development, Bootstrap's default b
 ## Navigation
 
 - Home: direct link
-- About GEO: dropdown trigger; Why Study with GEO, Areas of Study, Public Lectures, News
+- About GEO: dropdown trigger; Why Study GEO, Areas of Study, Public Lectures, News
 - Undergraduate: dropdown trigger; GIS Certificate, Minor, Major (BA), GEO BAM, SUST/GEO BAM
 - Graduate: dropdown trigger; Master (MA), Doctorate (PhD), Recipients, Current Cohort, Funding
 - Faculty: direct link to directory

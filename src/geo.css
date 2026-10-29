@@ -174,11 +174,11 @@ margin-bottom: 2rem;
 /* Intro catchphrase: a subtitle paragraph beneath the H1, not a heading. */
 .site-main p.intro-highlight {
 font-size: 1.25rem;
-font-weight: 500;
+font-weight: 400;
 font-style: italic;
 line-height: 1.4;
 color: #595959;
-margin: 0 0 0.75rem;
+margin: 0 0 0 .75rem;
 }
 
 /* Page title and tagline form one unit above the introduction. */
@@ -189,7 +189,7 @@ border-bottom: 1px solid #ddd;
 }
 
 .site-main .page-header h1 {
-margin-bottom: 0.5rem;
+margin-bottom: 0.75rem;
 }
 
 .site-main .page-header .intro-highlight {
@@ -662,6 +662,10 @@ padding: 0;
 margin: 0 0 1rem;
 }
 
+.program-glance ul:last-child {
+margin-bottom: 0;
+}
+
 /* Next steps */
 .next {
 margin: 3rem 0;
@@ -750,6 +754,24 @@ height: 212px;
 aspect-ratio: 1 / 1;
 object-fit: cover;
 object-position: center;
+}
+
+/* Shared image reveal; images remain visible without JavaScript. */
+@media (prefers-reduced-motion: no-preference) {
+.image-reveal.is-revealing {
+animation: image-reveal 400ms ease-out both;
+}
+}
+
+@keyframes image-reveal {
+from {
+opacity: 0;
+transform: translateX(-8px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
 }
 
 .course-information {
