@@ -171,25 +171,36 @@ line-height: 1.7;
 margin-bottom: 2rem;
 }
 
-.intro-highlight {
-color: var(--geo-blue);
-font-weight: 600;
-}
-
 /* Intro catchphrase: a subtitle paragraph beneath the H1, not a heading. */
 .site-main p.intro-highlight {
 font-size: 1.25rem;
-font-weight: 600;
+font-weight: 500;
 font-style: italic;
 line-height: 1.4;
 color: #595959;
 margin: 0 0 0.75rem;
 }
 
+/* Page title and tagline form one unit above the introduction. */
+.site-main .page-header {
+padding-bottom: 1.25rem;
+margin-bottom: 1.5rem;
+border-bottom: 1px solid #ddd;
+}
+
+.site-main .page-header h1 {
+margin-bottom: 0.5rem;
+}
+
+.site-main .page-header .intro-highlight {
+margin: 0;
+}
+
 /* Credit counts in section and individual course headings. */
 .credits {
 font-weight: 400;
-color: red;
+
+color: #B35C00;;
 }
 
 /* Accessibility */
