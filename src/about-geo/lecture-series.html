@@ -7,13 +7,14 @@ hero: /_media/dev/hero.webp
 <div class="lecture-series">
 <p class="page-intro">Explore new perspectives on people, places, and the environment. Our lecture series brings together local, national, and international speakers to share research and ideas from geography and related disciplines. Please contact the series organizer with questions about attending.</p>
 
-<section aria-labelledby="lecture-semester">
+<section class="program-glance" aria-labelledby="lecture-semester">
 <h2 id="lecture-semester">{{ lectures.semester | escape }}</h2>
-<div class="lecture-details">
-<p><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</p>
-<p><strong>Location:</strong> {{ lectures.location | escape }}</p>
-<p><strong>Contact:</strong> <a href="mailto:{{ lectures.contactEmail | escape }}">{{ lectures.contactName | escape }}</a></p>
-</div>
+<ul>
+<li><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</li>
+<li><strong>Location:</strong> {{ lectures.location | escape }}</li>
+<li><strong>Contact:</strong> <a href="mailto:{{ lectures.contactEmail | escape }}">{{ lectures.contactName | escape }}</a>, GEO Professor</li>
+</ul>
+</section>
 
 {% set months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
 <div class="lecture-list">
@@ -39,5 +40,4 @@ hero: /_media/dev/hero.webp
 </article>
 {% endfor %}
 </div>
-</section>
 </div>
