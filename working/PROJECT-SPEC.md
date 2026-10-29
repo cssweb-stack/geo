@@ -11,9 +11,9 @@ Bootstrap 5, Eleventy 3, Nunjucks for reusable layouts/includes, HTML content fi
 1. Sticky UH Brand Nav: green `#024731`; placeholder `<p>UH Brand and Nav</p>` centered white. Real university branding and search to be negotiated later.
 2. Sticky Unit Name: light gray `#f7f7f7`, department name `Department of Geography and Environment`; desktop site-scoped search field at right; mobile search icon left of hamburger, expandable search input.
 3. Sticky Unit Nav: light gray, 1px solid `#d2d2d2` bottom border. Desktop hover dropdowns where parent labels are not links and use arrow/default cursor; keyboard and mobile toggle support; full menu remains in own include; mobile hamburger button lives in Unit Name include.
-4. Hero: one shared include, page-specific front matter image with fallback `/_media/dev/hero.webp`, background cover/center, desktop/tablet 250px and mobile 180px.
+4. Hero: one shared include, page-specific front matter image with fallback `/_media/dev/hero.webp`, background cover/center, desktop 250px, tablet 187.5px, and phone 90px. The SVG pattern remains at 60% of hero height and scales with it.
 5. Main: single Bootstrap contained column; H1 driven by page title; four placeholder paragraphs; four image cards after first paragraph; image `/_media/dev/place.webp`; responsive 4 desktop, 2 tablet, 1 mobile; placeholders nonclickable, later individual cards may link.
-6. Footer: UH green background and `/_media/branding/footer-watermark-desktop.png` right-aligned, repeated vertically. Four equal columns desktop/tablet, two-by-two mobile; white placeholder text.
+6. Footer: UH green background and `/_media/branding/footer-watermark-desktop.png` right-aligned, repeated vertically. Four columns on desktop; centered 2×2 tablet layout with columns around 33% of available width; one centered phone column around 66% width.
 7. Subfooter: `#2d2d2d`, one centered white paragraph containing UH equality statement, usage policy and 2026 copyright links as supplied.
 
 ## Fonts and colors
@@ -52,3 +52,14 @@ Faculty directory `/faculty/` and profile sidebars share `src/_data/faculty.json
 ## Quality requirements
 
 Semantic HTML; responsive Bootstrap; keyboard and touch operability; WCAG 2.1 AA target; no unnecessary extra frameworks; minimal JavaScript; generate and check output with `npm run build`; no deployment to university domain before review/approval.
+
+## Responsive layout update — October 29, 2026
+
+- Phone: below 576px. Tablet: 576px through 1199.98px. Desktop: 1200px and above for shared header/footer. Individual content grids retain their existing Bootstrap breakpoints.
+- Keep the full department name on every device; phone unit name is 1rem.
+- Both header menu icons and department search icon are 22.5px on phone/tablet, inside 44px buttons.
+- Header bars use 1rem padding on all four sides on phone/tablet.
+- Main content padding is 2rem equally on phones, 2.25rem equally on tablets; desktop keeps its existing spacing.
+- Subfooter text is centered at 50% of available width on tablet/desktop and full available width on phones.
+- Bootstrap owns grid and interactive navigation behavior. geo.css owns shared component spacing, responsive sizing, footer layout, and custom page styling. The hero inline background image comes from page front matter.
+- HTML, Nunjucks includes, and CSS use flush-left source formatting with compact blank lines. Preserve YAML and other whitespace-sensitive syntax.

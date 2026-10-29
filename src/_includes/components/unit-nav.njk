@@ -1,35 +1,35 @@
-<nav class="unit-nav navbar navbar-expand-lg p-0" aria-label="Department navigation">
-    <div class="container">
-        <div class="collapse navbar-collapse" id="unitNavigation">
-            <ul class="navbar-nav">
-                {% for item in navigation %}
-                    {% if item.children %}
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle nav-trigger"
-                                    type="button"
-                                    id="navItem{{ loop.index }}"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">{{ item.label }}</button>
-                            <ul class="dropdown-menu" aria-labelledby="navItem{{ loop.index }}">
-                                {% for child in item.children %}
-                                    <li>
-                                        <a class="dropdown-item" href="{{ child.url | url }}">
-                                            {% if child.icon %}
-                                                {% include "icons/" + child.icon + ".svg" %}
-                                            {% endif %}
-                                            <span>{{ child.label }}</span>
-                                        </a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ item.url | url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+<nav class="unit-nav navbar navbar-expand-xl" aria-label="Department navigation">
+<div class="container">
+<div class="collapse navbar-collapse" id="unitNavigation">
+<ul class="navbar-nav">
+{% for item in navigation %}
+{% if item.children %}
+<li class="nav-item dropdown">
+<button class="nav-link dropdown-toggle nav-trigger"
+type="button"
+id="navItem{{ loop.index }}"
+data-bs-toggle="dropdown"
+aria-expanded="false">{{ item.label }}</button>
+<ul class="dropdown-menu" aria-labelledby="navItem{{ loop.index }}">
+{% for child in item.children %}
+<li>
+<a class="dropdown-item" href="{{ child.url | url }}">
+{% if child.icon %}
+{% include "icons/" + child.icon + ".svg" %}
+{% endif %}
+<span>{{ child.label }}</span>
+</a>
+</li>
+{% endfor %}
+</ul>
+</li>
+{% else %}
+<li class="nav-item">
+<a class="nav-link" href="{{ item.url | url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
+</div>
+</div>
 </nav>

@@ -11,34 +11,34 @@ eleventyComputed:
   description: "{{ person.name }}, {{ person.title }}. {{ person.keywords | join(', ') }}."
 ---
 <div class="row gx-4 gy-5 faculty-profile">
-  <div class="col-lg-3 faculty-sidebar">
-    <img class="faculty-profile-photo common-image" src="{{ person.photo | url }}" alt="{{ person.name | escape }}" width="{{ person.photoWidth }}" height="{{ person.photoHeight }}" decoding="async">
-    <h1 class="faculty-profile-name">{{ person.name | escape }}</h1>
-    <div class="faculty-titles">
-      <p class="faculty-title">{{ person.title | escape }}</p>
-      {% if person.role %}<p class="faculty-role">{{ person.role | escape }}</p>{% endif %}
-    </div>
-    {% include "components/faculty-contact.njk" %}
-    {% if person.keywords | length %}<p class="faculty-keywords">{{ person.keywords | join(", ") | escape }}</p>{% endif %}
-    {% if person.links | length %}
-    <ul class="faculty-personal-links" aria-label="{{ person.name | escape }}: websites and social profiles">
-      {% for link in person.links %}
-      <li><a href="{{ link.url | escape }}">{{ link.label | escape }}<span class="visually-hidden"> — {{ person.name | escape }}</span></a></li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    {% if person.publications | length %}
-    <section class="faculty-publications" aria-labelledby="faculty-publications-heading">
-      <h2 id="faculty-publications-heading">Browse My Publications</h2>
-      <ul class="faculty-publication-links">
-        {% for publication in person.publications %}
-        <li><a href="{{ publication.url | escape }}"><img src="{{ publication.image | url }}" alt="{{ person.name | escape }} on {{ publication.label | escape }}" width="450" height="96" loading="lazy" decoding="async"></a></li>
-        {% endfor %}
-      </ul>
-    </section>
-    {% endif %}
-  </div>
-  <div class="col-lg-9 faculty-biography">
-    {% include "faculty/" + person.slug + ".html" %}
-  </div>
+<div class="col-lg-3 faculty-sidebar">
+<img class="faculty-profile-photo common-image" src="{{ person.photo | url }}" alt="{{ person.name | escape }}" width="{{ person.photoWidth }}" height="{{ person.photoHeight }}" decoding="async">
+<h1 class="faculty-profile-name">{{ person.name | escape }}</h1>
+<div class="faculty-titles">
+<p class="faculty-title">{{ person.title | escape }}</p>
+{% if person.role %}<p class="faculty-role">{{ person.role | escape }}</p>{% endif %}
+</div>
+{% include "components/faculty-contact.njk" %}
+{% if person.keywords | length %}<p class="faculty-keywords">{{ person.keywords | join(", ") | escape }}</p>{% endif %}
+{% if person.links | length %}
+<ul class="faculty-personal-links" aria-label="{{ person.name | escape }}: websites and social profiles">
+{% for link in person.links %}
+<li><a href="{{ link.url | escape }}">{{ link.label | escape }}<span class="visually-hidden"> — {{ person.name | escape }}</span></a></li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if person.publications | length %}
+<section class="faculty-publications" aria-labelledby="faculty-publications-heading">
+<h2 id="faculty-publications-heading">Browse My Publications</h2>
+<ul class="faculty-publication-links">
+{% for publication in person.publications %}
+<li><a href="{{ publication.url | escape }}"><img src="{{ publication.image | url }}" alt="{{ person.name | escape }} on {{ publication.label | escape }}" width="450" height="96" loading="lazy" decoding="async"></a></li>
+{% endfor %}
+</ul>
+</section>
+{% endif %}
+</div>
+<div class="col-lg-9 faculty-biography">
+{% include "faculty/" + person.slug + ".html" %}
+</div>
 </div>
