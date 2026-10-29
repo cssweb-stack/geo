@@ -597,6 +597,12 @@ aspect-ratio: 3 / 2;
 object-fit: cover;
 margin-bottom: 1.5rem;
 }
+@media (min-width: 576px) and (max-width: 991.98px) {
+.study-area-image {
+width: 45%;
+margin-inline: 0;
+}
+}
 .site-main .study-area-topics {
 list-style: none;
 padding: 0;
