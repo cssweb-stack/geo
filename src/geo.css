@@ -638,9 +638,11 @@ text-decoration-thickness: 2px;
 
 /* Program at a glance */
 .program-glance {
-margin: 4rem 0;
-padding: 1.5rem 0 1.5rem 1.5rem;
-border-left: 3px solid var(--geo-blue);
+margin: 3rem 0;
+padding: 1.5rem;
+border-left: 6px solid var(--uh-green);
+border-radius: 0.5rem;
+background-color: #edf5f0;
 }
 
 .program-glance ul {
@@ -651,10 +653,11 @@ margin: 0 0 1rem;
 
 /* Next steps */
 .next {
-margin: 4rem 0;
-padding: 2rem 1.5rem;
-border-left: 3px solid var(--geo-blue);
-background: #eef9fc;
+margin: 3rem 0;
+padding: 1.5rem;
+border-left: 6px solid var(--geo-blue);
+border-radius: 0.5rem;
+background-color: #eef9fc;
 }
 
 .site-main .next > h3:not(:first-of-type) {
@@ -664,6 +667,19 @@ border-top: 3px solid #fff;
 }
 
 .next > :last-child {
+margin-bottom: 0;
+}
+
+/* Gold callout: scholarships, awards, and featured opportunities. */
+.callout-gold {
+margin: 3rem 0;
+padding: 1.5rem;
+border-left: 6px solid #b58a24;
+border-radius: 0.5rem;
+background-color: #fff8e6;
+}
+
+.callout-gold > :last-child {
 margin-bottom: 0;
 }
 
