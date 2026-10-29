@@ -1754,6 +1754,7 @@ font-size: 1.125rem;
 
 .site-footer {
 --footer-pattern-opacity: 0.1;
+--footer-logo-width: 75%;
 position: relative;
 isolation: isolate;
 color: #fff;
@@ -1817,7 +1818,14 @@ max-width: none;
 .footer-grid {
 grid-template-columns: repeat(2, minmax(0, 33%));
 justify-content: center;
-gap: 2.5rem 2rem;
+gap: 1.25rem 2rem;
+}
+/* One continuous divider between department details and university links. */
+.footer-grid::after {
+content: "";
+grid-column: 1 / -1;
+grid-row: 2;
+border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 }
 @media (max-width: 575.98px) {
@@ -1831,7 +1839,7 @@ gap: 2.5rem;
 
 .footer-department-logo {
 display: block;
-width: 75%;
+width: var(--footer-logo-width);
 max-width: 100%;
 height: auto;
 margin-bottom: 1rem;
@@ -1840,13 +1848,20 @@ border-radius: 0;
 box-shadow: none;
 }
 
-/* Match this width to .footer-department-logo to center beneath the logo. */
+/* One shared width keeps the privacy link centered beneath the logo. */
 .footer-department-privacy {
-width: 75%;
+width: var(--footer-logo-width);
 margin: 2rem 0 0;
 font-size: 0.875rem;
 line-height: 1.5;
 text-align: center;
+}
+
+/* Phone and tablet logo width follows the column width automatically. */
+@media (max-width: 1199.98px) {
+.site-footer {
+--footer-logo-width: 100%;
+}
 }
 
 .site-footer .footer-department-privacy a {
@@ -1916,7 +1931,7 @@ padding-block: 0.3rem;
 padding-block: 1rem;
 }
 .subfooter-text {
-width: 50%;
+width: 75%;
 margin: 0 auto;
 text-align: center;
 }
