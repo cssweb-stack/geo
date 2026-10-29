@@ -176,6 +176,22 @@ color: var(--geo-blue);
 font-weight: 600;
 }
 
+/* Intro catchphrase: a subtitle paragraph beneath the H1, not a heading. */
+.site-main p.intro-highlight {
+font-size: 1.25rem;
+font-weight: 600;
+font-style: italic;
+line-height: 1.4;
+color: #595959;
+margin: 0 0 0.75rem;
+}
+
+/* Credit counts in section and individual course headings. */
+.credits {
+font-weight: 400;
+color: red;
+}
+
 /* Accessibility */
 
 .skip-link {
@@ -722,10 +738,6 @@ font-weight: 600;
 line-height: 1.4;
 }
 
-.course-credits {
-font-weight: 500;
-white-space: nowrap;
-}
 
 .site-main .course-information p {
 margin: 0 0 1.5rem;
