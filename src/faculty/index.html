@@ -2,9 +2,23 @@
 layout: layouts/base.njk
 title: Core Faculty
 permalink: /faculty/
-hero: /_media/hero.webp
+hero: /_media/dev/hero.webp
 ---
-<p>Core faculty directory. Sample records below are placeholders; all directory and profile information is generated from the same dataset.</p>
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-4">
-{% for person in faculty %}<div class="col"><article class="card h-100"><a href="{{ ("/faculty/" + person.slug + ".html") | url }}"><img src="{{ person.photo | url }}" class="card-img-top" alt="Placeholder portrait of {{ person.name }}" width="600" height="400" loading="lazy"></a><div class="card-body"><h2 class="h5"><a href="{{ ("/faculty/" + person.slug + ".html") | url }}">{{ person.name }}</a></h2><p>{{ person.title }}</p>{% if person.email %}<p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}</div></article></div>{% endfor %}
+<p class="page-intro">Our faculty offers world-class geographic knowledge and expertise at local, national, and international scales, focusing on Asia and the Pacific.</p>
+
+<div class="faculty-directory">
+{% for person in faculty %}
+  <article class="faculty-entry" aria-labelledby="faculty-{{ person.slug }}">
+    <a class="faculty-profile-link" href="{{ ("/faculty/" + person.slug + ".html") | url }}">
+      <img class="faculty-directory-photo common-image" src="{{ person.photo | url }}" alt="" width="{{ person.photoWidth }}" height="{{ person.photoHeight }}" loading="lazy" decoding="async">
+      <h2 id="faculty-{{ person.slug }}" class="faculty-name">{{ person.name | escape }}</h2>
+    </a>
+    <div class="faculty-titles">
+      <p class="faculty-title">{{ person.title | escape }}</p>
+      {% if person.role %}<p class="faculty-role">{{ person.role | escape }}</p>{% endif %}
+    </div>
+    {% include "components/faculty-contact.njk" %}
+    {% if person.keywords | length %}<p class="faculty-keywords">{{ person.keywords | join(", ") | escape }}</p>{% endif %}
+  </article>
+{% endfor %}
 </div>

@@ -1,32 +1,338 @@
 [
   {
-    "name": "Sample Faculty One",
-    "slug": "sample-faculty-one",
-    "title": "Faculty Title (placeholder)",
-    "email": "",
-    "office": "Office TBD",
-    "photo": "/_media/place.webp",
-    "bio": "Placeholder biography. Replace this record with approved faculty information.",
-    "research": [
-      "Research area to be confirmed"
+    "name": "Qi Chen",
+    "slug": "qi-chen",
+    "title": "Professor",
+    "role": "Department Chair",
+    "office": "Saunders 435, 445B",
+    "phone": "1 (808) 956-3524",
+    "phoneHref": "+18089563524",
+    "email": "qichen@hawaii.edu",
+    "photo": "/_media/faculty/qi-chen.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "Remote Sensing",
+      "GIS",
+      "Environmental Science"
     ],
-    "education": "To be provided",
-    "publications": "To be provided",
-    "courses": "To be provided"
+    "links": [
+      {
+        "label": "smartremotesensing.org",
+        "url": "https://smartremotesensing.org/"
+      }
+    ],
+    "publications": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=ucpSWm0AAAAJ&hl=en",
+        "image": "/_media/publications/google-scholar.png"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Qi_Chen6",
+        "image": "/_media/publications/research-gate.png"
+      },
+      {
+        "label": "Academia.edu",
+        "url": "https://hawaii.academia.edu/QiChen",
+        "image": "/_media/publications/academia-edu.png"
+      }
+    ]
   },
   {
-    "name": "Sample Faculty Two",
-    "slug": "sample-faculty-two",
-    "title": "Faculty Title (placeholder)",
-    "email": "",
-    "office": "Office TBD",
-    "photo": "/_media/place.webp",
-    "bio": "Placeholder biography. Replace this record with approved faculty information.",
-    "research": [
-      "Research area to be confirmed"
+    "name": "Hong Jiang",
+    "slug": "hong-jiang",
+    "title": "Associate Professor",
+    "role": "Undergraduate Chair",
+    "office": "Saunders 437",
+    "phone": "",
+    "phoneHref": "",
+    "email": "hjiang@hawaii.edu",
+    "photo": "/_media/faculty/hong-jiang.webp",
+    "photoWidth": 600,
+    "photoHeight": 600,
+    "keywords": [
+      "Culture",
+      "Perception of Nature",
+      "China"
     ],
-    "education": "To be provided",
-    "publications": "To be provided",
-    "courses": "To be provided"
+    "links": [],
+    "publications": [
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Hong_Jiang55",
+        "image": "/_media/publications/research-gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Yuqin Jiang",
+    "slug": "yuqin-jiang",
+    "title": "Assistant Professor",
+    "role": "",
+    "office": "Saunders 419",
+    "phone": "",
+    "phoneHref": "",
+    "email": "yuqinj@hawaii.edu",
+    "photo": "/_media/faculty/yuqin-jiang.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "GIS",
+      "Spatial Data",
+      "Mobility",
+      "Smart City"
+    ],
+    "links": [],
+    "publications": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=BaMTux0AAAAJ&hl=en",
+        "image": "/_media/publications/google-scholar.png"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Yuqin-Jiang",
+        "image": "/_media/publications/research-gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Reece Jones",
+    "slug": "reece-jones",
+    "title": "Professor",
+    "role": "",
+    "office": "Saunders 417",
+    "phone": "",
+    "phoneHref": "",
+    "email": "reecej@hawaii.edu",
+    "photo": "/_media/faculty/reece-jones.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "Political Geography",
+      "Geopolitics",
+      "Borders"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.reecejonesauthor.com/"
+      },
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/reecejones.bsky.social"
+      },
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Reece_Jones_(geographer)"
+      }
+    ],
+    "publications": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=vGvbq1AAAAAJ&hl=en",
+        "image": "/_media/publications/google-scholar.png"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Reece_Jones",
+        "image": "/_media/publications/research-gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Aurora Kagawa-Viviani",
+    "slug": "aurora-kagawa-viviani",
+    "title": "Assistant Professor",
+    "role": "",
+    "office": "",
+    "phone": "",
+    "phoneHref": "",
+    "email": "kagawa@hawaii.edu",
+    "photo": "/_media/faculty/aurora-kagawa-viviani.webp",
+    "photoWidth": 600,
+    "photoHeight": 600,
+    "keywords": [
+      "Ecohydrology",
+      "Restoration",
+      "Water Resources"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://akkagawa.wordpress.com/"
+      }
+    ],
+    "publications": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=Fi4DsrIAAAAJ",
+        "image": "/_media/publications/google-scholar.png"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0001-8532-3017",
+        "image": "/_media/publications/orcid.png"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Aurora_Kagawa-Viviani",
+        "image": "/_media/publications/research-gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Marina Karides",
+    "slug": "marina-karides",
+    "title": "Professor",
+    "role": "",
+    "office": "Saunders 416",
+    "phone": "",
+    "phoneHref": "",
+    "email": "mkarides@hawaii.edu",
+    "photo": "/_media/faculty/marina-karides.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "Island Studies",
+      "Feminisms",
+      "Political Economy"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.marinakarides.com/"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/marina_karides"
+      }
+    ],
+    "publications": [
+      {
+        "label": "Academia.edu",
+        "url": "https://manoa-hawaii.academia.edu/MarinaKarides",
+        "image": "/_media/publications/academia-edu.png"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=rAHprXUAAAAJ&hl=en",
+        "image": "/_media/publications/google-scholar.png"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Marina_Karides/research",
+        "image": "/_media/publications/research-gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Camilo Mora",
+    "slug": "camilo-mora",
+    "title": "Professor",
+    "role": "",
+    "office": "Saunders 413",
+    "phone": "1 (808) 956-7093",
+    "phoneHref": "+18089567093",
+    "email": "cmora@hawaii.edu",
+    "photo": "/_media/faculty/camilo-mora.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "Biodiversity Threats and Conservation"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://camilo-mora.github.io/MoraLab/"
+      }
+    ],
+    "publications": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=PFCmm5MAAAAJ&hl=en",
+        "image": "/_media/publications/google-scholar.png"
+      }
+    ]
+  },
+  {
+    "name": "Mary Mostafanezhad",
+    "slug": "mary-mostafanezhad",
+    "title": "Professor",
+    "role": "Graduate Chair",
+    "office": "Saunders 440",
+    "phone": "",
+    "phoneHref": "",
+    "email": "mostafan@hawaii.edu",
+    "photo": "/_media/faculty/mary-mostafanezhad.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "Political Economy",
+      "Political Ecology",
+      "Cultural Politics"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.marymostafanezhad.com/"
+      }
+    ],
+    "publications": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=cm9lWxAAAAAJ&hl=en",
+        "image": "/_media/publications/google-scholar.png"
+      }
+    ]
+  },
+  {
+    "name": "Orhon Myadar",
+    "slug": "orhon-myadar",
+    "title": "Associate Professor",
+    "role": "",
+    "office": "Saunders 420",
+    "phone": "1 (808) 956-8465",
+    "phoneHref": "+18089568465",
+    "email": "orhon@hawaii.edu",
+    "photo": "/_media/faculty/orhon-myadar.webp",
+    "photoWidth": 400,
+    "photoHeight": 400,
+    "keywords": [
+      "Forced Mobility",
+      "Displacement",
+      "Nomadism"
+    ],
+    "links": [],
+    "publications": []
+  },
+  {
+    "name": "Brian Szuster",
+    "slug": "brian-szuster",
+    "title": "Professor",
+    "role": "",
+    "office": "Saunders 436",
+    "phone": "",
+    "phoneHref": "",
+    "email": "szuster@hawaii.edu",
+    "photo": "/_media/faculty/brian-szuster.webp",
+    "photoWidth": 600,
+    "photoHeight": 600,
+    "keywords": [
+      "Aquaculture",
+      "Seafood",
+      "Coastal Tourism",
+      "EIA"
+    ],
+    "links": [],
+    "publications": [
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/profile/Brian_Szuster",
+        "image": "/_media/publications/research-gate.png"
+      }
+    ]
   }
 ]

@@ -1,0 +1,44 @@
+{
+  "semester": "Fall 2026",
+  "schedule": "Alternating Thursdays, 12 noon to 1 pm",
+  "location": "Saunders Hall Room 443",
+  "contactName": "Reece Jones",
+  "contactEmail": "reecej@hawaii.edu",
+  "events": [
+    {
+      "date": "2026-09-15",
+      "weekday": "Tuesday",
+      "title": "Developmental Suspension: Uneven Sovereignty and Urban Horizons Across US territories and Freely Associated States in the Pacific",
+      "speaker": "Ryan Centner",
+      "affiliation": "Department of Geography and Environment, London School of Economics"
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "title": "Toward an Everyday Spatial Agency: Technology, Mobility, and the Practices of Public Life",
+      "speaker": "Scott Cloudwatcher",
+      "affiliation": "Uehiro Academy for Philosophy & Ethics in Education, University of Hawai'i"
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "title": "Indonesia’s Patchwork Industrial Saltscapes",
+      "speaker": "Gillian Bogart",
+      "affiliation": "Department of Asian Studies, University of Hawai'i"
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "title": "Book Launch: Smuggler: Drugs, Gangs, and Refugees at America's Northern Border",
+      "speaker": "Reece Jones",
+      "affiliation": "Department of Geography and Environment, University of Hawai'i"
+    },
+    {
+      "date": "2026-11-12",
+      "weekday": "Thursday",
+      "title": "TBD",
+      "speaker": "Nākoa Farrant",
+      "affiliation": "School of Life Sciences, University of Hawai'i"
+    }
+  ]
+}

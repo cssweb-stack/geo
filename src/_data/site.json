@@ -2,7 +2,7 @@
   "name": "Department of Geography and Environment",
   "shortName": "GEO",
   "url": "https://geography.manoa.hawaii.edu",
-  "defaultHero": "/_media/hero.webp",
+  "defaultHero": "/_media/heros/05-hero.webp",
   "ga4MeasurementId": "",
   "searchProvider": "google-site-restricted"
 }

@@ -19,7 +19,7 @@
   {% include "components/hero.njk" %}
   <main id="main-content" class="site-main">
     <div class="container py-5">
-      <h1>{{ title | default(site.name) | escape }}</h1>
+      {% if not hidePageTitle %}<h1>{{ title | default(site.name) | escape }}</h1>{% endif %}
       {{ content | safe }}
     </div>
   </main>

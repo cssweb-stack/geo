@@ -1,30 +1,30 @@
 ---
 layout: layouts/base.njk
-title: Current MA and PhD Students
+title: Current Cohort
 permalink: /graduate/current-cohort.html
-hero: /_media/hero.webp
+hero: /_media/dev/hero.webp
 ---
-<p class="mb-4">The following are select graduate degree candidates.</p>
+<p class="page-intro">The Department of Geography and Environment is proud to highlight the research interests of students pursuing MA and PhD degrees. Their work spans climate change, environmental conservation, cultural and political geography, migration, sustainable food systems, coastal and marine environments, and geospatial technologies. From Hawaiʻi and the Pacific to communities around the world, these varied interests reflect the breadth of geographic inquiry and the department’s commitment to supporting emerging scholars.</p>
 <div class="student-directory">
-    {% for student in students %}
-    <article class="student-entry" aria-labelledby="student-{{ student.slug }}">
-        <img
-            class="student-photo"
-            src="{{ student.photo | url }}"
-            alt="{{ student.name | escape }}"
-            width="212"
-            height="212"
-            loading="lazy"
-            decoding="async">
+{% for student in students %}
+<article class="student-entry" aria-labelledby="student-{{ student.slug }}">
+<img
+class="student-photo"
+src="{{ student.photo | url }}"
+alt="{{ student.name | escape }}"
+width="212"
+height="212"
+loading="lazy"
+decoding="async">
 
-        <div class="student-information">
-            <h2 id="student-{{ student.slug }}" class="h4 student-name">{{ student.name | escape }}</h2>
-            <p class="student-meta">
-                {{ student.program | escape }}{% if student.email %}<span class="student-meta-divider" aria-hidden="true"> · </span><a href="mailto:{{ student.email | escape }}">{{ student.email | escape }}</a>{% endif %}
-            </p>
-            <p class="student-research">{{ student.research | escape }}</p>
-            <p class="student-advisor"><strong>Advisor:</strong> {{ student.advisorName | escape }}</p>
-        </div>
-    </article>
-    {% endfor %}
+<div class="student-information">
+<h2 id="student-{{ student.slug }}" class="h4 student-name">{{ student.name | escape }}</h2>
+<p class="student-meta">
+<span class="student-program">{{ student.program | escape }}</span>{% if student.email %}<span class="student-meta-divider" aria-hidden="true"> · </span><a href="mailto:{{ student.email | escape }}">{{ student.email | escape }}</a>{% endif %}
+</p>
+<p class="student-research">{{ student.research | escape }}</p>
+<p class="student-advisor"><strong>Advisor:</strong> {{ student.advisorName | escape }}</p>
+</div>
+</article>
+{% endfor %}
 </div>

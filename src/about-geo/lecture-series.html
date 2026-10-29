@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: Lecture Series
+permalink: "/about-geo/lecture-series.html"
+hero: /_media/dev/hero.webp
+---
+<div class="lecture-series">
+<p class="page-intro">Explore new perspectives on people, places, and the environment. Our lecture series brings together local, national, and international speakers to share research and ideas from geography and related disciplines. Please contact the series organizer with questions about attending.</p>
+
+<section aria-labelledby="lecture-semester">
+<h2 id="lecture-semester">{{ lectures.semester | escape }}</h2>
+<div class="lecture-details">
+<p><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</p>
+<p><strong>Location:</strong> {{ lectures.location | escape }}</p>
+<p><strong>Contact:</strong> <a href="mailto:{{ lectures.contactEmail | escape }}">{{ lectures.contactName | escape }}</a></p>
+</div>
+
+{% set months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
+<div class="lecture-list">
+{% for lecture in lectures.events %}
+{% set dateParts = lecture.date.split('-') %}
+{% set monthIndex = (dateParts[1] | int) - 1 %}
+<article class="lecture-entry" aria-labelledby="lecture-title-{{ loop.index }}">
+<time class="lecture-date" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
+<svg class="lecture-date-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="3" y="5" width="18" height="16" rx="2"></rect>
+<path d="M7 3v4M17 3v4M3 11h18"></path>
+<path d="M8 15h2M14 15h2M8 18h2"></path>
+</svg>
+<span class="lecture-month" aria-hidden="true">{{ months[monthIndex] | truncate(3, true, "") }}</span>
+<span class="lecture-day" aria-hidden="true">{{ dateParts[2] | int }}</span>
+<span class="lecture-weekday" aria-hidden="true">{{ lecture.weekday | escape }}</span>
+</time>
+<div class="lecture-information">
+<h3 id="lecture-title-{{ loop.index }}" class="lecture-title">{{ lecture.title | escape }}</h3>
+<p class="lecture-speaker">{{ lecture.speaker | escape }}</p>
+<p class="lecture-affiliation">{{ lecture.affiliation | escape }}</p>
+</div>
+</article>
+{% endfor %}
+</div>
+</section>
+</div>

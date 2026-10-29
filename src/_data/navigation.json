@@ -8,19 +8,23 @@
     "children": [
       {
         "label": "Why Study with GEO",
-        "url": "/about-geo/why-study-with-geo.html"
+        "url": "/about-geo/why-study-with-geo.html",
+        "icon": "compass"
       },
       {
         "label": "Areas of Study",
-        "url": "/about-geo/areas-of-study.html"
+        "url": "/about-geo/areas-of-study.html",
+        "icon": "globe-americas"
       },
       {
-        "label": "Public Lectures",
-        "url": "/about-geo/public-lectures.html"
+        "label": "Lecture Series",
+        "url": "/about-geo/lecture-series.html",
+        "icon": "mic"
       },
       {
-        "label": "News",
-        "url": "/about-geo/news.html"
+        "label": "Department News",
+        "url": "/about-geo/department-news.html",
+        "icon": "newspaper"
       }
     ]
   },
@@ -29,23 +33,28 @@
     "children": [
       {
         "label": "GIS Certificate",
-        "url": "/undergraduate/gis-certificate.html"
+        "url": "/undergraduate/gis-certificate.html",
+        "icon": "map"
       },
       {
         "label": "Minor",
-        "url": "/undergraduate/minor.html"
+        "url": "/undergraduate/minor.html",
+        "icon": "journal"
       },
       {
         "label": "Major (BA)",
-        "url": "/undergraduate/major-ba.html"
+        "url": "/undergraduate/major-ba.html",
+        "icon": "mortarboard"
       },
       {
-        "label": "GEO BAM",
-        "url": "/undergraduate/geo-bam.html"
+        "label": "GEO BA/MA (BAM)",
+        "url": "/undergraduate/geo-bam.html",
+        "icon": "layers"
       },
       {
-        "label": "SUST/GEO BAM",
-        "url": "/undergraduate/sust-geo-bam.html"
+        "label": "SUST BA/GEO MA (BAM)",
+        "url": "/undergraduate/geo-sust-bam.html",
+        "icon": "leaf"
       }
     ]
   },
@@ -54,23 +63,28 @@
     "children": [
       {
         "label": "Master (MA)",
-        "url": "/graduate/master-ma.html"
+        "url": "/graduate/master-ma.html",
+        "icon": "mortarboard"
       },
       {
         "label": "Doctorate (PhD)",
-        "url": "/graduate/doctorate-phd.html"
+        "url": "/graduate/doctorate-phd.html",
+        "icon": "journal-richtext"
       },
       {
         "label": "Degrees Awarded",
-        "url": "/graduate/degrees-awarded.html"
+        "url": "/graduate/degrees-awarded.html",
+        "icon": "award"
       },
       {
         "label": "Current Cohort",
-        "url": "/graduate/current-cohort.html"
+        "url": "/graduate/current-cohort.html",
+        "icon": "people"
       },
       {
         "label": "Funding Sources",
-        "url": "/graduate/funding-sources.html"
+        "url": "/graduate/funding-sources.html",
+        "icon": "cash-coin"
       }
     ]
   },
