@@ -10,12 +10,12 @@
 <link href="{{ "/geo.css" | url }}" rel="stylesheet">
 </head>
 <body>
+<header class="sticky-header">
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<div class="sticky-header">
 {% include "components/uh-brand.njk" %}
 {% include "components/unit-name.njk" %}
 {% include "components/unit-nav.njk" %}
-</div>
+</header>
 {% include "components/hero.njk" %}
 <main id="main-content" class="site-main">
 <div class="container main-content">
@@ -24,7 +24,6 @@
 </div>
 </main>
 {% include "components/footer.njk" %}
-{% include "components/subfooter.njk" %}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="{{ "/assets/site.js" | url }}" defer></script>
 </body>

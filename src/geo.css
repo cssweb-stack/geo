@@ -44,7 +44,7 @@ min-height: 40vh;
 
 strong,
 b {
-font-weight: 600;
+font-weight: 500;
 }
 
 h1 {
@@ -628,6 +628,11 @@ box-shadow: 2px 2px 0 rgba(2, 71, 49, 0.2), 0 2px 6px rgba(0, 0, 0, 0.05);
 
 /* Shared resource links */
 
+/* Accessible content links */
+.site-main a:not(.btn) {
+color: #0a58ca;
+}
+
 .degree-link {
 display: inline-flex;
 align-items: baseline;
@@ -744,6 +749,11 @@ padding: 2rem 0;
 border-bottom: 1px solid var(--nav-divider);
 }
 
+/* Chair message: retain the shared two-column layout with matching dividers. */
+.chair-message {
+border-top: 1px solid var(--nav-divider);
+}
+
 .course-entry:first-child {
 border-top: 1px solid var(--nav-divider);
 }
@@ -793,9 +803,12 @@ font-weight: 600;
 line-height: 1.4;
 }
 
-
 .site-main .course-information p {
-margin: 0 0 1.5rem;
+margin: 0 0 0.875rem;
+}
+
+.site-main .course-information p + ul {
+margin-top: 0;
 }
 
 .site-main .course-information > :last-child {
@@ -821,6 +834,116 @@ width: 100%;
 .certificate-actions {
 flex-direction: column;
 align-items: flex-start;
+}
+}
+
+/* GEO BAM: compact icon tiles for three course-and-credit sections. */
+.bam-courses {
+margin-top: 3rem;
+}
+.bam-course-list .bam-course-icon {
+display: flex;
+flex: 0 0 112px;
+width: 112px;
+height: 112px;
+align-items: center;
+justify-content: center;
+border-radius: 0.25rem;
+color: #fff;
+}
+.bam-course-icon svg {
+width: 52px;
+height: 52px;
+}
+.bam-course-icon--teal {
+background: var(--geo-teal);
+}
+.bam-course-icon--blue {
+background: var(--geo-blue);
+}
+.bam-course-icon--plum {
+background: var(--geo-plum);
+}
+.site-main .bam-course-subheading {
+margin: 1.25rem 0 0.5rem;
+font-size: 1rem;
+font-weight: 600;
+line-height: 1.5;
+}
+.site-main .bam-course-list .course-information ul {
+margin-bottom: 1rem;
+}
+.site-main .bam-course-list .course-information > :last-child {
+margin-bottom: 0;
+}
+@media (max-width: 767.98px) {
+.bam-course-list .bam-course-icon {
+flex: 0 0 96px;
+width: 96px;
+height: 96px;
+}
+.bam-course-icon svg {
+width: 44px;
+height: 44px;
+}
+}
+
+/* GEO BAM: related pathway below the admissions callout. */
+.bam-related-pathway {
+display: flex;
+align-items: flex-start;
+gap: 1.5rem;
+margin: 3rem 0;
+padding: 2rem 0;
+border-top: 1px solid var(--nav-divider);
+border-bottom: 1px solid var(--nav-divider);
+}
+
+.bam-related-pathway-icon {
+display: flex;
+flex: 0 0 72px;
+width: 72px;
+height: 72px;
+align-items: center;
+justify-content: center;
+background: var(--geo-teal);
+color: #fff;
+border-radius: 0.25rem;
+}
+
+.bam-related-pathway-icon svg {
+width: 38px;
+height: 38px;
+}
+
+.bam-related-pathway-content {
+flex: 1 1 auto;
+min-width: 0;
+}
+
+.site-main .bam-related-pathway h2 {
+margin: 0 0 0.75rem;
+font-size: 1.125rem;
+}
+
+.site-main .bam-related-pathway p {
+margin: 0;
+}
+
+@media (max-width: 575.98px) {
+.bam-related-pathway {
+gap: 1rem;
+}
+
+.bam-related-pathway-icon {
+flex-basis: 56px;
+width: 56px;
+height: 56px;
+}
+
+.bam-related-pathway-icon svg {
+width: 30px;
+height: 30px;
 }
 }
 
@@ -867,6 +990,81 @@ padding: 1.25rem;
 
 .course-resource-buttons {
 grid-template-columns: 1fr;
+}
+}
+
+/* Undergraduate advising: shared major and minor contact block. */
+.undergraduate-advisors {
+margin: 3rem 0;
+padding: 2rem 0;
+border-top: 1px solid var(--nav-divider);
+border-bottom: 1px solid var(--nav-divider);
+}
+
+.site-main .undergraduate-advisors-intro {
+margin-bottom: 1.5rem;
+}
+
+.undergraduate-advisors-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 400px));
+gap: 2.5rem;
+}
+
+.undergraduate-advisor {
+display: flex;
+align-items: flex-start;
+gap: 1.25rem;
+min-width: 0;
+}
+
+.undergraduate-advisor-photo {
+display: block;
+flex: 0 0 112px;
+width: 112px;
+height: 112px;
+object-fit: cover;
+}
+
+.undergraduate-advisor-details {
+min-width: 0;
+}
+
+.site-main .undergraduate-advisor h3 {
+margin: 0 0 0.375rem;
+font-size: 1.125rem;
+font-weight: 500;
+line-height: 1.4;
+}
+
+.site-main .undergraduate-advisor p {
+margin: 0 0 0.375rem;
+line-height: 1.5;
+overflow-wrap: anywhere;
+}
+
+.site-main .undergraduate-advisor-name {
+font-weight: 400;
+}
+
+.undergraduate-advisor-email a {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+font-size: 0.9375rem;
+}
+
+.undergraduate-advisor-email svg {
+width: 1rem;
+height: 1rem;
+flex: 0 0 1rem;
+color: var(--icon-gray);
+}
+
+@media (max-width: 991.98px) {
+.undergraduate-advisors-grid {
+grid-template-columns: 1fr;
+gap: 1.5rem;
 }
 }
 
@@ -1802,7 +2000,7 @@ align-items: center;
 justify-content: center;
 gap: 0.125rem;
 padding: 0.625rem;
-background: var(--uh-green);
+background: var(--geo-blue);
 color: var(--light);
 border-radius: 0.25rem;
 text-align: center;
@@ -2114,4 +2312,14 @@ font-weight: 600;
 
 .site-main p.message-text {
 margin-bottom: 0.75rem;
+}
+
+.minor-note {
+margin-top: 1rem;
+font-size: 0.98rem;
+}
+
+.minor-note-icon {
+margin-right: 0.45rem;
+font-weight: 700;
 }

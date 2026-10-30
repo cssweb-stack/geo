@@ -23,11 +23,7 @@ hero: /_media/dev/hero.webp
 {% set monthIndex = (dateParts[1] | int) - 1 %}
 <article class="lecture-entry" aria-labelledby="lecture-title-{{ loop.index }}">
 <time class="lecture-date" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
-<svg class="lecture-date-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-<rect x="3" y="5" width="18" height="16" rx="2"></rect>
-<path d="M7 3v4M17 3v4M3 11h18"></path>
-<path d="M8 15h2M14 15h2M8 18h2"></path>
-</svg>
+{% include "icons/calendar3.svg" %}
 <span class="lecture-month" aria-hidden="true">{{ months[monthIndex] | truncate(3, true, "") }}</span>
 <span class="lecture-day" aria-hidden="true">{{ dateParts[2] | int }}</span>
 <span class="lecture-weekday" aria-hidden="true">{{ lecture.weekday | escape }}</span>
