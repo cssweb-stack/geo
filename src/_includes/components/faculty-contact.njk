@@ -3,13 +3,13 @@
 {% if person.office %}<p>{{ person.office | escape }}</p>{% endif %}
 {% if person.phone %}
 <p><a class="faculty-contact-link" href="tel:{{ person.phoneHref | escape }}">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.91-8.67A2 2 0 0 1 3.26 1.2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.79a2 2 0 0 1-.45 2.11L7.23 9.09a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.33 1.83.56 2.79.69A2 2 0 0 1 22 16.92z"/></svg>
+<span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span>
 <span><span class="visually-hidden">Telephone: </span>{{ person.phone | escape }}</span>
 </a></p>
 {% endif %}
 {% if person.email %}
 <p><a class="faculty-contact-link" href="mailto:{{ person.email | escape }}">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+<span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span>
 <span><span class="visually-hidden">Email: </span>{{ person.email | escape }}</span>
 </a></p>
 {% endif %}

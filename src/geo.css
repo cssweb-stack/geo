@@ -1533,12 +1533,17 @@ min-width: 0;
 overflow-wrap: anywhere;
 }
 
+.faculty-contact-link > .faculty-contact-icon {
+display: inline-flex;
+flex: 0 0 1rem;
+align-self: center;
+}
+
 .faculty-contact-link svg {
 width: 1rem;
 height: 1rem;
-flex: 0 0 1rem;
-align-self: center;
 color: var(--icon-gray);
+fill: currentColor;
 }
 
 .site-main .faculty-contact p:has(> a[href^="tel:"]) {
