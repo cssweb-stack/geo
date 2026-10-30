@@ -390,11 +390,8 @@ color: var(--text);
 .desktop-search-submit svg {
 width: 22.5px;
 height: 22.5px;
-fill: none;
-stroke: currentColor;
-stroke-width: 1.7;
-stroke-linecap: round;
-stroke-linejoin: round;
+fill: currentColor;
+stroke: none;
 }
 .mobile-search-form {
 padding-top: 1rem;
@@ -1767,13 +1764,16 @@ font-weight: 400;
 }
 
 .degree-badge-icon {
+display: inline-flex;
 width: 2rem;
 height: 2rem;
-fill: none;
-stroke: currentColor;
-stroke-width: 1.7;
-stroke-linejoin: round;
-stroke-linecap: round;
+align-items: center;
+justify-content: center;
+}
+.degree-badge-icon svg {
+width: 100%;
+height: 100%;
+fill: currentColor;
 }
 
 @media (max-width: 767.98px) {
@@ -1890,16 +1890,18 @@ color: var(--uh-green);
 }
 
 .funding-deadline-icon {
+display: inline-flex;
 color: var(--icon-gray);
 width: 1.125rem;
 height: 1.125rem;
 margin-right: 0.25rem;
 vertical-align: -0.125rem;
-fill: none;
-stroke: currentColor;
-stroke-width: 1.7;
-stroke-linecap: round;
-stroke-linejoin: round;
+}
+.funding-deadline-icon svg {
+width: 100%;
+height: 100%;
+fill: currentColor;
+stroke: none;
 }
 
 .funding-action-row::before {

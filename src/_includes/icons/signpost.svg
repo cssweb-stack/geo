@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" aria-hidden="true" focusable="false" fill="#fff">
-<path transform="translate(0 300) scale(1 -1)" d="M131 273V225H38Q30 225 24.5 219.5Q19 214 19 206V131Q19 123 24.5 118.0Q30 113 38 113H131V0H169V113H235Q244 113 249 119L286 163Q288 165 288.0 168.5Q288 172 286 175L249 218Q244 225 235 225H169V273Q169 281 163.5 286.5Q158 292 150.0 292.0Q142 292 136.5 286.5Q131 281 131 273ZM235 206 266 169 235 131H38V206Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="bi bi-signpost" aria-hidden="true" focusable="false"><path d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0M12.532 5l1.666 2-1.666 2H2V5z"/></svg>

@@ -6,10 +6,10 @@
 <label class="visually-hidden" for="unit-search-desktop">Search Geography website</label>
 <input id="unit-search-desktop" class="form-control form-control-sm" type="search" name="q" placeholder="Search GEO" required>
 <input type="hidden" name="sitesearch" value="geography.manoa.hawaii.edu">
-<button class="btn btn-outline-secondary desktop-search-submit" type="submit" aria-label="Search Geography website"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+<button class="btn btn-outline-secondary desktop-search-submit" type="submit" aria-label="Search Geography website">{% include "icons/search.svg" %}</button>
 </form>
-<button class="unit-icon-button unit-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch" aria-controls="mobileSearch" aria-expanded="false" aria-label="Toggle site search"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>
-<button class="unit-icon-button unit-menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#unitNavigation" aria-controls="unitNavigation" aria-expanded="false" aria-label="Toggle department navigation"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18M3 12h18M3 19h18"/></svg></button>
+<button class="unit-icon-button unit-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch" aria-controls="mobileSearch" aria-expanded="false" aria-label="Toggle site search">{% include "icons/search.svg" %}</button>
+<button class="unit-icon-button unit-menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#unitNavigation" aria-controls="unitNavigation" aria-expanded="false" aria-label="Toggle department navigation">{% include "icons/list.svg" %}</button>
 </div>
 </div>
 <div class="collapse mobile-search" id="mobileSearch"><form role="search" action="https://www.google.com/search" method="get" class="mobile-search-form">
