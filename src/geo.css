@@ -265,6 +265,9 @@ text-decoration: none;
 text-decoration-thickness: 1px;
 text-underline-offset: 5px;
 white-space: nowrap;
+min-height: 44px;
+display: inline-flex;
+align-items: center;
 }
 
 .uh-brand .nav-link:hover,
@@ -2198,12 +2201,17 @@ box-shadow: none;
 }
 
 /* One shared width keeps the privacy link centered beneath the logo. */
-.footer-department-privacy {
+.footer-department-links {
 width: var(--footer-logo-width);
-margin: 2rem 0 0;
+margin-top: 2rem;
+text-align: center;
+}
+
+.footer-department-privacy,
+.footer-department-webmaster {
+margin: 0;
 font-size: 0.875rem;
 line-height: 1.5;
-text-align: center;
 }
 
 /* Phone and tablet logo width follows the column width automatically. */
@@ -2213,10 +2221,22 @@ text-align: center;
 }
 }
 
-.site-footer .footer-department-privacy a {
-display: inline-block;
+.site-footer .footer-department-privacy a,
+.site-footer .footer-department-webmaster a {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+min-height: 44px;
 padding: 0.375rem 0;
 text-underline-offset: 3px;
+}
+
+.footer-department-webmaster svg {
+width: 1rem;
+height: 1rem;
+flex: 0 0 1rem;
+fill: currentColor;
 }
 
 .site-footer .footer-department-privacy a:focus-visible {
@@ -2267,6 +2287,7 @@ width: 1rem;
 height: 1rem;
 flex: 0 0 1rem;
 align-self: center;
+fill: currentColor;
 }
 
 /* Subfooter */
