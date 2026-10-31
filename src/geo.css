@@ -2295,7 +2295,8 @@ margin-bottom: 0;
 
 /* Contact page */
 .contact-page .page-header {
-margin-bottom: 1.75rem;
+padding-bottom: 2rem;
+margin-bottom: 2.625rem;
 }
 .contact-page .contact-hours {
 margin-bottom: 0;
@@ -2608,4 +2609,52 @@ font-size: 0.98rem;
 .minor-note-icon {
 margin-right: 0.45rem;
 font-weight: 700;
+}
+
+/* Support GEO */
+.site-main .support-geo-header {
+padding-bottom: 2rem;
+margin-bottom: 2.625rem;
+}
+.support-geo {
+display: grid;
+grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+gap: 2rem;
+align-items: start;
+}
+.support-geo-images {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2rem;
+}
+.support-geo-photo {
+display: block;
+width: 240px;
+max-width: 100%;
+height: auto;
+}
+.support-geo-foundation {
+display: block;
+width: 240px;
+max-width: 100%;
+height: auto;
+}
+.site-main .support-geo-content h2 {
+margin-top: 0;
+}
+.site-main .support-geo-appreciation {
+padding: 1rem 1.25rem;
+border-left: 4px solid #354d67;
+border-radius: 0.25rem;
+background: #edf2f6;
+color: #354d67;
+font-weight: 600;
+font-style: normal;
+}
+@media (max-width: 767.98px) {
+.support-geo {
+grid-template-columns: minmax(0, 1fr);
+gap: 2rem;
+}
 }

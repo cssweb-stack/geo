@@ -1,145 +1,146 @@
 {
-  "notes": "All hero assignments and appearance settings live here. 0-100 grayscale; 0-1 opacities; patternSize as a percent of hero height. Faculty biography profiles intentionally keep their existing default hero.",
-  "defaults": {
-    "background": "#000000",
-    "grayscale": 10,
-    "overlayOpacity": 0,
-    "blendMode": "normal",
-    "patternOpacity": 0.33,
-    "patternSize": 50,
-    "pattern": "uh-pattern-vert-5-black.svg",
-    "position": "center"
-  },
-  "sections": {
-    "home": {
-      "color": "#354d67"
-    },
-    "about": {
-      "color": "#354d67"
-    },
-    "undergraduate": {
-      "color": "#354d67"
-    },
-    "graduate": {
-      "color": "#354d67"
-    },
-    "faculty": {
-      "color": "#354d67"
-    },
-    "giving": {
-      "color": "#354d67"
-    },
-    "contact": {
-      "color": "#354d67"
-    },
-    "privacy": {
-      "color": "#354d67"
-    }
-  },
-  "credit": {
-    "source": "ESA WorldCover project (2021) / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
-    "url": "https://esa-worldcover.org/en/data-access"
-  },
-  "pages": {
-    "/": {
-      "section": "home",
-      "image": "honolulu-oahu.webp",
-      "location": "Honolulu, Oʻahu, Hawaiʻi"
-    },
-    "/about-geo/why-study-geo.html": {
-      "section": "about",
-      "image": "hanalei-kauai.webp",
-      "location": "Hanalei, Kauaʻi, Hawaiʻi"
-    },
-    "/about-geo/areas-of-study.html": {
-      "section": "about",
-      "image": "chiang-mai-thailand.webp",
-      "location": "Chiang Mai, Thailand"
-    },
-    "/about-geo/lecture-series.html": {
-      "section": "about",
-      "image": "kaneohe-oahu.webp",
-      "location": "Kāneʻohe Bay, Oʻahu, Hawaiʻi"
-    },
-    "/about-geo/department-news.html": {
-      "section": "about",
-      "image": "hong-kong-china.webp",
-      "location": "Hong Kong, China"
-    },
-    "/undergraduate/gis-certificate.html": {
-      "section": "undergraduate",
-      "image": "hilo-hawaii.webp",
-      "location": "Hilo, Hawaiʻi Island"
-    },
-    "/undergraduate/minor.html": {
-      "section": "undergraduate",
-      "image": "taipei-taiwan.webp",
-      "location": "Taipei, Taiwan"
-    },
-    "/undergraduate/major-ba.html": {
-      "section": "undergraduate",
-      "image": "manila-philippines.webp",
-      "location": "Manila, Philippines"
-    },
-    "/undergraduate/geo-bam.html": {
-      "section": "undergraduate",
-      "image": "north-shore-oahu.webp",
-      "location": "North Shore, Oʻahu, Hawaiʻi"
-    },
-    "/undergraduate/geo-sust-bam.html": {
-      "section": "undergraduate",
-      "image": "bali-indonesia.webp",
-      "location": "Bali, Indonesia"
-    },
-    "/graduate/master-ma.html": {
-      "section": "graduate",
-      "image": "hana-maui.webp",
-      "location": "Hāna, Maui, Hawaiʻi"
-    },
-    "/graduate/doctorate-phd.html": {
-      "section": "graduate",
-      "image": "tokyo-japan.webp",
-      "location": "Tokyo, Japan"
-    },
-    "/graduate/degrees-awarded.html": {
-      "section": "graduate",
-      "image": "beijing-china.webp",
-      "location": "Beijing, China"
-    },
-    "/graduate/current-cohort.html": {
-      "section": "graduate",
-      "image": "apia-samoa.webp",
-      "location": "Apia, Samoa"
-    },
-    "/graduate/funding-sources.html": {
-      "section": "graduate",
-      "image": "kailua-kona-hawaii.webp",
-      "location": "Kailua-Kona, Hawaiʻi Island"
-    },
-    "/faculty/": {
-      "section": "faculty",
-      "image": "kaunakakai-molokai.webp",
-      "location": "Kaunakakai, Molokaʻi, Hawaiʻi"
-    },
-    "/faculty/associated.html": {
-      "section": "faculty",
-      "image": "ulaanbaatar-mongolia.webp",
-      "location": "Ulaanbaatar, Mongolia"
-    },
-    "/give-a-gift/": {
-      "section": "giving",
-      "image": "north-lanai-lanai.webp",
-      "location": "Northern Lānaʻi, Hawaiʻi"
-    },
-    "/contact/": {
-      "section": "contact",
-      "image": "hagatna-guam.webp",
-      "location": "Hagåtña, Guam"
-    },
-    "/privacy/": {
-      "section": "privacy",
-      "image": "papeete-tahiti.webp",
-      "location": "Papeʻete, Tahiti, French Polynesia"
-    }
-  }
+"notes": "All hero assignments and appearance settings live here. 0-100 grayscale; 0-1 opacities; patternSize as a percent of hero height. Faculty biography profiles intentionally keep their existing default hero.",
+"defaults": {
+"background": "#000000",
+"grayscale": 10,
+"overlayOpacity": 0,
+"blendMode": "normal",
+"patternOpacity": 0.33,
+"patternSize": 50,
+"pattern": "uh-pattern-vert-5-black.svg",
+"position": "center"
+},
+"sections": {
+"home": {
+"color": "#354d67"
+},
+"about": {
+"color": "#354d67"
+},
+"undergraduate": {
+"color": "#354d67"
+},
+"graduate": {
+"color": "#354d67"
+},
+"faculty": {
+"color": "#354d67"
+},
+"giving": {
+"color": "#354d67"
+},
+"contact": {
+"color": "#354d67"
+},
+"privacy": {
+"color": "#354d67"
+}
+},
+"credit": {
+"source": "ESA WorldCover project (2021) / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+"url": "https://esa-worldcover.org/en/data-access"
+},
+"pages": {
+"/": {
+"section": "home",
+"image": "honolulu-oahu.webp",
+"location": "Honolulu, Oʻahu, Hawaiʻi"
+},
+"/about-geo/why-study-geo.html": {
+"section": "about",
+"image": "hanalei-kauai.webp",
+"location": "Hanalei, Kauaʻi, Hawaiʻi"
+},
+"/about-geo/areas-of-study.html": {
+"section": "about",
+"image": "chiang-mai-thailand.webp",
+"location": "Chiang Mai, Thailand"
+},
+"/about-geo/lecture-series.html": {
+"section": "about",
+"image": "kaneohe-oahu.webp",
+"location": "Kāneʻohe Bay, Oʻahu, Hawaiʻi"
+},
+"/about-geo/department-news.html": {
+"section": "about",
+"image": "hong-kong-china.webp",
+"location": "Hong Kong, China"
+},
+"/undergraduate/gis-certificate.html": {
+"section": "undergraduate",
+"image": "hilo-hawaii.webp",
+"location": "Hilo, Hawaiʻi Island"
+},
+"/undergraduate/minor.html": {
+"section": "undergraduate",
+"image": "taipei-taiwan.webp",
+"location": "Taipei, Taiwan"
+},
+"/undergraduate/major-ba.html": {
+"section": "undergraduate",
+"image": "manila-philippines.webp",
+"location": "Manila, Philippines"
+},
+"/undergraduate/geo-bam.html": {
+"section": "undergraduate",
+"image": "north-shore-oahu.webp",
+"location": "North Shore, Oʻahu, Hawaiʻi"
+},
+"/undergraduate/geo-sust-bam.html": {
+"section": "undergraduate",
+"image": "bali-indonesia.webp",
+"location": "Bali, Indonesia"
+},
+"/graduate/master-ma.html": {
+"section": "graduate",
+"image": "hana-maui.webp",
+"location": "Hāna, Maui, Hawaiʻi"
+},
+"/graduate/doctorate-phd.html": {
+"section": "graduate",
+"image": "tokyo-japan.webp",
+"location": "Tokyo, Japan"
+},
+"/graduate/degrees-awarded.html": {
+"section": "graduate",
+"image": "beijing-china.webp",
+"location": "Beijing, China"
+},
+"/graduate/current-cohort.html": {
+"section": "graduate",
+"image": "apia-samoa.webp",
+"location": "Apia, Samoa"
+},
+"/graduate/funding-sources.html": {
+"section": "graduate",
+"image": "kailua-kona-hawaii.webp",
+"location": "Kailua-Kona, Hawaiʻi Island"
+},
+"/faculty/": {
+"section": "faculty",
+"image": "kaunakakai-molokai.webp",
+"location": "Kaunakakai, Molokaʻi, Hawaiʻi"
+},
+"/faculty/associated.html": {
+"section": "faculty",
+"image": "ulaanbaatar-mongolia.webp",
+"location": "Ulaanbaatar, Mongolia"
+},
+"/support-geo/": {
+"section": "giving",
+"image": "north-lanai-lanai.webp",
+"location": "Northern Lānaʻi, Hawaiʻi",
+"position": "center top"
+},
+"/contact/": {
+"section": "contact",
+"image": "hagatna-guam.webp",
+"location": "Hagåtña, Guam"
+},
+"/privacy/": {
+"section": "privacy",
+"image": "papeete-tahiti.webp",
+"location": "Papeʻete, Tahiti, French Polynesia"
+}
+}
 }
