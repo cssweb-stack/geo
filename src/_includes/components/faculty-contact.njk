@@ -1,16 +1,16 @@
 {% if person.office or person.phone or person.email %}
 <address class="faculty-contact">
 {% if person.office %}<p>{{ person.office | escape }}</p>{% endif %}
-{% if person.phone %}
-<p><a class="faculty-contact-link" href="tel:{{ person.phoneHref | escape }}">
-<span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span>
-<span><span class="visually-hidden">Telephone: </span>{{ person.phone | escape }}</span>
-</a></p>
-{% endif %}
 {% if person.email %}
 <p><a class="faculty-contact-link" href="mailto:{{ person.email | escape }}">
 <span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span>
 <span><span class="visually-hidden">Email: </span>{{ person.email | escape }}</span>
+</a></p>
+{% endif %}
+{% if person.phone %}
+<p><a class="faculty-contact-link" href="tel:{{ person.phoneHref | escape }}">
+<span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span>
+<span><span class="visually-hidden">Telephone: </span>{{ person.phone | escape }}</span>
 </a></p>
 {% endif %}
 </address>

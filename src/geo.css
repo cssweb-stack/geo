@@ -395,6 +395,16 @@ height: 22.5px;
 fill: currentColor;
 stroke: none;
 }
+/* Keep both GEO search submit buttons at the full 44px target size. */
+.desktop-search button[type="submit"],
+.mobile-search-form button[type="submit"] {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+min-width: 44px;
+min-height: 44px;
+flex-shrink: 0;
+}
 .mobile-search-form {
 padding-top: 1rem;
 }
@@ -614,6 +624,22 @@ background-size: auto var(--hero-pattern-size, 60%);
 background-position: left bottom;
 background-repeat: repeat-x;
 opacity: var(--hero-pattern-opacity, 0.30);
+}
+
+/* Subtle hero fade with no movement. */
+@media (prefers-reduced-motion: no-preference) {
+.page-hero {
+animation: hero-fade-in 600ms ease-out both;
+}
+}
+
+@keyframes hero-fade-in {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
 }
 
 /* Source attribution beneath page content, separate from the university footer. */
@@ -1516,7 +1542,7 @@ text-align: center;
 display: block;
 width: fit-content;
 max-width: 100%;
-margin: 0 auto 0.5rem;
+margin: 0 auto 0.25rem;
 color: var(--text);
 text-decoration: none;
 }
@@ -1549,7 +1575,7 @@ line-height: 1.35;
 }
 
 .faculty-titles {
-margin-bottom: 0.375rem;
+margin-bottom: 0.25rem;
 }
 
 .site-main .faculty-titles p {
@@ -1558,7 +1584,7 @@ line-height: 1.4;
 }
 
 .site-main .faculty-titles .faculty-role {
-margin-top: 0.375rem;
+margin-top: 0.25rem;
 font-weight: 600;
 }
 
@@ -1567,23 +1593,25 @@ margin-bottom: 0;
 font-style: normal;
 }
 
+/* Contact rows stay compact; each link retains its full target height. */
 .site-main .faculty-contact p {
-margin: 0 0 0.25rem;
+margin: 0;
 line-height: 1.5;
 }
 
 .site-main .faculty-contact p + p {
-margin-top: 0.5rem;
+margin-top: 0;
 }
 
 .faculty-contact-link {
 display: inline-flex;
 align-items: center;
-vertical-align: middle;
+vertical-align: top;
 gap: 0.5rem;
 max-width: 100%;
-min-height: 2.75rem;
-padding: 0.5rem 0.375rem;
+min-width: 44px;
+min-height: 44px;
+padding: 0.25rem 0.375rem;
 }
 
 .faculty-contact-link > span {
@@ -1604,30 +1632,12 @@ color: var(--icon-gray);
 fill: currentColor;
 }
 
-.site-main .faculty-contact p:has(> a[href^="tel:"]) {
-margin-bottom: 0;
-}
-
-.site-main .faculty-contact p:has(> a[href^="tel:"]) + p {
-margin-top: 0;
-}
-
-.faculty-contact-link[href^="tel:"] {
-min-height: 2.5rem;
-padding-block: 0.625rem 0.375rem;
-}
-
-.faculty-contact p:has(> a[href^="tel:"]) + p .faculty-contact-link {
-min-height: 2.5rem;
-padding-block: 0.375rem 0.625rem;
-}
-
 .site-main .faculty-contact p:last-child {
 margin-bottom: 0;
 }
 
 .site-main .faculty-keywords {
-margin-top: 0.625rem;
+margin-top: 0.25rem;
 margin-bottom: 0;
 font-style: normal;
 }
@@ -1655,7 +1665,7 @@ margin: 0 auto;
 
 .site-main .faculty-profile-name {
 font-size: 1.8rem; /* Profile name size: adjust here. */
-margin: 1.5rem 0 0.5rem;
+margin: 1rem 0 0.25rem;
 }
 
 .site-main .faculty-personal-links {
@@ -2186,7 +2196,18 @@ opacity: var(--footer-pattern-opacity);
 pointer-events: none;
 }
 
+/* One target rule covers every footer link, including the subfooter. */
 .site-footer a {
+display: inline-flex;
+align-items: center;
+vertical-align: middle;
+box-sizing: border-box;
+min-width: 44px;
+min-height: 44px;
+max-width: 100%;
+padding-block: 0.375rem;
+line-height: 1.5;
+overflow-wrap: anywhere;
 color: #fff;
 text-decoration: none;
 }
@@ -2317,7 +2338,7 @@ margin-top: 2rem;
 
 /* Footer layout: four desktop columns, two tablet columns, one phone column. */
 .footer-inner {
-padding-block: 3rem;
+padding-block: 4rem;
 }
 .footer-grid {
 display: grid;
@@ -2456,7 +2477,7 @@ margin-bottom: 0;
 
 .footer-contact-link {
 display: inline-flex;
-align-items: baseline;
+align-items: center;
 gap: 0.5rem;
 max-width: 100%;
 }
