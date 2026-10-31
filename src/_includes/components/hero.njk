@@ -8,6 +8,7 @@
 <div class="page-hero-image" style="background-image: url('{{ heroImage | url }}');"></div>
 <div class="page-hero-overlay"></div>
 <div class="page-hero-pattern" style="background-image: url('{{ ('/_media/branding/' + (heroSection.pattern | default(heroes.defaults.pattern))) | url }}');"></div>
+<div class="hero-location">{{ assignedHero.location | escape }}</div>
 </section>
 {% else %}
 {# Unassigned pages retain their existing hero. #}

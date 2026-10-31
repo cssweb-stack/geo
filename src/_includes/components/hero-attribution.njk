@@ -1,8 +1,10 @@
-{# Only assigned pages receive this credit. Keep university footer unchanged. #}
+{# Full-width imagery credit immediately above the footer. #}
 {% set assignedHero = heroes.pages[page.url] %}
 {% if not assignedHero %}{% set assignedHero = faculty_heroes.pages[page.url] %}{% endif %}
 {% if assignedHero %}
-<div class="container hero-attribution">
-<p><span class="hero-attribution-location">{% if assignedHero.temporary %}Temporary hero location{% else %}Location{% endif %}: {{ assignedHero.location | escape }}</span><span class="hero-attribution-separator" aria-hidden="true"> · </span><span>Imagery: <a href="{{ heroes.credit.url }}">{{ heroes.credit.source | escape }}</a></span></p>
+<aside class="hero-attribution" aria-label="Imagery attribution">
+<div class="container hero-attribution-inner">
+<p><span class="hero-attribution-label">Imagery:</span> <a href="{{ heroes.credit.url }}">{{ heroes.credit.source | escape }}</a></p>
 </div>
+</aside>
 {% endif %}

@@ -22,8 +22,8 @@
 {% if not hidePageTitle %}<h1>{{ title | default(site.name) | escape }}</h1>{% endif %}
 {{ content | safe }}
 </div>
-{% include "components/hero-attribution.njk" %}
 </main>
+{% include "components/hero-attribution.njk" %}
 {% include "components/footer.njk" %}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="{{ "/assets/site.js" | url }}" defer></script>

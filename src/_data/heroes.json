@@ -2,8 +2,8 @@
   "notes": "All hero assignments and appearance settings live here. 0-100 grayscale; 0-1 opacities; patternSize as a percent of hero height. Faculty biography profiles intentionally keep their existing default hero.",
   "defaults": {
     "background": "#000000",
-    "grayscale": 90,
-    "overlayOpacity": 0.65,
+    "grayscale": 10,
+    "overlayOpacity": 0,
     "blendMode": "normal",
     "patternOpacity": 0.33,
     "patternSize": 50,
