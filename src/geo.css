@@ -2225,6 +2225,23 @@ margin-bottom: 0;
 }
 
 
+/* Compact footer links on desktop; retain 44px targets on touch layouts. */
+@media (min-width: 1200px) {
+.site-footer a {
+min-height: 0;
+padding-block: 0.25rem;
+}
+.site-footer .footer-department-privacy a,
+.site-footer .footer-department-webmaster a,
+.site-footer .footer-department-support a {
+min-height: 0;
+padding-block: 0.25rem;
+}
+.footer-link-list li {
+margin-bottom: 0;
+}
+}
+
 /* Contact page */
 .contact-page .page-header {
 margin-bottom: 1.75rem;
