@@ -104,15 +104,7 @@
     ]
   },
   {
-    "label": "Give a Gift",
-    "url": "/give-a-gift/"
-  },
-  {
     "label": "Contact",
     "url": "/contact/"
-  },
-  {
-    "label": "Hero Lab",
-    "url": "/hero-lab/"
   }
 ]

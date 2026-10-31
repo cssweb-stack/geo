@@ -1,0 +1,8 @@
+{# Only assigned pages receive this credit. Keep university footer unchanged. #}
+{% set assignedHero = heroes.pages[page.url] %}
+{% if not assignedHero %}{% set assignedHero = faculty_heroes.pages[page.url] %}{% endif %}
+{% if assignedHero %}
+<div class="container hero-attribution">
+<p><span class="hero-attribution-location">{% if assignedHero.temporary %}Temporary hero location{% else %}Location{% endif %}: {{ assignedHero.location | escape }}</span><span class="hero-attribution-separator" aria-hidden="true"> · </span><span>Imagery: <a href="{{ heroes.credit.url }}">{{ heroes.credit.source | escape }}</a></span></p>
+</div>
+{% endif %}

@@ -1,7 +1,93 @@
 ---
 layout: layouts/base.njk
 title: Contact
+hidePageTitle: true
+description: Contact the University of Hawaiʻi at Mānoa Department of Geography and Environment. Find office hours, location, directions, and departmental contacts.
 permalink: "/contact/"
-hero: /_media/dev/hero.webp
+hero: /_media/heros/honolulu-oahu.webp
 ---
-{% include "components/sample-content.njk" %}
+<div class="contact-page">
+<header class="page-header">
+<h1>Contact the Department of Geography and Environment</h1>
+<p class="contact-hours">We are open Monday–Friday from 8:30 am to 4:30 pm. We are closed on weekends and all <a href="https://dhrd.hawaii.gov/state-observed-holidays/">state holidays</a>.</p>
+</header>
+<section class="contact-location" aria-label="Department location and directions">
+<div class="contact-building">
+<img class="common-image contact-location-photo image-reveal" src="{{ '/_media/other/saunders-hall.webp' | url }}" alt="Saunders Hall at the University of Hawaiʻi at Mānoa" width="400" height="400" decoding="async">
+<div class="contact-building-details faculty-contact">
+<address>
+<p>2424 Maile Way</p>
+<p>Saunders Hall 445</p>
+<p>Honolulu, HI 96822</p>
+<p><a class="faculty-contact-link" href="tel:+18089568465"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span><span><span class="visually-hidden">Telephone: </span>1 (808) 956-8465</span></a></p>
+<p><a class="faculty-contact-link" href="mailto:uhmgeog@hawaii.edu"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span><span><span class="visually-hidden">Email: </span>uhmgeog@hawaii.edu</span></a></p>
+</address>
+</div>
+</div>
+<iframe class="contact-map" title="Google Map showing Saunders Hall at UH Mānoa" src="https://www.google.com/maps?q=Saunders%20Hall%2C%202424%20Maile%20Way%2C%20Honolulu%2C%20HI%2096822&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</section>
+<section class="contact-people" aria-label="Department contacts">
+<div class="contact-leadership">
+<article class="contact-profile">
+<img class="common-image contact-profile-photo image-reveal" src="{{ '/_media/faculty/qi-chen.webp' | url }}" alt="Qi Chen" width="400" height="400" loading="lazy" decoding="async">
+<div class="contact-profile-details faculty-contact">
+<h2>Qi Chen</h2>
+<p class="contact-profile-role">Department Chair, Faculty</p>
+<address>
+<p>Office: Saunders 435, 445B</p>
+<p><a class="faculty-contact-link" href="tel:+18089563524"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span><span><span class="visually-hidden">Telephone: </span>1 (808) 956-3524</span></a></p>
+<p><a class="faculty-contact-link" href="mailto:qichen@hawaii.edu"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span><span><span class="visually-hidden">Email: </span>qichen@hawaii.edu</span></a></p>
+</address>
+</div>
+</article>
+<article class="contact-profile">
+<img class="common-image contact-profile-photo image-reveal" src="{{ '/_media/faculty/hong-jiang.webp' | url }}" alt="Hong Jiang" width="400" height="400" loading="lazy" decoding="async">
+<div class="contact-profile-details faculty-contact">
+<h2>Hong Jiang</h2>
+<p class="contact-profile-role">Undergraduate Chair, Faculty</p>
+<address>
+<p>Office: Saunders 437</p>
+<p><a class="faculty-contact-link" href="mailto:hjiang@hawaii.edu"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span><span><span class="visually-hidden">Email: </span>hjiang@hawaii.edu</span></a></p>
+</address>
+</div>
+</article>
+<article class="contact-profile">
+<img class="common-image contact-profile-photo image-reveal" src="{{ '/_media/faculty/mary-mostafanezhad.webp' | url }}" alt="Mary Mostafanezhad" width="400" height="400" loading="lazy" decoding="async">
+<div class="contact-profile-details faculty-contact">
+<h2>Mary Mostafanezhad</h2>
+<p class="contact-profile-role">Graduate Chair, Faculty</p>
+<address>
+<p>Office: Saunders 440</p>
+<p><a class="faculty-contact-link" href="mailto:mostafam@hawaii.edu"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span><span><span class="visually-hidden">Email: </span>mostafam@hawaii.edu</span></a></p>
+</address>
+</div>
+</article>
+</div>
+<div class="contact-staff">
+<article class="contact-profile">
+<img class="common-image contact-profile-photo image-reveal" src="{{ '/_media/staff/david-olsen.webp' | url }}" alt="David Olsen" width="400" height="400" loading="lazy" decoding="async">
+<div class="contact-profile-details faculty-contact">
+<h2>David Olsen</h2>
+<p class="contact-profile-role">GIS Lab Coordinator</p>
+<address>
+<p>Office: PSB 312C</p>
+<p><a class="faculty-contact-link" href="tel:+18089563526"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span><span><span class="visually-hidden">Telephone: </span>1 (808) 956-3526</span></a></p>
+<p><a class="faculty-contact-link" href="mailto:dolsen@hawaii.edu"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span><span><span class="visually-hidden">Email: </span>dolsen@hawaii.edu</span></a></p>
+</address>
+</div>
+</article>
+<article class="contact-profile">
+<img class="common-image contact-profile-photo image-reveal" src="{{ '/_media/staff/elizabeth-tajima.webp' | url }}" alt="Elizabeth Tajima" width="400" height="400" loading="lazy" decoding="async">
+<div class="contact-profile-details faculty-contact">
+<h2>Elizabeth Tajima</h2>
+<p class="contact-profile-role">Administrative Assistant</p>
+<address>
+<p>Office: Saunders 445C</p>
+<p><a class="faculty-contact-link" href="tel:+18089568465"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/telephone.svg" %}</span><span><span class="visually-hidden">Telephone: </span>1 (808) 956-8465</span></a></p>
+<p><a class="faculty-contact-link" href="mailto:etajima3@hawaii.edu"><span class="faculty-contact-icon" aria-hidden="true">{% include "icons/envelope.svg" %}</span><span><span class="visually-hidden">Email: </span>etajima3@hawaii.edu</span></a></p>
+</address>
+</div>
+</article>
+</div>
+</section>
+</div>

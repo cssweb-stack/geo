@@ -40,12 +40,11 @@ eleventyExcludeFromCollections: true
 <main id="main-content">
 <section class="hero-gallery-controls"><div class="container">
 <h1>GEO Hero Gallery</h1>
-<p>All 17 images with one identical treatment. Compare image quality, crop, and consistency before approving the set.</p>
+<p>All {{ heroImages.length }} images with one identical treatment. Compare image quality, crop, and consistency before approving the set.</p>
 <a class="hero-gallery-link" href="{{ '/hero-lab/' | url }}">Back to Hero Lab</a>
 </div></section>
 <div id="hero-gallery-list">
-{% for n in range(1, 18) %}
-{% set filename = ('0' if n < 10 else '') + n + '-hero.webp' %}
+{% for filename in heroImages %}
 <section class="hero-gallery-item">
 <div class="container"><h2>{{ filename }}</h2></div>
 <div class="hero-gallery-stage" role="img" aria-label="{{ filename }} with selected hero treatment">

@@ -1,1 +1,15 @@
+{# Page assignments and section treatments are centralized in src/_data/heroes.json. #}
+{% set assignedHero = heroes.pages[page.url] %}
+{% if not assignedHero %}{% set assignedHero = faculty_heroes.pages[page.url] %}{% endif %}
+{% if assignedHero %}
+{% set heroSection = heroes.sections[assignedHero.section] %}
+{% set heroImage = '/_media/heros/' + assignedHero.image %}
+<section class="page-hero page-hero--layered" role="img" aria-label="Satellite imagery of {{ assignedHero.location | escape }}" style="--hero-base-color: {{ heroSection.background | default(heroes.defaults.background) }}; --hero-overlay-color: {{ heroSection.color }}; --hero-overlay-opacity: {{ heroSection.overlayOpacity | default(heroes.defaults.overlayOpacity) }}; --hero-blend-mode: {{ heroSection.blendMode | default(heroes.defaults.blendMode) }}; --hero-grayscale: {{ heroSection.grayscale | default(heroes.defaults.grayscale) }}%; --hero-pattern-opacity: {{ heroSection.patternOpacity | default(heroes.defaults.patternOpacity) }}; --hero-pattern-size: {{ heroSection.patternSize | default(heroes.defaults.patternSize) }}%; --hero-position: {{ heroSection.position | default(heroes.defaults.position) }};">
+<div class="page-hero-image" style="background-image: url('{{ heroImage | url }}');"></div>
+<div class="page-hero-overlay"></div>
+<div class="page-hero-pattern" style="background-image: url('{{ ('/_media/branding/' + (heroSection.pattern | default(heroes.defaults.pattern))) | url }}');"></div>
+</section>
+{% else %}
+{# Unassigned pages retain their existing hero. #}
 <section class="page-hero" role="img" aria-label="Decorative geographical landscape" style="background-image: url('{{ (hero | default(site.defaultHero)) | url }}');"></section>
+{% endif %}

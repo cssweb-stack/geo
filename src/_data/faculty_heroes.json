@@ -1,0 +1,65 @@
+{
+  "notes": "Temporary shared image for all 10 faculty profiles. Replace each image and location with a research-specific location as selected. All profiles inherit faculty section appearance settings from heroes.json.",
+  "pages": {
+    "/faculty/qi-chen.html": {
+      "section": "faculty",
+      "image": "kahului-maui-hawaii.webp",
+      "location": "Kahului, Maui, Hawaiʻi",
+      "temporary": true
+    },
+    "/faculty/hong-jiang.html": {
+      "section": "faculty",
+      "image": "lishan-techi-reservoir-taiwan.webp",
+      "location": "Lishan and Techi Reservoir, Taiwan",
+      "temporary": false
+    },
+    "/faculty/yuqin-jiang.html": {
+      "section": "faculty",
+      "image": "lower-manhattan-new-york.webp",
+      "location": "Lower Manhattan and New York Harbor, USA",
+      "temporary": true
+    },
+    "/faculty/reece-jones.html": {
+      "section": "faculty",
+      "image": "melilla-spain-morocco.webp",
+      "location": "Melilla, Spain / Morocco border",
+      "temporary": false
+    },
+    "/faculty/aurora-kagawa-viviani.html": {
+      "section": "faculty",
+      "image": "honaunau-south-kona-hawaii.webp",
+      "location": "Hōnaunau Bay and surrounding forest, Hawaiʻi Island",
+      "temporary": false
+    },
+    "/faculty/marina-karides.html": {
+      "section": "faculty",
+      "image": "skala-eresos-lesvos-greece.webp",
+      "location": "Skala Eresos, Lesvos, Greece",
+      "temporary": false
+    },
+    "/faculty/camilo-mora.html": {
+      "section": "faculty",
+      "image": "guapi-river-estuary-colombia.webp",
+      "location": "Guapi River Estuary, Pacific Coast, Colombia",
+      "temporary": false
+    },
+    "/faculty/mary-mostafanezhad.html": {
+      "section": "faculty",
+      "image": "golden-triangle-thailand.webp",
+      "location": "Golden Triangle, Thailand / Myanmar / Laos border",
+      "temporary": false
+    },
+    "/faculty/orhon-myadar.html": {
+      "section": "faculty",
+      "image": "lake-khovsgol-mongolia.webp",
+      "location": "Southern Lake Khövsgöl, Mongolia",
+      "temporary": false
+    },
+    "/faculty/brian-szuster.html": {
+      "section": "faculty",
+      "image": "misool-raja-ampat-indonesia.webp",
+      "location": "Misool Island, Raja Ampat, Indonesia",
+      "temporary": false
+    }
+  }
+}

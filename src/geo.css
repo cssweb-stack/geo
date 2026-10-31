@@ -131,7 +131,7 @@ Compact component titles retain their own sizes in their component sections. */
 /* Main spacing: desktop 4rem vertically; tablet 2.25rem; phone 2rem.
 Bootstrap owns grid structure; this stylesheet owns shared component spacing. */
 .main-content {
-padding-block: 4rem;
+padding-block: 3.5rem;
 }
 @media (min-width: 576px) and (max-width: 1199.98px) {
 .main-content {
@@ -230,6 +230,8 @@ position: sticky;
 top: 0;
 z-index: 1030;
 background: var(--light-gray);
+border-bottom: 1px solid #b5b5b5;
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.24);
 }
 
 .uh-brand {
@@ -558,7 +560,7 @@ padding-right: 0;
 --hero-pattern-opacity: 0.30;
 position: relative;
 width: 100%;
-height: 250px;
+height: 180px;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -575,6 +577,63 @@ background-position: left bottom;
 background-repeat: repeat-x;
 opacity: var(--hero-pattern-opacity);
 pointer-events: none;
+}
+
+/* Central hero treatments: set values in _data/heroes.json, not page templates. */
+.page-hero--layered {
+isolation: isolate;
+background: var(--hero-base-color, #000);
+overflow: hidden;
+}
+.page-hero--layered::before {
+content: none;
+}
+.page-hero-image,
+.page-hero-overlay,
+.page-hero-pattern {
+position: absolute;
+inset: 0;
+pointer-events: none;
+}
+.page-hero-image {
+z-index: 0;
+background-size: cover;
+background-position: var(--hero-position, center center);
+background-repeat: no-repeat;
+filter: grayscale(var(--hero-grayscale, 100%));
+}
+.page-hero-overlay {
+z-index: 1;
+background: var(--hero-overlay-color, #354d67);
+opacity: var(--hero-overlay-opacity, 0.68);
+mix-blend-mode: var(--hero-blend-mode, multiply);
+}
+.page-hero-pattern {
+z-index: 2;
+background-size: auto var(--hero-pattern-size, 60%);
+background-position: left bottom;
+background-repeat: repeat-x;
+opacity: var(--hero-pattern-opacity, 0.30);
+}
+
+/* Source attribution beneath page content, separate from the university footer. */
+.hero-attribution {
+padding-bottom: 1.5rem;
+}
+.site-main .hero-attribution p {
+margin: 0;
+padding-top: 0.75rem;
+border-top: 1px solid var(--nav-divider);
+font-size: 0.75rem;
+line-height: 1.6;
+color: #555;
+}
+.hero-attribution a {
+text-underline-offset: 2px;
+}
+@media (max-width: 575.98px) {
+.hero-attribution-separator { display: none; }
+.hero-attribution-location { display: block; }
 }
 
 /* The pattern stays at 60% of hero height, scaling proportionally. */
@@ -1332,7 +1391,9 @@ outline-offset: 3px;
 }
 
 .news-bluesky-button svg {
-flex: 0 0 auto;
+flex: 0 0 20px;
+width: 20px;
+height: 20px;
 }
 
 @media (max-width: 991.98px) {
@@ -2142,6 +2203,118 @@ text-underline-offset: 3px;
 margin-bottom: 0;
 }
 
+
+/* Contact page */
+.contact-page .page-header {
+margin-bottom: 1.75rem;
+}
+.contact-page .contact-hours {
+margin-bottom: 0;
+}
+.contact-location {
+display: grid;
+grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+gap: 2rem;
+margin-bottom: 2.5rem;
+}
+.contact-location-photo,
+.contact-profile-photo {
+display: block;
+width: 240px;
+max-width: 100%;
+height: auto;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+margin: 0 auto;
+}
+.contact-building {
+min-width: 0;
+text-align: center;
+}
+.contact-building-details {
+margin-top: 1.25rem;
+}
+.contact-building-details p,
+.contact-profile-details p {
+margin-bottom: 0.4rem;
+}
+.contact-building-details address,
+.contact-profile-details address {
+font-style: normal;
+margin-bottom: 0;
+}
+.contact-page .faculty-contact-link {
+text-align: left;
+}
+.contact-map {
+width: 100%;
+height: 100%;
+min-height: 390px;
+border: 0;
+}
+.contact-people {
+border-top: 1px solid var(--nav-divider);
+padding-top: 2.5rem;
+}
+.contact-leadership,
+.contact-staff {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2.5rem 2rem;
+}
+.contact-profile {
+flex: 0 1 calc((100% - 6rem) / 4);
+min-width: 0;
+text-align: center;
+}
+.contact-staff {
+margin-top: 2.5rem;
+}
+.contact-profile-details {
+margin-top: 1rem;
+}
+.contact-profile h2 {
+font-size: 1.125rem;
+margin-bottom: 0.35rem;
+}
+.contact-profile-role {
+font-style: italic;
+}
+.contact-page a {
+overflow-wrap: anywhere;
+}
+@media (max-width: 991.98px) {
+.contact-profile {
+flex-basis: calc((100% - 2rem) / 3);
+}
+}
+@media (max-width: 767.98px) {
+.contact-location {
+grid-template-columns: 1fr;
+}
+.contact-building {
+max-width: 400px;
+margin-inline: auto;
+}
+.contact-map {
+min-height: 340px;
+height: 340px;
+}
+.contact-profile {
+flex-basis: calc((100% - 2rem) / 2);
+}
+}
+@media (max-width: 575.98px) {
+.contact-profile {
+flex-basis: 100%;
+max-width: 300px;
+}
+.contact-staff {
+margin-top: 2rem;
+}
+}
+
 /* Footer layout: four desktop columns, two tablet columns, one phone column. */
 .footer-inner {
 padding-block: 3rem;
@@ -2215,7 +2388,8 @@ text-align: center;
 }
 
 .footer-department-privacy,
-.footer-department-webmaster {
+.footer-department-webmaster,
+.footer-department-support {
 margin: 0;
 font-size: 0.875rem;
 line-height: 1.5;
@@ -2229,7 +2403,8 @@ line-height: 1.5;
 }
 
 .site-footer .footer-department-privacy a,
-.site-footer .footer-department-webmaster a {
+.site-footer .footer-department-webmaster a,
+.site-footer .footer-department-support a {
 display: inline-flex;
 align-items: center;
 justify-content: center;
@@ -2246,7 +2421,9 @@ flex: 0 0 1rem;
 fill: currentColor;
 }
 
-.site-footer .footer-department-privacy a:focus-visible {
+.site-footer .footer-department-privacy a:focus-visible,
+.site-footer .footer-department-webmaster a:focus-visible,
+.site-footer .footer-department-support a:focus-visible {
 outline: 2px solid currentColor;
 outline-offset: 4px;
 }

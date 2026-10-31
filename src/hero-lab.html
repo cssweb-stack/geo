@@ -61,13 +61,12 @@ eleventyExcludeFromCollections: true
 <section class="hero-lab-controls" aria-labelledby="lab-title">
 <div class="container">
 <h1 id="lab-title">GEO Hero Lab</h1>
-<p class="hero-lab-intro">Choose an image and adjust four visual layers. Each treatment can be compared across all 17 images using its <strong>Compare all 17</strong> button.</p>
+<p class="hero-lab-intro">Choose an image and adjust four visual layers. Each treatment can be compared across all {{ heroImages.length }} images using its <strong>Compare all {{ heroImages.length }}</strong> button.</p>
 <div class="hero-lab-form">
 <div class="hero-lab-field">
 <label for="lab-file">Hero image filename</label>
 <select id="lab-file">
-{% for n in range(1, 18) %}
-{% set filename = ('0' if n < 10 else '') + n + '-hero.webp' %}
+{% for filename in heroImages %}
 <option value="{{ filename }}">{{ filename }}</option>
 {% endfor %}
 </select>
@@ -116,7 +115,7 @@ eleventyExcludeFromCollections: true
 </div>
 </div>
 <div class="hero-lab-error" id="lab-error" role="status"></div>
-<p class="hero-lab-note">Images: <code>src/_media/heros/</code> (17 numbered files). Adjust each preview's tint independently below. All hero heights match the live GEO CSS: desktop 250px, tablet 187.5px, phone 90px.</p>
+<p class="hero-lab-note">Images: <code>src/_media/heros/</code> ({{ heroImages.length }} WebP files). Adjust each preview's tint independently below. All hero heights match the live GEO CSS: desktop 250px, tablet 187.5px, phone 90px.</p>
 </div>
 </section>
 <div id="lab-previews" aria-label="Hero treatments">
@@ -124,7 +123,7 @@ eleventyExcludeFromCollections: true
 {% for color in colors %}
 <section class="hero-lab-preview" data-name="{{ color[0] }}">
 <div class="container">
-<div class="hero-lab-preview-head"><h2>{{ loop.index }}. {{ color[0] }}</h2><div class="d-flex flex-wrap gap-2"><button class="hero-lab-button lab-compare" type="button" aria-label="Compare all images with {{ color[0] }} settings">Compare all 17</button><button class="hero-lab-button lab-copy" type="button" aria-label="Copy {{ color[0] }} CSS">Copy CSS</button></div></div>
+<div class="hero-lab-preview-head"><h2>{{ loop.index }}. {{ color[0] }}</h2><div class="d-flex flex-wrap gap-2"><button class="hero-lab-button lab-compare" type="button" aria-label="Compare all images with {{ color[0] }} settings">Compare all {{ heroImages.length }}</button><button class="hero-lab-button lab-copy" type="button" aria-label="Copy {{ color[0] }} CSS">Copy CSS</button></div></div>
 <div class="hero-lab-settings">
 <label>Color <input class="lab-color" type="color" value="{{ color[1] }}" aria-label="{{ color[0] }} overlay color"></label>
 <label>Opacity <input class="lab-opacity" type="range" min="0" max="100" value="50" aria-label="{{ color[0] }} overlay opacity"><output class="lab-opacity-out">50%</output></label>
@@ -228,7 +227,7 @@ navigator.clipboard.writeText(css).then(() => { const btn = section.querySelecto
 Object.values(controls).forEach(el => el.addEventListener('input', refresh));
 previews.forEach(section => { section.querySelectorAll('.lab-color,.lab-opacity,.lab-blend').forEach(el => el.addEventListener('input', refresh)); section.querySelector('.lab-copy').addEventListener('click', () => copyFor(section)); section.querySelector('.lab-compare').addEventListener('click', () => compareAll(section)); });
 document.getElementById('lab-reset').addEventListener('click', () => {
-controls.file.value = '01-hero.webp'; controls.background.value = '#000000'; controls.transparent.checked = false;
+controls.file.value = {{ heroImages[0] | dump | safe }}; controls.background.value = '#000000'; controls.transparent.checked = false;
 controls.gray.value = '100'; controls['image-show'].checked = true; controls.position.value = 'center';
 controls.pattern.value = '30'; controls['pattern-size'].value = '60'; controls['pattern-file'].value = 'uh-pattern-vert-5-black.svg';
 const defaults = ['#354d67','#27665d','#655b7a','#a17a32','#9c523c','#45494b'];

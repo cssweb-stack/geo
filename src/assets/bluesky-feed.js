@@ -33,7 +33,7 @@
   }
 
   function profileURL(actor) {
-    return 'https://bsky.app/profile/' + encodeURIComponent(actor);
+    return 'https://bsky.app/profile/' + encodeURIComponent(actor).replace(/%3A/gi, ':');
   }
 
   function postURL(post) {
