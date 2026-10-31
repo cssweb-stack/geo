@@ -1613,9 +1613,9 @@ margin: 0 auto 1rem;
 }
 
 .site-main .faculty-name {
-margin: 0;
+margin: 0 0 0.25rem;
 font-size: 1.375rem;
-line-height: 1.35;
+line-height: 1.5;
 }
 
 .faculty-titles {
@@ -1624,7 +1624,7 @@ margin-bottom: 0.25rem;
 
 .site-main .faculty-titles p {
 margin: 0;
-line-height: 1.4;
+line-height: 1.5;
 }
 
 .site-main .faculty-titles .faculty-role {
@@ -1680,10 +1680,16 @@ fill: currentColor;
 margin-bottom: 0;
 }
 
+.site-main .faculty-office {
+margin: 0 0 0.25rem;
+line-height: 1.5;
+}
+
 .site-main .faculty-keywords {
 margin-top: 0.25rem;
 margin-bottom: 0;
 font-style: normal;
+line-height: 1.5;
 }
 
 .site-main .faculty-entry .faculty-keywords {
@@ -1709,6 +1715,7 @@ margin: 0 auto;
 
 .site-main .faculty-profile-name {
 font-size: 1.8rem; /* Profile name size: adjust here. */
+line-height: 1.5;
 margin: 1rem 0 0.25rem;
 }
 
@@ -2316,8 +2323,7 @@ text-align: center;
 .contact-building-details {
 margin-top: 1.25rem;
 }
-.contact-building-details p,
-.contact-profile-details p {
+.contact-building-details p {
 margin-bottom: 0.4rem;
 }
 .contact-building-details address,
@@ -2355,13 +2361,6 @@ margin-top: 2.5rem;
 }
 .contact-profile-details {
 margin-top: 1rem;
-}
-.contact-profile h2 {
-font-size: 1.125rem;
-margin-bottom: 0.35rem;
-}
-.contact-profile-role {
-font-style: normal;
 }
 .contact-page a {
 overflow-wrap: anywhere;
