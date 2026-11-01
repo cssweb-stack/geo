@@ -50,7 +50,7 @@ min-height: 40vh;
 
 strong,
 b {
-font-weight: 500;
+font-weight: 600;
 }
 
 h1 {
@@ -183,15 +183,19 @@ font-size: 1.25rem;
 font-weight: 400;
 font-style: normal;
 line-height: 1.5;
-color: #595959;
+color: var(--geo-blue);
 margin: 0 0 0 .75rem;
 }
 
-/* Page title and tagline form one unit above the introduction. */
+/* One shared opening block: title, tagline, and introduction.
+Change this value to adjust the space above and below its divider. */
+:root {
+--page-header-spacing: 2rem;
+}
 .site-main .page-header {
-padding-bottom: 1.25rem;
-margin-bottom: 1.5rem;
-border-bottom: 1px solid #ddd;
+padding-bottom: var(--page-header-spacing);
+margin-bottom: var(--page-header-spacing);
+border-bottom: 1px solid var(--nav-divider);
 }
 
 .site-main .page-header h1 {
@@ -200,6 +204,24 @@ margin-bottom: 0.75rem;
 
 .site-main .page-header .intro-highlight {
 margin: 0;
+}
+
+.site-main .page-header .page-intro {
+margin: 1rem 0 0;
+}
+
+/* The opening block supplies the divider and gap before the first content. */
+.site-main .page-header + * {
+margin-top: 0;
+}
+.site-main .page-header + .faculty-directory {
+padding-top: 0;
+border-top: 0;
+}
+.site-main .page-header + .student-directory > .student-entry:first-child,
+.site-main .page-header + .funding-row {
+padding-top: 0;
+border-top: 0;
 }
 
 /* Credit counts in section and individual course headings. */
@@ -1087,9 +1109,9 @@ height: 30px;
 
 .course-resources {
 margin-top: 3rem;
-padding: 2rem;
+padding: 1.5rem;
 background: var(--light-gray);
-border-radius: 0.25rem;
+border-radius: 2rem;
 }
 
 .course-resource-buttons {
@@ -2303,13 +2325,6 @@ margin-bottom: 0;
 }
 
 /* Contact page */
-.contact-page .page-header {
-padding-bottom: 2rem;
-margin-bottom: 2.625rem;
-}
-.contact-page .contact-hours {
-margin-bottom: 0;
-}
 .contact-location {
 display: grid;
 grid-template-columns: minmax(0, 212px) minmax(0, 1fr);
@@ -2697,10 +2712,6 @@ font-weight: 700;
 }
 
 /* Support GEO */
-.site-main .support-geo-header {
-padding-bottom: 2rem;
-margin-bottom: 2.625rem;
-}
 .support-geo {
 display: grid;
 grid-template-columns: minmax(0, 212px) minmax(0, 1fr);
@@ -3070,4 +3081,67 @@ border: 0;
 border-top: 1px solid var(--bs-border-color, #dee2e6);
 opacity: 1;
 margin: 2rem 0;
+}
+
+/* Existing graduate handbook and course tile styles. */
+.phd-handbook {
+border-top: 1px solid var(--nav-divider);
+margin-bottom: 2rem;
+}
+.phd-handbook > .degree-badge {
+flex: 0 0 212px;
+width: 212px;
+max-width: 100%;
+height: auto;
+aspect-ratio: 1 / 1;
+min-height: 0;
+box-sizing: border-box;
+flex-direction: column;
+flex-wrap: nowrap;
+padding: 1.5rem;
+border: 1px solid #b5b5b5;
+border-radius: 0.25rem;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 767.98px) {
+.phd-handbook > .degree-badge {
+flex-basis: auto;
+}
+}
+.phd-course-list .bam-course-icon--dissertation {
+background: var(--geo-bronze);
+}
+
+.ma-handbook {
+border-top: 1px solid var(--nav-divider);
+margin-bottom: 2rem;
+}
+.ma-handbook > .degree-badge {
+flex: 0 0 212px;
+width: 212px;
+max-width: 100%;
+height: auto;
+aspect-ratio: 1 / 1;
+min-height: 0;
+box-sizing: border-box;
+flex-direction: column;
+flex-wrap: nowrap;
+padding: 1.5rem;
+border: 1px solid #b5b5b5;
+border-radius: 0.25rem;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 767.98px) {
+.ma-handbook > .degree-badge {
+flex-basis: auto;
+}
+}
+.ma-course-list .bam-course-icon--thesis {
+background: var(--geo-bronze);
+}
+
+/* Existing BAM policy divider, shared by both pathways. */
+.bam-policies {
+border-top: 1px solid var(--nav-divider);
+padding-top: 2rem;
 }
