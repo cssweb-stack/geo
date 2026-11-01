@@ -7,210 +7,32 @@ permalink: "/"
 hero: /_media/dev/hero.webp
 ---
 <style>
-/* Home page only. Shared typography and spacing remain in geo.css. */
-.geo-home {
---home-undergraduate: var(--geo-plum, #655b7a);
---home-graduate: var(--geo-blue, #354d67);
+.site-main .geo-home a.home-bam-link.home-bam-link--ocean:any-link {
+background: #f0f5f9;
+border-color: #d5dfe8;
+border-left-color: var(--geo-blue);
+color: var(--geo-blue);
 }
-.home-welcome {
-display: grid;
-grid-template-columns: minmax(0, 1.8fr) minmax(16rem, 1fr);
-gap: 3rem;
-align-items: start;
-}
-.site-main .home-introduction h1 {
-margin-bottom: 1.25rem;
-}
-.site-main .home-introduction p {
-font-size: 1.125rem;
-line-height: 1.75;
-}
-.home-highlights {
-background: #faf7f0;
-border: 1px solid #e7dfce;
-border-left: 4px solid #755322;
-border-radius: .75rem;
-padding: 1.5rem;
-}
-.site-main .home-highlights h2 {
-font-size: 1.25rem;
-margin-bottom: 1.25rem;
-}
-.home-highlight + .home-highlight {
-margin-top: 1rem;
-padding-top: 1rem;
-border-top: 1px solid #e7dfce;
-}
-.site-main .home-highlight h3 {
-font-size: 1rem;
-margin: 0 0 .25rem;
-}
-.site-main .home-highlight p {
-font-size: .9375rem;
-line-height: 1.6;
-margin-bottom: 0;
-}
-.home-section {
-margin-top: 3rem;
-padding-top: 2.5rem;
-border-top: 1px solid var(--border-gray, #d2d2d2);
-}
-.site-main .home-section-intro {
-max-width: 56rem;
-margin-bottom: 1.75rem;
-}
-.home-program-grid {
-display: grid;
-grid-template-columns: repeat(5, minmax(0, 1fr));
-gap: 1rem;
-}
-.home-program {
---program-color: var(--home-undergraduate);
-display: flex;
-flex-direction: column;
-min-width: 0;
-padding: 1.5rem 1.125rem;
-border: 1px solid #dcd7e3;
-border-top: 4px solid var(--program-color);
-border-radius: .75rem;
-background: #f6f4f8;
-color: #222;
-text-decoration: none;
-transition: transform .2s ease, box-shadow .2s ease;
-}
-.home-program-graduate {
---program-color: var(--home-graduate);
-background: #f1f5f8;
-border-color: #d4dee7;
-border-top-color: var(--program-color);
-}
-.home-program-title {
-font-size: 1.125rem;
-font-weight: 600;
-line-height: 1.4;
-color: var(--program-color);
-}
-.home-program-description {
-font-size: .9375rem;
-line-height: 1.6;
-margin-top: .75rem;
-}
-.home-program-arrow {
-font-size: 1.25rem;
-line-height: 1;
-color: var(--program-color);
-margin-top: auto;
-padding-top: 1.25rem;
-}
-.home-program:hover {
-color: #222;
-transform: translateY(-3px);
-box-shadow: 0 6px 16px rgb(0 0 0 / .08);
-}
-.home-program:hover .home-program-title {
-text-decoration: underline;
-text-underline-offset: .2em;
-}
-.home-bam-links {
-display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 1rem;
-margin-top: 1.5rem;
-}
-.home-bam-link {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: .75rem;
-min-height: 3.25rem;
-padding: .875rem 1.25rem;
-border: 1px solid var(--home-undergraduate);
-border-radius: 999px;
-background: #fff;
-color: var(--home-undergraduate);
-font-weight: 600;
-line-height: 1.5;
-text-align: center;
-text-decoration: none;
-}
-.home-bam-link:hover {
-background: var(--home-undergraduate);
+.site-main .geo-home a.home-bam-link.home-bam-link--ocean:hover,
+.site-main .geo-home a.home-bam-link.home-bam-link--ocean:focus-visible {
+background: var(--geo-blue);
+border-color: var(--geo-blue);
 color: #fff;
 }
-.geo-home a:focus-visible {
-outline: 3px solid #222;
-outline-offset: 4px;
-}
-.home-video-grid {
+.home-ranking {
 display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 1.5rem;
+grid-template-columns: 3rem minmax(0, 1fr);
+align-items: center;
+gap: 0.875rem;
+margin-top: 1.5rem;
 }
-.home-video {
-aspect-ratio: 16 / 9;
-overflow: hidden;
-border-radius: .75rem;
-background: #222;
+.home-ranking-icon {
+width: 3rem;
+height: 3rem;
+color: #d47a13;
 }
-.home-video iframe {
-display: block;
-width: 100%;
-height: 100%;
-border: 0;
-}
-@media (max-width: 1199.98px) {
-.home-welcome {
-gap: 2rem;
-}
-.home-program-grid {
-gap: .75rem;
-}
-.home-program {
-padding: 1.25rem .875rem;
-}
-}
-@media (max-width: 991.98px) {
-.home-welcome {
-grid-template-columns: 1fr;
-}
-.home-program-grid {
-grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-.home-program {
-grid-column: span 2;
-}
-.home-program:nth-child(n+4) {
-grid-column: span 3;
-}
-}
-@media (max-width: 575.98px) {
-.home-welcome {
-gap: 1.5rem;
-}
-.home-section {
-margin-top: 2rem;
-padding-top: 2rem;
-}
-.home-program-grid,
-.home-bam-links,
-.home-video-grid {
-grid-template-columns: 1fr;
-}
-.home-program,
-.home-program:nth-child(n+4) {
-grid-column: auto;
-}
-.home-program {
-padding: 1.25rem;
-}
-}
-@media (prefers-reduced-motion: reduce) {
-.home-program {
-transition: none;
-}
-.home-program:hover {
-transform: none;
-}
+.site-main .home-ranking p {
+margin: 0;
 }
 </style>
 <div class="geo-home">
@@ -219,6 +41,13 @@ transform: none;
 <h1>Explore Our Changing World</h1>
 <p>Aloha and welcome to the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Explore how global change shapes communities and environments, and how local actions influence the world around us. Our faculty bring expertise in environmental geography, human geography, and geospatial information science, with a focus on Asia and the Pacific.</p>
 <p>Whether you are discovering geography for the first time or building a research career, find a path that connects your interests with the questions that matter to you.</p>
+<div class="home-ranking">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="home-ranking-icon bi bi-emoji-smile" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+<path d="M4.285 9.567a.5.5 0 0 1 .683.183 3.5 3.5 0 0 0 6.064 0 .5.5 0 0 1 .866.5 4.5 4.5 0 0 1-7.796 0 .5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+</svg>
+<p>UH Mānoa GEO <a href="https://www.hawaii.edu/news/2026/10/06/global-ranking-of-academic-subjects-2026/">ranks No. 14 in the U.S.</a> in 2026.</p>
+</div>
 </div>
 <aside class="home-highlights" aria-labelledby="home-highlights-heading">
 <h2 id="home-highlights-heading">{{ home.title | escape }}</h2>
@@ -232,44 +61,59 @@ transform: none;
 </div>
 <section class="home-section" aria-labelledby="home-programs-heading">
 <h2 id="home-programs-heading">Explore Our Academic Programs</h2>
-<p class="home-section-intro">Find your path from a GIS certificate to a doctorate. Our combined bachelor’s and master’s pathways let you work toward both degrees while saving time.</p>
+<p class="home-section-intro">In addition to an exciting selection of <a href="{{ '/about-geo/geo-courses.html' | url }}">GEO courses</a>, we offer academic programs ranging from an undergraduate certificate to a doctoral degree.</p>
 <div class="home-program-grid">
-<a class="home-program" href="{{ '/undergraduate/gis-certificate.html' | url }}">
-<span class="home-program-title">GIS Certificate</span>
-<span class="home-program-description">Add mapping and spatial analysis skills to your major.</span>
-<span class="home-program-arrow" aria-hidden="true">→</span>
+<a class="home-program home-program--gis color-tile" href="{{ '/undergraduate/gis-certificate.html' | url }}" aria-label="GIS Certificate">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">GIS</span>
+<span class="home-program-label">Certificate</span>
 </a>
-<a class="home-program" href="{{ '/undergraduate/minor.html' | url }}">
+<a class="home-program home-program--minor color-tile" href="{{ '/undergraduate/minor.html' | url }}" aria-label="Geography Minor">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
 <span class="home-program-title">Minor</span>
-<span class="home-program-description">Bring a geographic perspective to your studies.</span>
-<span class="home-program-arrow" aria-hidden="true">→</span>
+<span class="home-program-label" aria-hidden="true"></span>
 </a>
-<a class="home-program" href="{{ '/undergraduate/major-ba.html' | url }}">
-<span class="home-program-title">Major (BA)</span>
-<span class="home-program-description">Explore the connections between people, places, and environments.</span>
-<span class="home-program-arrow" aria-hidden="true">→</span>
+<a class="home-program home-program--ba color-tile" href="{{ '/undergraduate/major-ba.html' | url }}" aria-label="Geography Major (BA)">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">BA</span>
+<span class="home-program-label">Major</span>
 </a>
-<a class="home-program home-program-graduate" href="{{ '/graduate/master-ma.html' | url }}">
-<span class="home-program-title">Master (MA)</span>
-<span class="home-program-description">Develop your expertise through advanced study and research.</span>
-<span class="home-program-arrow" aria-hidden="true">→</span>
+<a class="home-program home-program--ma color-tile" href="{{ '/graduate/master-ma.html' | url }}" aria-label="Master of Arts (MA)">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">MA</span>
+<span class="home-program-label">Master of Arts</span>
 </a>
-<a class="home-program home-program-graduate" href="{{ '/graduate/doctorate-phd.html' | url }}">
-<span class="home-program-title">Doctorate (PhD)</span>
-<span class="home-program-description">Pursue original research and contribute new geographic knowledge.</span>
-<span class="home-program-arrow" aria-hidden="true">→</span>
+<a class="home-program home-program--phd color-tile" href="{{ '/graduate/doctorate-phd.html' | url }}" aria-label="Doctor of Philosophy (PhD)">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">PhD</span>
+<span class="home-program-label">Doctor of Philosophy</span>
 </a>
 </div>
-<div class="home-bam-links">
+<div class="row gx-4">
+<div class="col-lg-6 d-flex flex-column">
+<p class="home-bam-intro">Our BA/MA pathways let you work toward both degrees while saving time.</p>
+<div class="home-bam-links flex-grow-1">
 <a class="home-bam-link" href="{{ '/undergraduate/geo-bam.html' | url }}">GEO BA/MA (BAM) <span aria-hidden="true">→</span></a>
 <a class="home-bam-link" href="{{ '/undergraduate/geo-sust-bam.html' | url }}">SUST BA/GEO MA (BAM) <span aria-hidden="true">→</span></a>
+</div>
+</div>
+<div class="col-lg-6 d-flex flex-column">
+<p class="home-bam-intro">We also participate in an interdisciplinary online degree and a graduate certificate.</p>
+<div class="home-bam-links flex-grow-1">
+<a class="home-bam-link home-bam-link--ocean" href="http://www.socialsciences.hawaii.edu/cssonline/oceans.html">Social Sciences of Oceans <span aria-hidden="true">→</span></a>
+<a class="home-bam-link home-bam-link--ocean" href="http://socialsciences.hawaii.edu/certificate/gopc/" aria-label="Ocean Policy Certificate (graduate)">Ocean Policy Certificate <span aria-hidden="true">→</span></a>
+</div>
+</div>
 </div>
 </section>
 <section class="home-section" aria-labelledby="home-videos-heading">
 <h2 id="home-videos-heading">Discover GEO</h2>
 <div class="home-video-grid">
+<div>
 <div class="home-video">
 <iframe id="home-video-left" width="560" height="315" src="https://www.youtube.com/embed/8fU3f_ACqRs?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p class="mt-3">Additional <a href="https://youtu.be/F9-06WQdg-s">Department Video</a></p>
 </div>
 <div class="home-video">
 <iframe id="home-video-right" width="560" height="315" src="https://www.youtube.com/embed/6ax5lF_qb9c?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -16,6 +16,12 @@
 --icon-gray: #888888;
 --nav-divider: #e2e2e2;
 
+/* Shared photo and colored tile finish. */
+--frame-border: 1px solid #e2e2e2;
+--frame-radius: 2px;
+--frame-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+--photo-mat: 9px;
+
 /* Content heading scale: desktop defaults; smaller screens below. */
 --heading-1-size: 2rem;
 --heading-2-size: 1.5rem;
@@ -231,7 +237,7 @@ top: 0;
 z-index: 1030;
 background: var(--light-gray);
 border-bottom: 1px solid #b5b5b5;
-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.24);
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
 .uh-brand {
@@ -744,15 +750,19 @@ aspect-ratio: 3 / 2;
 object-fit: cover;
 }
 
-/* Common image and tile frames */
-
+/* Shared finish: photos and colored tiles use the same edge and shadow. */
 .common-image,
-.student-photo,
-.funding-tile {
-border: 1px solid var(--border-gray);
-border-radius: 0.25rem;
+.color-tile {
+border: var(--frame-border);
+border-radius: var(--frame-radius);
 box-sizing: border-box;
-box-shadow: 2px 2px 0 rgba(2, 71, 49, 0.2), 0 2px 6px rgba(0, 0, 0, 0.05);
+box-shadow: var(--frame-shadow);
+}
+
+/* Only photographs receive a white mat. Tile spacing stays in its layout rules. */
+.common-image {
+padding: var(--photo-mat);
+background-color: #fff;
 }
 
 /* Shared resource links */
@@ -901,21 +911,19 @@ object-fit: cover;
 object-position: center;
 }
 
-/* Shared image reveal; images remain visible without JavaScript. */
+/* Content photos fade once when loaded, without moving. Visible without JavaScript. */
 @media (prefers-reduced-motion: no-preference) {
-.image-reveal.is-revealing {
-animation: image-reveal 400ms ease-out both;
+.common-image.is-loaded {
+animation: content-photo-fade 250ms ease-out both;
 }
 }
 
-@keyframes image-reveal {
+@keyframes content-photo-fade {
 from {
 opacity: 0;
-transform: translateX(-8px);
 }
 to {
 opacity: 1;
-transform: translateX(0);
 }
 }
 
@@ -977,7 +985,6 @@ width: 112px;
 height: 112px;
 align-items: center;
 justify-content: center;
-border-radius: 0.25rem;
 color: #fff;
 }
 .bam-course-icon svg {
@@ -1230,7 +1237,7 @@ background: #fff;
 overflow: hidden;
 border: 1px solid var(--border-gray);
 border-radius: 0.25rem;
-box-shadow: 2px 2px 0 rgba(2, 71, 49, 0.2), 0 2px 6px rgba(0, 0, 0, 0.05);
+box-shadow: var(--frame-shadow);
 overflow-wrap: anywhere;
 }
 
@@ -1854,6 +1861,9 @@ margin: 0;
 
 /* Degree tiles */
 .degree-badge {
+position: relative;
+isolation: isolate;
+overflow: hidden;
 display: flex;
 flex: 0 0 212px;
 width: 212px;
@@ -1863,7 +1873,6 @@ align-items: center;
 justify-content: center;
 gap: 0.5rem;
 color: #fff;
-border-radius: 0.25rem;
 }
 
 .degree-badge--ma {
@@ -1946,6 +1955,9 @@ border-top: 1px solid var(--nav-divider);
 }
 
 .funding-tile {
+position: relative;
+isolation: isolate;
+overflow: hidden;
 flex: 0 0 212px;
 width: 212px;
 min-height: 212px;
@@ -2126,7 +2138,6 @@ flex: 0 0 10rem;
 width: 10rem;
 height: 10rem;
 min-height: 0;
-box-sizing: border-box;
 flex-direction: column;
 align-items: center;
 justify-content: center;
@@ -2134,7 +2145,6 @@ gap: 0.125rem;
 padding: 0.625rem;
 background: var(--geo-blue);
 color: var(--light);
-border-radius: 0.25rem;
 text-align: center;
 }
 
@@ -2145,7 +2155,6 @@ width: 8rem;
 height: 8rem;
 min-height: 0;
 aspect-ratio: 1;
-box-sizing: border-box;
 }
 }
 
@@ -2303,7 +2312,7 @@ margin-bottom: 0;
 }
 .contact-location {
 display: grid;
-grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+grid-template-columns: minmax(0, 212px) minmax(0, 1fr);
 gap: 2rem;
 margin-bottom: 2.5rem;
 }
@@ -2399,7 +2408,7 @@ margin-top: 2rem;
 
 /* Footer layout: four desktop columns, two tablet columns, one phone column. */
 .footer-inner {
-padding-block: 4rem;
+padding-block: 4rem 2rem;
 }
 .footer-grid {
 display: grid;
@@ -2556,6 +2565,82 @@ align-self: center;
 fill: currentColor;
 }
 
+/* Interpretation services: transparent dark band directly above the subfooter. */
+.footer-language-band {
+margin: 0;
+padding: 0;
+background: rgb(0 0 0 / 15%);
+color: #fff;
+}
+.footer-language-heading-bar {
+padding: 0.5rem 1rem;
+background: rgb(0 0 0 / 10%);
+text-align: center;
+}
+.site-footer .footer-language-heading-bar p {
+margin: 0;
+color: #fff;
+font-size: 0.875rem;
+font-weight: 600;
+line-height: 1.5;
+}
+.footer-language-links {
+padding-block: 1rem;
+}
+.site-footer .footer-languages {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr)) max-content repeat(4, minmax(0, 1fr));
+gap: 0.25rem 0.5rem;
+list-style: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.footer-languages li {
+min-width: 0;
+margin: 0;
+padding: 0;
+}
+.site-footer .footer-languages a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+min-height: 44px;
+padding: 0.375rem 0.25rem;
+font-size: 0.875rem;
+font-weight: 400;
+line-height: 1.5;
+overflow-wrap: normal;
+color: #fff;
+}
+.site-footer .footer-languages li:nth-child(4) a {
+white-space: nowrap;
+}
+.site-footer .footer-languages a:hover,
+.site-footer .footer-languages a:focus-visible {
+color: #fff;
+text-decoration: underline;
+}
+.site-footer .footer-languages a:focus-visible {
+outline: 2px solid currentColor;
+outline-offset: 3px;
+}
+@media (max-width: 1199.98px) {
+.site-footer .footer-languages {
+grid-template-columns: repeat(3, minmax(0, 1fr)) max-content;
+}
+}
+@media (max-width: 575.98px) {
+.site-footer .footer-languages {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.site-footer .footer-languages li:nth-child(4) a {
+white-space: normal;
+}
+}
+
 /* Subfooter */
 
 .subfooter {
@@ -2618,7 +2703,7 @@ margin-bottom: 2.625rem;
 }
 .support-geo {
 display: grid;
-grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+grid-template-columns: minmax(0, 212px) minmax(0, 1fr);
 gap: 2rem;
 align-items: start;
 }
@@ -2628,15 +2713,9 @@ flex-direction: column;
 align-items: flex-start;
 gap: 2rem;
 }
-.support-geo-photo {
-display: block;
-width: 240px;
-max-width: 100%;
-height: auto;
-}
 .support-geo-foundation {
 display: block;
-width: 240px;
+width: 212px;
 max-width: 100%;
 height: auto;
 }
@@ -2657,4 +2736,338 @@ font-style: normal;
 grid-template-columns: minmax(0, 1fr);
 gap: 2rem;
 }
+}
+
+/* GEO Courses: shared image rows with Current Cohort divider spacing. */
+.geo-course-levels .course-entry {
+padding-block: 2.625rem;
+}
+
+/* Shared decorative contour background */
+:root {
+/* Shared contour background controls for home program, funding, and degree boxes. Opacity: 0 to 1.
+Size accepts cover, contain, percentages, or pixel values.
+The image path is relative to geo.css, so it also works under /geo/. */
+--home-program-pattern-image: url("_media/other/contour-lines.svg");
+--home-program-pattern-opacity: .2;
+/* Smaller BAM icon and lecture date boxes: adjust opacity here (0 to 1). */
+--small-box-pattern-opacity: .14;
+--home-program-pattern-size: 200% auto;
+--home-program-pattern-position: center;
+--home-program-pattern-repeat: no-repeat;
+--home-program-pattern-scale: 1;
+--home-program-pattern-rotation: 0deg;
+/* Original SVG has very fine black lines. Invert to white and
+reinforce their edges so they remain visible on dark colors. */
+--home-program-pattern-filter: invert(1) drop-shadow(.4px 0 0 #fff) drop-shadow(-.4px 0 0 #fff);
+}
+
+/* Small boxes share the contour treatment with quieter opacity. */
+.bam-course-icon,
+.lecture-date {
+position: relative;
+isolation: isolate;
+overflow: hidden;
+--home-program-pattern-opacity: var(--small-box-pattern-opacity);
+}
+
+/* Home page */
+.geo-home {
+--home-undergraduate: var(--geo-plum, #655b7a);
+--home-graduate: var(--geo-blue, #354d67);
+/* Program box colors: edit these five values together. */
+--home-program-gis: #755322;
+--home-program-minor: #65506d;
+--home-program-ba: #835044;
+--home-program-ma: #28655f;
+--home-program-phd: #354d67;
+
+}
+.home-welcome {
+display: grid;
+grid-template-columns: minmax(0, 1.8fr) minmax(16rem, 1fr);
+gap: 3rem;
+align-items: start;
+}
+.site-main .home-introduction h1 {
+margin-bottom: 1.25rem;
+}
+.site-main .home-introduction p {
+font-size: 1.125rem;
+line-height: 1.75;
+}
+.home-highlights {
+background: #faf7f0;
+border: 1px solid #e7dfce;
+border-left: 4px solid #755322;
+border-radius: .75rem;
+padding: 1.5rem;
+}
+.site-main .home-highlights h2 {
+font-size: 1.25rem;
+margin-bottom: 1.25rem;
+}
+.home-highlight + .home-highlight {
+margin-top: 1rem;
+padding-top: 1rem;
+border-top: 1px solid #e7dfce;
+}
+.site-main .home-highlight h3 {
+font-size: 1rem;
+margin: 0 0 .25rem;
+}
+.site-main .home-highlight p {
+font-size: .9375rem;
+line-height: 1.6;
+margin-bottom: 0;
+}
+.home-section {
+margin-top: 3rem;
+padding-top: 2.5rem;
+border-top: 1px solid var(--border-gray, #d2d2d2);
+}
+.site-main .home-section-intro {
+width: 100%;
+max-width: none;
+margin-bottom: 1.75rem;
+}
+.home-program-grid {
+display: grid;
+grid-template-columns: repeat(5, minmax(0, 1fr));
+gap: 1rem;
+}
+.geo-home .home-program {
+position: relative;
+isolation: isolate;
+overflow: hidden;
+--program-color: var(--home-program-gis);
+container-type: inline-size;
+display: grid;
+grid-template-rows: auto auto auto;
+align-content: center;
+justify-items: center;
+gap: 0;
+width: 100%;
+aspect-ratio: 1 / 1;
+min-width: 0;
+padding: 10%;
+background: var(--program-color);
+color: #fff;
+text-align: center;
+text-decoration: none;
+transition: transform .2s ease, box-shadow .2s ease;
+}
+.geo-home .home-program::before,
+.funding-tile::before,
+.degree-badge::before,
+.bam-course-icon::before,
+.lecture-date::before {
+content: "";
+position: absolute;
+inset: 0;
+z-index: 0;
+pointer-events: none;
+border-radius: inherit;
+background-image: var(--home-program-pattern-image);
+background-size: var(--home-program-pattern-size);
+background-position: var(--home-program-pattern-position);
+background-repeat: var(--home-program-pattern-repeat);
+opacity: var(--home-program-pattern-opacity);
+filter: var(--home-program-pattern-filter);
+transform: scale(var(--home-program-pattern-scale)) rotate(var(--home-program-pattern-rotation));
+transform-origin: center;
+}
+.geo-home .home-program > span,
+.funding-tile > h2,
+.degree-badge > span,
+.bam-course-icon > svg,
+.lecture-date > * {
+position: relative;
+z-index: 1;
+}
+.geo-home .home-program--minor {
+--program-color: var(--home-program-minor);
+}
+.geo-home .home-program--ba {
+--program-color: var(--home-program-ba);
+}
+.geo-home .home-program--ma {
+--program-color: var(--home-program-ma);
+}
+.geo-home .home-program--phd {
+--program-color: var(--home-program-phd);
+}
+.home-program-icon {
+display: block;
+width: clamp(1.75rem, 16cqi, 3.5rem);
+height: clamp(1.75rem, 16cqi, 3.5rem);
+margin-bottom: 6cqi;
+color: inherit;
+}
+.home-program-icon svg {
+display: block;
+width: 100%;
+height: 100%;
+fill: currentColor;
+}
+.home-program-title {
+font-size: clamp(2rem, 25cqi, 6rem);
+font-weight: 600;
+line-height: 1.1;
+color: inherit;
+white-space: nowrap;
+}
+.home-program-label {
+display: block;
+min-height: 2.8em;
+margin-top: 5cqi;
+font-size: clamp(.75rem, 7.5cqi, 1.75rem);
+font-weight: 600;
+line-height: 1.4;
+color: inherit;
+}
+.geo-home .home-program:hover {
+color: #fff;
+text-decoration: none;
+transform: translateY(-3px);
+box-shadow: 0 6px 16px rgb(0 0 0 / .16);
+}
+/* Keep program links white when shared link styles apply. */
+.site-main .geo-home a.home-program:any-link,
+.site-main .geo-home a.home-program span,
+.site-main .geo-home a.home-program svg {
+color: #fff !important;
+text-decoration: none !important;
+}
+.site-main .geo-home .home-bam-intro {
+margin: 2.5rem 0 1.25rem;
+width: 100%;
+max-width: none;
+}
+.home-bam-links {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+margin-top: 0;
+}
+.site-main .geo-home a.home-bam-link:any-link {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+min-height: 4.5rem;
+padding: 1.25rem 1.5rem;
+border: 1px solid #ded9e5;
+border-left: 4px solid var(--home-undergraduate);
+border-radius: .5rem;
+background: #f6f4f8;
+color: #514660;
+font-weight: 600;
+line-height: 1.5;
+text-align: left;
+text-decoration: none;
+}
+.home-bam-link > span {
+flex-shrink: 0;
+font-size: 1.5rem;
+line-height: 1;
+}
+.site-main .geo-home a.home-bam-link:hover,
+.site-main .geo-home a.home-bam-link:focus-visible {
+background: var(--home-undergraduate);
+border-color: var(--home-undergraduate);
+color: #fff;
+text-decoration: none;
+}
+.geo-home a:focus-visible {
+outline: 3px solid #222;
+outline-offset: 4px;
+}
+.home-video-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1.5rem;
+}
+.home-video {
+aspect-ratio: 16 / 9;
+overflow: hidden;
+border-radius: .75rem;
+background: #222;
+}
+.home-video iframe {
+display: block;
+width: 100%;
+height: 100%;
+border: 0;
+}
+@media (max-width: 1199.98px) {
+.home-welcome {
+gap: 2rem;
+}
+.home-program-grid {
+gap: .75rem;
+}
+}
+@media (max-width: 991.98px) {
+.home-welcome {
+grid-template-columns: 1fr;
+}
+.home-program-grid {
+grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.home-program {
+grid-column: span 2;
+}
+.home-program:nth-child(4) {
+grid-column: 2 / span 2;
+}
+.home-program:nth-child(5) {
+grid-column: 4 / span 2;
+}
+}
+@media (max-width: 575.98px) {
+.home-welcome {
+gap: 1.5rem;
+}
+.home-section {
+margin-top: 2rem;
+padding-top: 2rem;
+}
+.home-program-grid,
+.home-bam-links,
+.home-video-grid {
+grid-template-columns: 1fr;
+}
+.home-program,
+.home-program:nth-child(4),
+.home-program:nth-child(5) {
+grid-column: auto;
+}
+}
+@media (prefers-reduced-motion: reduce) {
+.geo-home .home-program {
+transition: none;
+}
+.geo-home .home-program:hover {
+transform: none;
+}
+}
+
+/* Degrees Awarded section spacing */
+.degree-list.degrees-awarded-list {
+display: block;
+margin: 0;
+padding: 0;
+border: 0;
+}
+.degree-list.degrees-awarded-list > .degree-entry {
+margin: 0;
+padding: 0;
+border: 0;
+}
+hr.degrees-awarded-divider {
+border: 0;
+border-top: 1px solid var(--bs-border-color, #dee2e6);
+opacity: 1;
+margin: 2rem 0;
 }

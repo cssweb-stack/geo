@@ -22,7 +22,7 @@ hero: /_media/dev/hero.webp
 {% set dateParts = lecture.date.split('-') %}
 {% set monthIndex = (dateParts[1] | int) - 1 %}
 <article class="lecture-entry" aria-labelledby="lecture-title-{{ loop.index }}">
-<time class="lecture-date" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
+<time class="lecture-date color-tile" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
 {% include "icons/calendar3.svg" %}
 <span class="lecture-month" aria-hidden="true">{{ months[monthIndex] | truncate(3, true, "") }}</span>
 <span class="lecture-day" aria-hidden="true">{{ dateParts[2] | int }}</span>

@@ -141,6 +141,16 @@
 "section": "privacy",
 "image": "papeete-tahiti.webp",
 "location": "Papeʻete, Tahiti, French Polynesia"
+},
+"/about-geo/geo-courses.html": {
+"section": "about",
+"image": "kahului-maui-hawaii.webp",
+"location": "Kahului, Maui, Hawaiʻi"
+},
+"/undergraduate/student-learning-outcomes.html": {
+"section": "undergraduate",
+"image": "kahului-maui-hawaii.webp",
+"location": "Kahului, Maui, Hawaiʻi"
 }
 }
 }

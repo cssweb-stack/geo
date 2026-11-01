@@ -17,6 +17,11 @@
 "icon": "globe-americas"
 },
 {
+"label": "GEO Courses",
+"url": "/about-geo/geo-courses.html",
+"icon": "book"
+},
+{
 "label": "Lecture Series",
 "url": "/about-geo/lecture-series.html",
 "icon": "mic"
@@ -25,11 +30,6 @@
 "label": "Department News",
 "url": "/about-geo/department-news.html",
 "icon": "newspaper"
-},
-{
-"label": "Support GEO",
-"url": "/support-geo/",
-"icon": "cash-coin"
 }
 ]
 },
@@ -107,6 +107,10 @@
 "icon": "people"
 }
 ]
+},
+{
+"label": "Support GEO",
+"url": "/support-geo/"
 },
 {
 "label": "Contact",

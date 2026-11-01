@@ -1,21 +1,15 @@
-// GEO v1: Bootstrap handles mobile navigation and mobile search.
-// Desktop hover behavior is in geo.css; keyboard/touch also work through Bootstrap.
+// Bootstrap handles navigation and search; hover behavior is in geo.css.
 
-// Shared reveal for images carrying the image-reveal class.
+// One load-based fade for every framed content photo, including lazy-loaded photos.
+// No scroll observer, movement, or hidden state; images work without JavaScript.
 (() => {
-if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-const images = document.querySelectorAll('.image-reveal');
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if (!entry.isIntersecting) return;
-const image = entry.target;
-observer.unobserve(image);
-const reveal = () => {
-if (image.naturalWidth > 0) image.classList.add('is-revealing');
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+const images = document.querySelectorAll('img.common-image');
+images.forEach(image => {
+const fade = () => {
+if (image.naturalWidth > 0) image.classList.add('is-loaded');
 };
-if (image.complete) reveal();
-else image.addEventListener('load', reveal, { once: true });
+if (image.complete) fade();
+else image.addEventListener('load', fade, { once: true });
 });
-}, { threshold: 0.1 });
-images.forEach(image => observer.observe(image));
 })();

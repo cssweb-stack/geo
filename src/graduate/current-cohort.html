@@ -9,7 +9,7 @@ hero: /_media/dev/hero.webp
 {% for student in students %}
 <article class="student-entry" aria-labelledby="student-{{ student.slug }}">
 <img
-class="student-photo"
+class="student-photo common-image"
 src="{{ student.photo | url }}"
 alt="{{ student.name | escape }}"
 width="212"

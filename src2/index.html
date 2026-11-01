@@ -1,0 +1,124 @@
+---
+layout: layouts/base.njk
+title: Explore Our Changing World
+hidePageTitle: true
+description: Explore geography at UH Mānoa, from a GIS certificate to a doctorate, with expertise in environmental geography, human geography, and geospatial information science across Asia and the Pacific.
+permalink: "/"
+hero: /_media/dev/hero.webp
+---
+<style>
+.site-main .geo-home a.home-bam-link.home-bam-link--ocean:any-link {
+background: #f0f5f9;
+border-color: #d5dfe8;
+border-left-color: var(--geo-blue);
+color: var(--geo-blue);
+}
+.site-main .geo-home a.home-bam-link.home-bam-link--ocean:hover,
+.site-main .geo-home a.home-bam-link.home-bam-link--ocean:focus-visible {
+background: var(--geo-blue);
+border-color: var(--geo-blue);
+color: #fff;
+}
+.home-ranking {
+display: grid;
+grid-template-columns: 3rem minmax(0, 1fr);
+align-items: center;
+gap: 0.875rem;
+margin-top: 1.5rem;
+}
+.home-ranking-icon {
+width: 3rem;
+height: 3rem;
+color: #d47a13;
+}
+.site-main .home-ranking p {
+margin: 0;
+}
+</style>
+<div class="geo-home">
+<div class="home-welcome">
+<div class="home-introduction">
+<h1>Explore Our Changing World</h1>
+<p>Aloha and welcome to the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Explore how global change shapes communities and environments, and how local actions influence the world around us. Our faculty bring expertise in environmental geography, human geography, and geospatial information science, with a focus on Asia and the Pacific.</p>
+<p>Whether you are discovering geography for the first time or building a research career, find a path that connects your interests with the questions that matter to you.</p>
+<div class="home-ranking">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="home-ranking-icon bi bi-emoji-smile" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+<path d="M4.285 9.567a.5.5 0 0 1 .683.183 3.5 3.5 0 0 0 6.064 0 .5.5 0 0 1 .866.5 4.5 4.5 0 0 1-7.796 0 .5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+</svg>
+<p>UH Mānoa GEO <a href="https://www.hawaii.edu/news/2026/10/06/global-ranking-of-academic-subjects-2026/">ranks No. 14 in the U.S.</a> in 2026.</p>
+</div>
+</div>
+<aside class="home-highlights" aria-labelledby="home-highlights-heading">
+<h2 id="home-highlights-heading">{{ home.title | escape }}</h2>
+{% for highlight in home.items %}
+<div class="home-highlight">
+<h3>{{ highlight.title | escape }}</h3>
+<p>{{ highlight.text | escape }}{% if highlight.url %} <a href="{{ highlight.url | url }}">{{ highlight.linkText | escape }}</a>{% endif %}</p>
+</div>
+{% endfor %}
+</aside>
+</div>
+<section class="home-section" aria-labelledby="home-programs-heading">
+<h2 id="home-programs-heading">Explore Our Academic Programs</h2>
+<p class="home-section-intro">In addition to an exciting selection of <a href="{{ '/about-geo/geo-courses.html' | url }}">GEO courses</a>, we offer academic programs ranging from an undergraduate certificate to a doctoral degree.</p>
+<div class="home-program-grid">
+<a class="home-program home-program--gis" href="{{ '/undergraduate/gis-certificate.html' | url }}" aria-label="GIS Certificate">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">GIS</span>
+<span class="home-program-label">Certificate</span>
+</a>
+<a class="home-program home-program--minor" href="{{ '/undergraduate/minor.html' | url }}" aria-label="Geography Minor">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">Minor</span>
+<span class="home-program-label" aria-hidden="true"></span>
+</a>
+<a class="home-program home-program--ba" href="{{ '/undergraduate/major-ba.html' | url }}" aria-label="Geography Major (BA)">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">BA</span>
+<span class="home-program-label">Major</span>
+</a>
+<a class="home-program home-program--ma" href="{{ '/graduate/master-ma.html' | url }}" aria-label="Master of Arts (MA)">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">MA</span>
+<span class="home-program-label">Master of Arts</span>
+</a>
+<a class="home-program home-program--phd" href="{{ '/graduate/doctorate-phd.html' | url }}" aria-label="Doctor of Philosophy (PhD)">
+<span class="home-program-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
+<span class="home-program-title">PhD</span>
+<span class="home-program-label">Doctor of Philosophy</span>
+</a>
+</div>
+<div class="row gx-4">
+<div class="col-lg-6 d-flex flex-column">
+<p class="home-bam-intro">Our BA/MA pathways let you work toward both degrees while saving time.</p>
+<div class="home-bam-links flex-grow-1">
+<a class="home-bam-link" href="{{ '/undergraduate/geo-bam.html' | url }}">GEO BA/MA (BAM) <span aria-hidden="true">→</span></a>
+<a class="home-bam-link" href="{{ '/undergraduate/geo-sust-bam.html' | url }}">SUST BA/GEO MA (BAM) <span aria-hidden="true">→</span></a>
+</div>
+</div>
+<div class="col-lg-6 d-flex flex-column">
+<p class="home-bam-intro">We also participate in an interdisciplinary online degree and a graduate certificate.</p>
+<div class="home-bam-links flex-grow-1">
+<a class="home-bam-link home-bam-link--ocean" href="http://www.socialsciences.hawaii.edu/cssonline/oceans.html">Social Sciences of Oceans <span aria-hidden="true">→</span></a>
+<a class="home-bam-link home-bam-link--ocean" href="http://socialsciences.hawaii.edu/certificate/gopc/" aria-label="Ocean Policy Certificate (graduate)">Ocean Policy Certificate <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</section>
+<section class="home-section" aria-labelledby="home-videos-heading">
+<h2 id="home-videos-heading">Discover GEO</h2>
+<div class="home-video-grid">
+<div>
+<div class="home-video">
+<iframe id="home-video-left" width="560" height="315" src="https://www.youtube.com/embed/8fU3f_ACqRs?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p class="mt-3">Additional <a href="https://youtu.be/F9-06WQdg-s">Department Video</a></p>
+</div>
+<div class="home-video">
+<iframe id="home-video-right" width="560" height="315" src="https://www.youtube.com/embed/6ax5lF_qb9c?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+</section>
+</div>
+<!-- GA4 enhanced measurement can collect video_start, video_progress, and video_complete with enablejsapi=1. The site's Google tag and video engagement setting must be enabled. -->
