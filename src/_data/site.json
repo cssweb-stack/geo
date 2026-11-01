@@ -2,7 +2,65 @@
   "name": "Department of Geography and Environment",
   "shortName": "GEO",
   "url": "https://geography.manoa.hawaii.edu",
-  "defaultHero": "/_media/heros/05-hero.webp",
+  "defaultHero": "/_media/heros/honolulu-oahu.webp",
   "ga4MeasurementId": "",
-  "searchProvider": "google-site-restricted"
+  "searchProvider": "google-site-restricted",
+  "prefix": "Department of",
+  "logo": {
+    "src": "/_media/branding/geo-logo-white.svg",
+    "alt": "Department of Geography and Environment logo",
+    "width": 500,
+    "height": 310
+  },
+  "privacy": {
+    "label": "Department Privacy Policy",
+    "url": "/privacy/"
+  },
+  "webmaster": {
+    "label": "Department Webmaster",
+    "email": "cssweb@hawaii.edu"
+  },
+  "address": [
+    "2424 Maile Way",
+    "Saunders Hall 445",
+    "Honolulu, HI 96822"
+  ],
+  "phone": {
+    "label": "1 (808) 956-8465",
+    "href": "tel:+18089568465"
+  },
+  "email": {
+    "label": "uhmgeog@hawaii.edu",
+    "href": "mailto:uhmgeog@hawaii.edu?subject=Website%20inquiry",
+    "contactHref": "mailto:uhmgeog@hawaii.edu"
+  },
+  "socialLinks": [
+    {
+      "label": "Bluesky",
+      "url": "https://bsky.app/profile/hawaiigeography.bsky.social",
+      "icon": "bluesky"
+    }
+  ],
+  "search": {
+    "domain": "geography.manoa.hawaii.edu",
+    "label": "Geography"
+  },
+  "courseResources": [
+    {
+      "label": "Class Availability",
+      "url": "https://www.sis.hawaii.edu:9350/crseavail/"
+    },
+    {
+      "label": "Course Descriptions",
+      "url": "https://catalog.manoa.hawaii.edu/content.php?filter%5B27%5D=GEO&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=4&expand=&navoid=949&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter"
+    }
+  ],
+  "facultyBasePath": "/faculty/",
+  "bluesky": {
+    "enabled": true,
+    "actor": "hawaiigeography.bsky.social",
+    "limit": 12,
+    "url": "https://bsky.app/profile/hawaiigeography.bsky.social",
+    "label": "UH Geography on Bluesky"
+  }
 }

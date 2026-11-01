@@ -11,8 +11,10 @@ hero: /_media/heros/08-hero.webp
 <p class="intro-highlight">Connect Your Geography BA with an MA</p>
 <p class="page-intro">The combined Bachelor of Arts (BA) and Master of Arts (MA) in Geography and Environment at the University of Hawaiʻi at Mānoa lets you begin graduate coursework while completing your undergraduate degree. Through this BAM pathway, up to 9 approved credits count toward both degrees, reducing the coursework needed to earn them separately. Build on your undergraduate specialization with graduate seminars in geographic concepts and research design, then work with a faculty advisor to investigate a geographic problem and complete a master’s thesis.</p>
 </header>
+{% include "components/divider-medium.njk" %}
 
-<section class="program-glance">
+
+<section class="callout callout-green callout-facts">
 <h2>BAM at a Glance</h2>
 <ul>
 <li><strong>Degrees:</strong> Bachelor of Arts (BA) and Master of Arts (MA) in Geography and Environment</li>
@@ -25,8 +27,8 @@ hero: /_media/heros/08-hero.webp
 </ul>
 <p class="minor-note"><span class="minor-note-icon" aria-hidden="true">ⓘ</span>Additional university and program requirements apply. Review the official <a href="https://manoa.hawaii.edu/ovpae/bachelors-and-masters-bam-combined-degree-pathways/">UH Mānoa BAM guidelines</a> and consult your BAM Coordinator to confirm current eligibility, deadlines, and degree requirements.</p>
 </section>
-
-<section class="callout-gold">
+{% include "components/space-medium.njk" %}
+<section class="callout callout-gold">
 <h2>BAM Advantages</h2>
 <p>One of the key benefits of the BAM pathway is the ability to count up to three approved courses (9 credits) toward both your bachelor's and master's degrees. This shared coursework offers two important advantages:</p>
 <ul>
@@ -34,15 +36,18 @@ hero: /_media/heros/08-hero.webp
 <li><strong>Save money:</strong> Take approved graduate coursework at undergraduate tuition rates while completing your bachelor's degree, potentially reducing the total cost of earning both degrees.</li>
 </ul>
 </section>
+{% include "components/space-medium.njk" %}
 
-<section class="bam-courses" aria-labelledby="bam-courses-title">
+
+<section class="program-courses" aria-labelledby="bam-courses-title">
 <h2 id="bam-courses-title">Courses and Credits</h2>
 <p>The GEO BAM brings together the requirements of the undergraduate BA and the research-focused MA. Students first meet the gateway requirement, then complete specific approved courses that may count toward both degrees. The credit totals and course choices below show how the pathway fits together.</p>
-<div class="course-list bam-course-list">
-<section class="course-entry" aria-labelledby="bam-degree-credits">
-<div class="bam-course-icon bam-course-icon--teal color-tile" aria-hidden="true">{% include "icons/mortarboard.svg" %}</div>
-<div class="course-information">
-<h3 id="bam-degree-credits" class="course-title">Degree Credit Requirements</h3>
+<div class="course-list compact-rows">
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-small" aria-labelledby="bam-degree-credits">
+<div class="media-visual icon-tile tile tile-teal" aria-hidden="true">{% include "icons/mortarboard.svg" %}</div>
+<div class="media-content">
+<h3 id="bam-degree-credits" class="media-title">Degree Credit Requirements</h3>
 <p>The pathway combines a 120-credit BA and a 30-credit MA. With all 9 approved shared credits applied to both degrees, students earn a minimum of 141 distinct credits.</p>
 <ul>
 <li><strong>BA:</strong> 120 credits, including at least 31 GEO credits and the university’s applicable upper-division requirements.</li>
@@ -51,14 +56,15 @@ hero: /_media/heros/08-hero.webp
 </ul>
 </div>
 </section>
-<section class="course-entry" aria-labelledby="bam-gateway-shared">
-<div class="bam-course-icon bam-course-icon--blue color-tile" aria-hidden="true">{% include "icons/book.svg" %}</div>
-<div class="course-information">
-<h3 id="bam-gateway-shared" class="course-title">Gateway and Shared Courses</h3>
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-small" aria-labelledby="bam-gateway-shared">
+<div class="media-visual icon-tile tile tile-blue" aria-hidden="true">{% include "icons/book.svg" %}</div>
+<div class="media-content">
+<h3 id="bam-gateway-shared" class="media-title">Gateway and Shared Courses</h3>
 <p>Complete the gateway course before applying. Students admitted to the pathway may then take the approved shared courses during undergraduate study. A grade of B or better is required in each course used for double counting. Plan your shared courses with the GEO BAM Coordinator before enrolling to confirm university approval and degree applicability.</p>
-<h4 class="bam-course-subheading">Gateway course</h4>
+<h4 class="course-subheading">Gateway course</h4>
 <ul><li>GEO 325: Geography, Environment, and Society (3 credits) — B or better required for consideration; passing does not guarantee admission.</li></ul>
-<h4 class="bam-course-subheading">Approved shared coursework <span class="credits">(up to 9 credits)</span></h4>
+<h4 class="course-subheading">Approved shared coursework <span class="credits">(up to 9 credits)</span></h4>
 <ul>
 <li>GEO 695: Concepts and Theories in Geography (3 credits)</li>
 <li>GEO 696: Research Design/Methods in Geography (3 credits)</li>
@@ -66,23 +72,25 @@ hero: /_media/heros/08-hero.webp
 </ul>
 </div>
 </section>
-<section class="course-entry" aria-labelledby="bam-specialization">
-<div class="bam-course-icon bam-course-icon--plum color-tile" aria-hidden="true">{% include "icons/layers.svg" %}</div>
-<div class="course-information">
-<h3 id="bam-specialization" class="course-title">Approved Specialization Courses</h3>
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-small" aria-labelledby="bam-specialization">
+<div class="media-visual icon-tile tile tile-purple" aria-hidden="true">{% include "icons/layers.svg" %}</div>
+<div class="media-content">
+<h3 id="bam-specialization" class="media-title">Approved Specialization Courses</h3>
 <p>Choose one approved 400-level course that connects to your interests in human geography, environmental geography, or geospatial information science. Only the courses listed below are identified for this shared-course requirement.</p>
-<h4 class="bam-course-subheading">Human Geography</h4>
+<h4 class="course-subheading">Human Geography</h4>
 <ul><li>GEO 425: Geographies of Popular Culture</li><li>GEO 426: Environment, Resources and Society</li></ul>
-<h4 class="bam-course-subheading">Environmental Geography</h4>
+<h4 class="course-subheading">Environmental Geography</h4>
 <ul><li>GEO 401: Climate Change</li><li>GEO 411: Past Global Change and the Human Era</li></ul>
-<h4 class="bam-course-subheading">Geospatial Information Science</h4>
+<h4 class="course-subheading">Geospatial Information Science</h4>
 <ul><li>GEO 470: Remote Sensing</li><li>GEO 489: GIS for Environmental Sciences</li></ul>
 </div>
 </section>
 </div>
 </section>
 
-<section class="bam-policies" aria-labelledby="bam-policies-title">
+{% include "components/divider-medium.njk" %}
+<section class="program-policies" aria-labelledby="bam-policies-title">
 <h2 id="bam-policies-title">Program Requirements and Policies</h2>
 <p>Along with completing the GEO BA and Plan A MA requirements, BAM students must meet university rules governing admission, shared coursework, and graduate enrollment. Keep these important conditions in mind as you plan:</p>
 <ul>
@@ -94,19 +102,23 @@ hero: /_media/heros/08-hero.webp
 <p class="minor-note"><span class="minor-note-icon" aria-hidden="true">ⓘ</span>This is a summary, not a complete statement of university policy. Review the official <a href="https://manoa.hawaii.edu/graduate/combined-pathway-guidelines-for-bachelors-and-masters-degrees/">UH Mānoa combined pathway guidelines</a> and <a href="https://manoa.hawaii.edu/ovpae/bachelors-and-masters-bam-combined-degree-pathways/">BAM student FAQs</a>, and confirm current requirements with your BAM Coordinator.</p>
 </section>
 
-<section class="next" aria-labelledby="bam-admissions-title">
+{% include "components/space-medium.njk" %}
+<section class="callout callout-blue callout-plan" aria-labelledby="bam-admissions-title">
 <h2 id="bam-admissions-title">Applications and Admissions</h2>
 <p>Interested in GEO BAM? Start planning early so the gateway course, graduate application, and approved shared coursework fit your degree schedule.</p>
 <h3>Explore the Pathway</h3>
 <p>Ideally during your sophomore year, meet with the <a href="https://docs.google.com/spreadsheets/d/12HymBRU1q0YeExR_Kwy2aZySsMz6-SZCAii74Yld0zM/edit?gid=0#gid=0">GEO BAM Coordinator</a> to discuss your interests, academic progress, and course plan. Transfer students should seek guidance as early as possible. Review the <a href="https://catalog.manoa.hawaii.edu/preview_program.php?catoid=4&amp;poid=1753">GEO BAM five-year sample plan</a> to see how undergraduate and graduate coursework can fit together.</p>
+{% include "components/divider-white.njk" %}
 <h3>Prepare to Apply</h3>
 <p>Complete GEO 325 with a B or better before applying. Students typically seek admission during their junior year. The application deadline for fall admission is <strong>March 15</strong>. Confirm the current deadline, eligibility requirements, and application materials with the BAM Coordinator before applying.</p>
+{% include "components/divider-white.njk" %}
 <h3>Submit Your Application</h3>
 <p>With the coordinator’s guidance, submit the <a href="https://manoa.hawaii.edu/graduate/submitting-your-application/">UH Mānoa Graduate Division application</a>, application fee, and any department-required materials by the deadline. If admitted, follow university instructions for accepting admission and planning your shared courses.</p>
 </section>
-<section class="bam-related-pathway" aria-label="Related BAM pathway">
-<div class="bam-related-pathway-icon" aria-hidden="true">{% include "icons/signpost.svg" %}</div>
-<div class="bam-related-pathway-content">
+{% include "components/divider-medium.njk" %}
+<section class="related-pathway media-row media-row-small" aria-label="Related BAM pathway">
+<div class="media-visual icon-tile tile tile-teal" aria-hidden="true">{% include "icons/signpost.svg" %}</div>
+<div class="media-content">
 <h2>Another Pathway to Explore</h2>
 <p>Interested in combining sustainability with GEO graduate study? Explore the <a href="{{ '/undergraduate/geo-sust-bam.html' | url }}">SUST BA/GEO MA (BAM) pathway</a>.</p>
 </div>

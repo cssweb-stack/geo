@@ -11,8 +11,10 @@ hero: /_media/heros/08-hero.webp
 <p class="intro-highlight">Connect Sustainability with Geographic Research</p>
 <p class="page-intro">Connect undergraduate sustainability studies with a research degree through the University of Hawaiʻi at Mānoa’s combined Bachelor of Arts (BA) in Interdisciplinary Studies: Sustainability and Master of Arts (MA) in Geography and Environment. This BAM pathway allows up to 9 approved credits to count toward both degrees. Build on your sustainability coursework with graduate study in geographic concepts and research design. Work with a faculty advisor to develop a project within departmental expertise, drawing on interests such as resource management, food systems, or environmental change, and complete a master’s thesis.</p>
 </header>
+{% include "components/divider-medium.njk" %}
 
-<section class="program-glance">
+
+<section class="callout callout-green callout-facts">
 <h2>BAM at a Glance</h2>
 <ul>
 <li><strong>Degrees:</strong> Bachelor of Arts (BA) in Interdisciplinary Studies: Sustainability and Master of Arts (MA) in Geography and Environment</li>
@@ -25,8 +27,8 @@ hero: /_media/heros/08-hero.webp
 </ul>
 <p class="minor-note"><span class="minor-note-icon" aria-hidden="true">ⓘ</span>Additional university and program requirements apply. Review the official <a href="https://manoa.hawaii.edu/ovpae/bachelors-and-masters-bam-combined-degree-pathways/">UH Mānoa BAM guidelines</a> and consult your BAM Coordinator to confirm current eligibility, deadlines, and degree requirements.</p>
 </section>
-
-<section class="callout-gold">
+{% include "components/space-medium.njk" %}
+<section class="callout callout-gold">
 <h2>BAM Advantages</h2>
 <p>One of the key benefits of the BAM pathway is the ability to count up to three approved courses (9 credits) toward both your bachelor's and master's degrees. This shared coursework offers two important advantages:</p>
 <ul>
@@ -34,15 +36,18 @@ hero: /_media/heros/08-hero.webp
 <li><strong>Save money:</strong> Take approved graduate coursework at undergraduate tuition rates while completing your bachelor's degree, potentially reducing the total cost of earning both degrees.</li>
 </ul>
 </section>
+{% include "components/space-medium.njk" %}
 
-<section class="bam-courses" aria-labelledby="bam-courses-title">
+
+<section class="program-courses" aria-labelledby="bam-courses-title">
 <h2 id="bam-courses-title">Courses and Credits</h2>
 <p>The SUST/GEO BAM brings together an interdisciplinary sustainability BA and the research-focused Geography and Environment MA. Students first meet the gateway requirement, then complete approved shared courses that connect the two degrees. Plan these courses with your coordinators to confirm how each applies to your sustainability concentration and graduate requirements.</p>
-<div class="course-list bam-course-list">
-<section class="course-entry" aria-labelledby="bam-degree-credits">
-<div class="bam-course-icon bam-course-icon--teal color-tile" aria-hidden="true">{% include "icons/mortarboard.svg" %}</div>
-<div class="course-information">
-<h3 id="bam-degree-credits" class="course-title">Degree Credit Requirements</h3>
+<div class="course-list compact-rows">
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-small" aria-labelledby="bam-degree-credits">
+<div class="media-visual icon-tile tile tile-teal" aria-hidden="true">{% include "icons/mortarboard.svg" %}</div>
+<div class="media-content">
+<h3 id="bam-degree-credits" class="media-title">Degree Credit Requirements</h3>
 <p>The pathway combines a 120-credit BA and a 30-credit MA. With all 9 approved shared credits applied to both degrees, students earn a minimum of 141 distinct credits.</p>
 <ul>
 <li><strong>BA:</strong> 120 credits, including the requirements for Interdisciplinary Studies: Sustainability and the university's applicable upper-division requirements.</li>
@@ -52,14 +57,15 @@ hero: /_media/heros/08-hero.webp
 <p>The sample plan also includes GEO 692: Faculty Seminar Series (1 credit), required for entering graduate students, including pathway students. This course counts toward the MA, but not toward the BA.</p>
 </div>
 </section>
-<section class="course-entry" aria-labelledby="bam-gateway-shared">
-<div class="bam-course-icon bam-course-icon--blue color-tile" aria-hidden="true">{% include "icons/book.svg" %}</div>
-<div class="course-information">
-<h3 id="bam-gateway-shared" class="course-title">Gateway and Shared Courses</h3>
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-small" aria-labelledby="bam-gateway-shared">
+<div class="media-visual icon-tile tile tile-blue" aria-hidden="true">{% include "icons/book.svg" %}</div>
+<div class="media-content">
+<h3 id="bam-gateway-shared" class="media-title">Gateway and Shared Courses</h3>
 <p>Complete the gateway course before applying. Students admitted to the pathway may then take the approved shared courses during undergraduate study. A grade of B or better is required in each course used for double counting. Confirm course approval and degree applicability with your coordinators before enrolling.</p>
-<h4 class="bam-course-subheading">Gateway course</h4>
+<h4 class="course-subheading">Gateway course</h4>
 <ul><li>GEO 325/SUST 326: Geography, Environment, and Society (3 credits), completed with a B or better for consideration. Passing does not guarantee admission.</li></ul>
-<h4 class="bam-course-subheading">Approved shared coursework <span class="credits">(up to 9 credits)</span></h4>
+<h4 class="course-subheading">Approved shared coursework <span class="credits">(up to 9 credits)</span></h4>
 <ul>
 <li>GEO 695: Concepts and Theories in Geography (3 credits), counted as an upper-division core course in the sustainability major</li>
 <li>GEO 696: Research Design/Methods in Geography (3 credits), substituted for SUST 495: Sustainability Capstone and used to develop the thesis research proposal</li>
@@ -67,10 +73,11 @@ hero: /_media/heros/08-hero.webp
 </ul>
 </div>
 </section>
-<section class="course-entry" aria-labelledby="bam-specialization">
-<div class="bam-course-icon bam-course-icon--plum color-tile" aria-hidden="true">{% include "icons/layers.svg" %}</div>
-<div class="course-information">
-<h3 id="bam-specialization" class="course-title">Approved Specialization Courses</h3>
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-small" aria-labelledby="bam-specialization">
+<div class="media-visual icon-tile tile tile-purple" aria-hidden="true">{% include "icons/layers.svg" %}</div>
+<div class="media-content">
+<h3 id="bam-specialization" class="media-title">Approved Specialization Courses</h3>
 <p>The 2026–2027 catalog sample plan identifies the following shared-course options. Choose a course that fits both your sustainability area of concentration and your Geography and Environment MA. The course may be taken in fall or spring of senior year, subject to availability and approval.</p>
 <ul>
 <li>GEO 411/SUST 413</li>
@@ -84,7 +91,8 @@ hero: /_media/heros/08-hero.webp
 </div>
 </section>
 
-<section class="bam-policies" aria-labelledby="bam-policies-title">
+{% include "components/divider-medium.njk" %}
+<section class="program-policies" aria-labelledby="bam-policies-title">
 <h2 id="bam-policies-title">Program Requirements and Policies</h2>
 <p>Along with completing the sustainability BA and Geography and Environment Plan A MA requirements, BAM students must meet university rules governing admission, shared coursework, and graduate enrollment. Keep these important conditions in mind as you plan:</p>
 <ul>
@@ -96,20 +104,24 @@ hero: /_media/heros/08-hero.webp
 <p class="minor-note"><span class="minor-note-icon" aria-hidden="true">ⓘ</span>This is a summary, not a complete statement of university policy. Requirements and course availability may change. Review the official <a href="https://manoa.hawaii.edu/graduate/combined-pathway-guidelines-for-bachelors-and-masters-degrees/">UH Mānoa combined pathway guidelines</a> and <a href="https://manoa.hawaii.edu/ovpae/bachelors-and-masters-bam-combined-degree-pathways/">BAM student FAQs</a>, and confirm current requirements with your BAM Coordinator.</p>
 </section>
 
-<section class="next" aria-labelledby="bam-admissions-title">
+{% include "components/space-medium.njk" %}
+<section class="callout callout-blue callout-plan" aria-labelledby="bam-admissions-title">
 <h2 id="bam-admissions-title">Applications and Admissions</h2>
 <p>Interested in SUST/GEO BAM? Start planning early so the gateway course, graduate application, and approved shared coursework fit your degree schedule.</p>
 <h3>Explore the Pathway</h3>
 <p>Ideally during your sophomore year, consult the <a href="https://docs.google.com/spreadsheets/d/12HymBRU1q0YeExR_Kwy2aZySsMz6-SZCAii74Yld0zM/edit?gid=0#gid=0">BAM Coordinator directory</a> and contact <a href="mailto:sustain@hawaii.edu">Sustainability advising</a> to discuss your interests, academic progress, and course plan. Students whose undergraduate studies include limited geography coursework should also seek guidance from the GEO Graduate Chair about preparation for the MA. Transfer students should seek guidance as early as possible.</p>
 <p>Review the <a href="https://catalog.manoa.hawaii.edu/preview_program.php?catoid=4&amp;poid=1870">SUST/GEO BAM five-year sample plan</a> to see how undergraduate and graduate coursework can fit together. This is a sample, not an individual degree plan. Meet with your advisors before registration to develop a plan suited to your requirements.</p>
+{% include "components/divider-white.njk" %}
 <h3>Prepare to Apply</h3>
 <p>Complete GEO 325/SUST 326 with a B or better before applying, then notify <a href="mailto:sustain@hawaii.edu">the Sustainability program</a> that you intend to pursue the BAM pathway. Students typically seek admission during their junior year. The application deadline for fall admission is <strong>March 15</strong>. Confirm the current deadline, eligibility requirements, and application materials with your coordinators before applying.</p>
+{% include "components/divider-white.njk" %}
 <h3>Submit Your Application</h3>
 <p>With your coordinators' guidance, submit the <a href="https://manoa.hawaii.edu/graduate/submitting-your-application/">UH Mānoa Graduate Division application</a>, application fee, and any department-required materials by the deadline. If admitted, follow university instructions for accepting admission and planning your shared courses. For Geography and Environment program questions, contact <a href="mailto:uhmgeo@hawaii.edu">uhmgeo@hawaii.edu</a>.</p>
 </section>
-<section class="bam-related-pathway" aria-label="Related BAM pathway">
-<div class="bam-related-pathway-icon" aria-hidden="true">{% include "icons/signpost.svg" %}</div>
-<div class="bam-related-pathway-content">
+{% include "components/divider-medium.njk" %}
+<section class="related-pathway media-row media-row-small" aria-label="Related BAM pathway">
+<div class="media-visual icon-tile tile tile-teal" aria-hidden="true">{% include "icons/signpost.svg" %}</div>
+<div class="media-content">
 <h2>Another Pathway to Explore</h2>
 <p>Interested in building directly on an undergraduate geography degree? Explore the <a href="{{ '/undergraduate/geo-bam.html' | url }}">GEO BA/MA (BAM) pathway</a>.</p>
 </div>

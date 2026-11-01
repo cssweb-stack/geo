@@ -11,8 +11,10 @@ hero: /_media/heros/10-hero.webp
 <p class="intro-highlight">Add a Geographic Perspective to Your Major</p>
 <p class="page-intro">The minor in Geography and Environment at the University of Hawaiʻi at Mānoa adds a geographic perspective to your major through coursework in human geography, environmental geography, and geospatial technologies. Choose from subjects such as tourism, food systems, climate, water, GIS, and remote sensing. Study how societies use resources, how physical environments change, or how maps and spatial data reveal geographic patterns. The minor provides breadth across these areas while leaving room for courses that complement your main field of study.</p>
 </header>
+{% include "components/divider-medium.njk" %}
 
-<section class="program-glance">
+
+<section class="callout callout-green callout-facts">
 <h2>Minor at a Glance</h2>
 <ul>
 <li><strong>Program:</strong> Minor in Geography and Environment</li>
@@ -24,16 +26,19 @@ hero: /_media/heros/10-hero.webp
 <p class="minor-note"><span class="minor-note-icon" aria-hidden="true">ⓘ</span>Additional university and program requirements, including GPA requirements, may apply. Confirm current requirements with the Undergraduate Chair.
 </p>
 </section>
+{% include "components/space-medium.njk" %}
+
 
 <h2>Area Requirements <span class="credits">(9 credits minimum)</span></h2>
 <p>Choose at least one GEO course from each of the three areas below, then select additional GEO courses to reach 15 credits. All courses listed below are 3 credits each. Each area offers a different perspective on the relationships between people and their environment.</p>
 
 <div class="course-list">
-<section class="course-entry" aria-labelledby="human-geography">
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-large" aria-labelledby="human-geography">
 <!-- Replace this development image with a photograph for human geography. -->
-<img class="common-image course-image" src="{{ '/_media/undergraduate/03.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
-<div class="course-information">
-<h3 id="human-geography" class="course-title">Human Geography</h3>
+<img class="photo-frame photo-frame-large media-visual" src="{{ '/_media/undergraduate/03.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<div class="media-content">
+<h3 id="human-geography" class="media-title">Human Geography</h3>
 <p>Study how culture, politics, economies, and everyday life shape places and communities. Explore connections among tourism, food systems, cities, and the environment.</p>
 <ul>
 <li>GEO 320: Economic Geography</li>
@@ -54,11 +59,12 @@ hero: /_media/heros/10-hero.webp
 </ul>
 </div>
 </section>
-<section class="course-entry" aria-labelledby="environmental-geography">
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-large" aria-labelledby="environmental-geography">
 <!-- Replace this development image with a photograph for environmental geography. -->
-<img class="common-image course-image" src="{{ '/_media/undergraduate/02.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
-<div class="course-information">
-<h3 id="environmental-geography" class="course-title">Environmental Geography</h3>
+<img class="photo-frame photo-frame-large media-visual" src="{{ '/_media/undergraduate/02.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<div class="media-content">
+<h3 id="environmental-geography" class="media-title">Environmental Geography</h3>
 <p>Examine the processes that shape the natural environment and the choices people make about it, from climate and water to conservation and resource management.</p>
 <ul>
 <li>GEO 300: Introduction to Climatology</li>
@@ -82,11 +88,12 @@ hero: /_media/heros/10-hero.webp
 </ul>
 </div>
 </section>
-<section class="course-entry" aria-labelledby="geospatial-technologies">
+{% include "components/divider-medium.njk" %}
+<section class="media-row media-row-large" aria-labelledby="geospatial-technologies">
 <!-- Replace this development image with a photograph for geospatial technologies. -->
-<img class="common-image course-image" src="{{ '/_media/undergraduate/01.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
-<div class="course-information">
-<h3 id="geospatial-technologies" class="course-title">Geospatial Technologies</h3>
+<img class="photo-frame photo-frame-large media-visual" src="{{ '/_media/undergraduate/01.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<div class="media-content">
+<h3 id="geospatial-technologies" class="media-title">Geospatial Technologies</h3>
 <p>Develop ways to investigate and communicate geographic patterns through GIS, maps, aerial imagery, remote sensing, and spatial analysis.</p>
 <ul>
 <li>GEO 370: UAV and Aerial Photography</li>
@@ -102,15 +109,20 @@ hero: /_media/heros/10-hero.webp
 </section>
 </div>
 
-<section class="next">
+{% include "components/space-medium.njk" %}
+<section class="callout callout-blue callout-plan">
 <h2>Plan Your Minor</h2>
 <h3>Exploring the Minor?</h3>
 <p>Contact the Undergraduate Chair to discuss your interests and review any GEO courses you have already taken. Plan a combination that meets the three area requirements and fits alongside your major. Check prerequisites and class availability before registering.</p>
+{% include "components/divider-white.njk" %}
 <h3>Ready to Declare?</h3>
 <p>Submit the university’s online declaration form to add the GEO minor to your academic record. Follow the form’s instructions and complete any required approvals. The <a href="https://manoa.hawaii.edu/registrar/student-records/undergraduate-declare-update-major-minor-certificate/">Registrar’s declaration guidance</a> explains the process and when your request takes effect.</p>
-<p><a class="degree-link" href="https://hawaii.kualibuild.com/app/69db4abcd9309c0283e2b3af/page/69db4abcd9309c0283e2b3af/run"><span class="degree-link-text">Declare a GEO Minor</span></a> <span class="certificate-note">(UH login required)</span></p>
+<p><a class="action-link" href="https://hawaii.kualibuild.com/app/69db4abcd9309c0283e2b3af/page/69db4abcd9309c0283e2b3af/run"><span class="action-link-text">Declare a GEO Minor</span></a> <span class="text-note">(UH login required)</span></p>
+{% include "components/divider-white.njk" %}
 <h3>Getting Ready to Graduate?</h3>
 <p>Review your completed and remaining courses with the Undergraduate Chair to confirm that you have met the minor requirements. Check with the General Education Advisor that the minor is included in your graduation review and ask whether any additional completion paperwork is needed.</p>
 </section>
+{% include "components/space-medium.njk" %}
+
 {% include "components/undergraduate-advisors.njk" %}
 {% include "components/course-resources.njk" %}

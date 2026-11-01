@@ -1,13 +1,19 @@
 ---
 layout: layouts/base.njk
+hidePageTitle: true
 title: Lecture Series
 permalink: "/about-geo/lecture-series.html"
 hero: /_media/dev/hero.webp
 ---
 <div class="lecture-series">
+<header class="page-header">
+<h1>{{ title | escape }}</h1>
 <p class="page-intro">Explore new perspectives on people, places, and the environment. Our lecture series brings together local, national, and international speakers to share research and ideas from geography and related disciplines. Please contact the series organizer with questions about attending.</p>
+</header>
+{% include "components/divider-medium.njk" %}
 
-<section class="program-glance" aria-labelledby="lecture-semester">
+{% include "components/space-medium.njk" %}
+<section class="callout callout-green callout-facts" aria-labelledby="lecture-semester">
 <h2 id="lecture-semester">{{ lectures.semester | escape }}</h2>
 <ul>
 <li><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</li>
@@ -15,14 +21,22 @@ hero: /_media/dev/hero.webp
 <li><strong>Contact:</strong> <a href="mailto:{{ lectures.contactEmail | escape }}">{{ lectures.contactName | escape }}</a>, GEO Professor</li>
 </ul>
 </section>
+{% include "components/space-medium.njk" %}
+
 
 {% set months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
 <div class="lecture-list">
 {% for lecture in lectures.events %}
 {% set dateParts = lecture.date.split('-') %}
 {% set monthIndex = (dateParts[1] | int) - 1 %}
-<article class="lecture-entry" aria-labelledby="lecture-title-{{ loop.index }}">
-<time class="lecture-date color-tile" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
+{% if not loop.first %}
+{% include "components/divider-medium.njk" %}
+{% endif %}
+{% if loop.first %}
+{% include "components/divider-medium.njk" %}
+{% endif %}
+<article class="lecture-entry media-row media-row-medium" aria-labelledby="lecture-title-{{ loop.index }}">
+<time class="date-tile tile tile-blue media-visual" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
 {% include "icons/calendar3.svg" %}
 <span class="lecture-month" aria-hidden="true">{{ months[monthIndex] | truncate(3, true, "") }}</span>
 <span class="lecture-day" aria-hidden="true">{{ dateParts[2] | int }}</span>

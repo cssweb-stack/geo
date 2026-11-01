@@ -11,12 +11,17 @@ hero: /_media/dev/hero.webp
 <p class="intro-highlight">Meet Our MA and PhD Students</p>
 <p class="page-intro">Explore the research interests of graduate students in the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Their research spans migration and borders, climate change, ecosystem restoration, food and water systems, tourism, and applications of GIS and remote sensing.</p>
 </header>
+{% include "components/divider-medium.njk" %}
+
 
 <div class="student-directory">
 {% for student in students %}
-<article class="student-entry" aria-labelledby="student-{{ student.slug }}">
+{% if not loop.first %}
+{% include "components/divider-medium.njk" %}
+{% endif %}
+<article class="student-entry media-row media-row-large" aria-labelledby="student-{{ student.slug }}">
 <img
-class="student-photo common-image"
+class="media-visual photo-frame photo-frame-large"
 src="{{ student.photo | url }}"
 alt="{{ student.name | escape }}"
 width="212"
@@ -24,7 +29,7 @@ height="212"
 loading="lazy"
 decoding="async">
 
-<div class="student-information">
+<div class="student-information media-content">
 <h2 id="student-{{ student.slug }}" class="h4 student-name">{{ student.name | escape }}</h2>
 <p class="student-meta">
 <span class="student-program">{{ student.program | escape }}</span>{% if student.email %}<span class="student-meta-divider" aria-hidden="true"> · </span><a href="mailto:{{ student.email | escape }}">{{ student.email | escape }}</a>{% endif %}

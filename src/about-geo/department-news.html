@@ -1,18 +1,15 @@
 ---
 layout: layouts/base.njk
+hidePageTitle: true
 title: Department News
 description: News, events, research, and updates from the Department of Geography and Environment at the University of Hawaiʻi at Mānoa.
 permalink: "/about-geo/department-news.html"
 hero: /_media/heros/16-hero.webp
 ---
+<header class="page-header">
+<h1>{{ title | escape }}</h1>
 <p class="page-intro">Research, publications, events, and stories from our faculty, students, and alumni.</p>
+</header>
+{% include "components/divider-medium.njk" %}
 
-<section class="department-news" data-bluesky-feed data-bluesky-actor="hawaiigeography.bsky.social" data-bluesky-limit="12" aria-label="Latest department updates">
-<p class="news-feed-status" role="status" aria-live="polite" hidden></p>
-<div class="news-feed-grid" aria-busy="false"></div>
-<button class="news-feed-retry btn btn-outline-secondary" type="button" hidden>Try loading the updates again</button>
-<noscript><p>Visit <a href="https://bsky.app/profile/hawaiigeography.bsky.social">UH Geography on Bluesky</a> to read the latest updates, or enable JavaScript to display them here.</p></noscript>
-</section>
-
-<p class="news-feed-more"><a class="btn news-bluesky-button" href="https://bsky.app/profile/hawaiigeography.bsky.social">{% include "icons/bluesky.svg" %}<span>More department updates on Bluesky</span></a></p>
-<script src="{{ "/assets/bluesky-feed.js" | url }}" defer></script>
+{% include "components/bluesky-feed.njk" %}
