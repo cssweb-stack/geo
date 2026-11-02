@@ -5,7 +5,7 @@ title: Lecture Series
 permalink: "/about-geo/lecture-series.html"
 hero: /_media/dev/hero.webp
 ---
-<div class="lecture-series">
+{% from "components/event.njk" import eventItem %}
 <header class="page-header">
 <h1>{{ title | escape }}</h1>
 <p class="page-intro">Explore new perspectives on people, places, and the environment. Our lecture series brings together local, national, and international speakers to share research and ideas from geography and related disciplines. Please contact the series organizer with questions about attending.</p>
@@ -22,30 +22,9 @@ hero: /_media/dev/hero.webp
 </section>
 
 
-{% set months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
-<div class="lecture-list">
+<div>
 {% for lecture in lectures.events %}
-{% set dateParts = lecture.date.split('-') %}
-{% set monthIndex = (dateParts[1] | int) - 1 %}
-{% if not loop.first %}
 {% include "components/divider-medium.njk" %}
-{% endif %}
-{% if loop.first %}
-{% include "components/divider-medium.njk" %}
-{% endif %}
-<article class="lecture-entry media-row media-row-medium" aria-labelledby="lecture-title-{{ loop.index }}">
-<time class="date-tile tile tile-blue media-visual" datetime="{{ lecture.date | escape }}" aria-label="{{ lecture.weekday | escape }}, {{ months[monthIndex] }} {{ dateParts[2] | int }}, {{ dateParts[0] }}">
-{% include "icons/calendar3.svg" %}
-<span class="lecture-month" aria-hidden="true">{{ months[monthIndex] | truncate(3, true, "") }}</span>
-<span class="lecture-day" aria-hidden="true">{{ dateParts[2] | int }}</span>
-<span class="lecture-weekday" aria-hidden="true">{{ lecture.weekday | escape }}</span>
-</time>
-<div class="lecture-information">
-<h3 id="lecture-title-{{ loop.index }}" class="lecture-title">{{ lecture.title | escape }}</h3>
-<p class="lecture-speaker">{{ lecture.speaker | escape }}</p>
-<p class="lecture-affiliation">{{ lecture.affiliation | escape }}</p>
-</div>
-</article>
+{{ eventItem(lecture, "event-title-" ~ loop.index, 3) }}
 {% endfor %}
-</div>
 </div>

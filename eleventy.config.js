@@ -1,7 +1,10 @@
+import { createRequire } from 'node:module';
 import { syncShared } from './scripts/sync-shared.mjs';
 
 export default function(eleventyConfig) {
   const sharedRoot = syncShared();
+  const eventDate = createRequire(import.meta.url)("./src/_includes/components/event-date.cjs");
+  eleventyConfig.addFilter("eventDate", eventDate);
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget(sharedRoot + "/src");
   eleventyConfig.on("eleventy.beforeWatch", () => syncShared());
