@@ -42,6 +42,8 @@ const sourceDir = path.join(source, 'src');
 const files = [];
 function scan(dir, prefix = '') {
 for (const entry of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+// Finder metadata is not a shared site asset.
+if (entry.name === '.DS_Store') continue;
 const name = prefix + entry.name;
 if (entry.isSymbolicLink()) throw new Error(`Shared files cannot be symbolic links: ${name}`);
 if (entry.isDirectory()) scan(path.join(dir, entry.name), name + '/');
