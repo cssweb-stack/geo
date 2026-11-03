@@ -9,6 +9,8 @@ export default function(eleventyConfig) {
   eleventyConfig.addWatchTarget(sharedRoot + "/src");
   eleventyConfig.on("eleventy.beforeWatch", () => syncShared());
   eleventyConfig.addFilter("telephone", value => String(value || "").replace(/[^\d+]/g, ""));
+  eleventyConfig.addPassthroughCopy({ "src/colors.css": "colors.css" });
+  eleventyConfig.addPassthroughCopy({ "src/typography.css": "typography.css" });
   eleventyConfig.addPassthroughCopy({ "src/common.css": "common.css" });
   eleventyConfig.addPassthroughCopy({ "src/callouts.css": "callouts.css" });
   eleventyConfig.addPassthroughCopy({ "src/_includes/icons": "assets/icons" });
@@ -16,6 +18,8 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/geo.css": "geo.css" });
   eleventyConfig.addPassthroughCopy({ "src/_media": "_media" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addWatchTarget("src/colors.css");
+  eleventyConfig.addWatchTarget("src/typography.css");
   eleventyConfig.addWatchTarget("src/common.css");
   eleventyConfig.addWatchTarget("src/callouts.css");
   eleventyConfig.addWatchTarget("src/shell.css");
