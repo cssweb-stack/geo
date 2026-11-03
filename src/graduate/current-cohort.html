@@ -14,7 +14,7 @@ permalink: /graduate/current-cohort.html
 
 
 {% for student in students %}
-<article class="media-row media-row-large academic-photo-row" aria-labelledby="student-{{ student.slug }}">
+<article class="media-row academic-photo-row" aria-labelledby="student-{{ student.slug }}">
 <img
 class="media-visual photo-frame photo-frame-large"
 src="{{ student.photo | url }}"
