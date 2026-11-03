@@ -24,7 +24,6 @@ hero: /_media/dev/hero.webp
 
 <div>
 {% for lecture in lectures.events %}
-{% include "components/divider-medium.njk" %}
 {{ eventItem(lecture, "event-title-" ~ loop.index, 3) }}
 {% endfor %}
 </div>
