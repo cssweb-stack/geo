@@ -6,13 +6,10 @@ permalink: "/about-geo/lecture-series.html"
 hero: /_media/dev/hero.webp
 ---
 {% from "components/event.njk" import eventItem %}
-<header class="page-header">
 <h1>{{ title | escape }}</h1>
 <p class="intro">Explore new perspectives on people, places, and the environment. Our lecture series brings together local, national, and international speakers to share research and ideas from geography and related disciplines. Please contact the series organizer with questions about attending.</p>
-</header>
 
-
-<section class="callout callout-green callout-facts" aria-labelledby="lecture-semester">
+<section class="callout callout-green" aria-labelledby="lecture-semester">
 <h2 id="lecture-semester">{{ lectures.semester | escape }}</h2>
 <ul>
 <li><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</li>
@@ -21,9 +18,6 @@ hero: /_media/dev/hero.webp
 </ul>
 </section>
 
-
-<div>
 {% for lecture in lectures.events %}
 {{ eventItem(lecture, "event-title-" ~ loop.index, 3) }}
 {% endfor %}
-</div>
