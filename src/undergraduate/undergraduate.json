@@ -1,0 +1,5 @@
+{
+  "eleventyComputed": {
+    "canonicalUrl": "{{ site.url }}{{ page.url }}"
+  }
+}

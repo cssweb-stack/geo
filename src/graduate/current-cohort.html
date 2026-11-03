@@ -4,7 +4,6 @@ title: Current Cohort
 hidePageTitle: true
 description: Meet current Geography and Environment MA and PhD students at UH Mānoa. Explore their research interests, faculty advisors, and contact information.
 permalink: /graduate/current-cohort.html
-hero: /_media/dev/hero.webp
 ---
 <header class="page-header">
 <h1>Current Cohort</h1>
@@ -14,9 +13,8 @@ hero: /_media/dev/hero.webp
 
 
 
-<div class="student-directory">
 {% for student in students %}
-<article class="student-entry media-row media-row-large academic-photo-row" aria-labelledby="student-{{ student.slug }}">
+<article class="media-row media-row-large academic-photo-row" aria-labelledby="student-{{ student.slug }}">
 <img
 class="media-visual photo-frame photo-frame-large"
 src="{{ student.photo | url }}"
@@ -29,11 +27,10 @@ decoding="async">
 <div class="student-information media-content">
 <h2 id="student-{{ student.slug }}" class="h4 student-name">{{ student.name | escape }}</h2>
 <p class="student-meta">
-<span class="student-program">{{ student.program | escape }}</span>{% if student.email %}<span class="student-meta-divider" aria-hidden="true"> · </span><a href="mailto:{{ student.email | escape }}">{{ student.email | escape }}</a>{% endif %}
+<span class="student-program">{{ student.program | escape }}</span>{% if student.email %}<span aria-hidden="true"> · </span><a href="mailto:{{ student.email | escape }}">{{ student.email | escape }}</a>{% endif %}
 </p>
-<p class="student-research">{{ student.research | escape }}</p>
-<p class="student-advisor"><strong>Advisor:</strong> {{ student.advisorName | escape }}</p>
+<p>{{ student.research | escape }}</p>
+<p><strong>Advisor:</strong> {{ student.advisorName | escape }}</p>
 </div>
 </article>
 {% endfor %}
-</div>
