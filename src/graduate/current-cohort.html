@@ -10,27 +10,4 @@ permalink: /graduate/current-cohort.html
 <p class="tagline">Meet Our MA and PhD Students</p>
 <p class="intro">Explore the research interests of graduate students in the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Their research spans migration and borders, climate change, ecosystem restoration, food and water systems, tourism, and applications of GIS and remote sensing.</p>
 </header>
-
-
-
-{% for student in students %}
-<article class="media-row" aria-labelledby="student-{{ student.slug }}">
-<img
-class="media-visual photo-frame photo-frame-large"
-src="{{ student.photo | url }}"
-alt="{{ student.name | escape }}"
-width="212"
-height="212"
-loading="lazy"
-decoding="async">
-
-<div class="student-information media-content">
-<h2 id="student-{{ student.slug }}" class="h4 student-name">{{ student.name | escape }}</h2>
-<p class="student-meta">
-<span class="student-program">{{ student.program | escape }}</span>{% if student.email %}<span aria-hidden="true"> · </span><a href="mailto:{{ student.email | escape }}">{{ student.email | escape }}</a>{% endif %}
-</p>
-<p>{{ student.research | escape }}</p>
-<p><strong>Advisor:</strong> {{ student.advisorName | escape }}</p>
-</div>
-</article>
-{% endfor %}
+{% include "components/student-directory.njk" %}

@@ -24,10 +24,6 @@ _site-root/
 /src/_includes/components/bluesky-feed.njk
 /src/_includes/components/button.njk
 /src/_includes/components/course-resources.njk
-/src/_includes/components/divider-large.njk
-/src/_includes/components/divider-medium.njk
-/src/_includes/components/divider-small.njk
-/src/_includes/components/divider-white.njk
 /src/_includes/components/event-date.cjs
 /src/_includes/components/event.njk
 /src/_includes/components/faculty-contact.njk
@@ -40,9 +36,7 @@ _site-root/
 /src/_includes/components/profile-contact.njk
 /src/_includes/components/profile-identity.njk
 /src/_includes/components/profile-sidebar.njk
-/src/_includes/components/space-large.njk
-/src/_includes/components/space-medium.njk
-/src/_includes/components/space-small.njk
+/src/_includes/components/student-directory.njk
 /src/_includes/components/subfooter.njk
 /src/_includes/components/uh-brand.njk
 /src/_includes/components/undergraduate-advisors.njk
@@ -93,9 +87,23 @@ _site-root/
 /src/_media/branding/uh-pattern-vert-5-white.svg
 /src/_media/other/contour-lines.svg
 /src/assets/bluesky-feed.js
+/src/assets/fonts/InterVariable-Italic.woff2
+/src/assets/fonts/InterVariable.woff2
+/src/assets/fonts/LICENSE.txt
 /src/assets/site.js
+/src/buttons.css
 /src/callouts.css
 /src/colors.css
 /src/common.css
-/src/shell.css
+/src/fonts.css
+/src/footer.css
+/src/header.css
+/src/hero.css
+/src/images.css
+/src/layout.css
+/src/news.css
+/src/profile.css
+/src/special-text.css
+/src/tiles.css
+/src/typography.css
 # END GENERATED SHARED FILES

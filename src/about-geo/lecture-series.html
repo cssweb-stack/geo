@@ -5,11 +5,11 @@ title: Lecture Series
 permalink: "/about-geo/lecture-series.html"
 hero: /_media/dev/hero.webp
 ---
-{% from "components/event.njk" import eventItem %}
 <h1>{{ title | escape }}</h1>
-<p class="intro">Explore new perspectives on people, places, and the environment. Our lecture series brings together local, national, and international speakers to share research and ideas from geography and related disciplines. Please contact the series organizer with questions about attending.</p>
+<p class="tagline">Hear New Ideas. Connect Through Geography</p>
+<p class="intro">Explore research on people, places, and the environment with local, national, and international speakers. Our lecture series brings geography and related disciplines into conversation, offering opportunities to hear new ideas and ask questions. Contact the series organizer with questions about attending.</p>
 
-<section class="callout callout-green" aria-labelledby="lecture-semester">
+<section class="callout callout-teal" aria-labelledby="lecture-semester">
 <h2 id="lecture-semester">{{ lectures.semester | escape }}</h2>
 <ul>
 <li><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</li>
@@ -18,6 +18,5 @@ hero: /_media/dev/hero.webp
 </ul>
 </section>
 
-{% for lecture in lectures.events %}
-{{ eventItem(lecture, "event-title-" ~ loop.index, 3) }}
-{% endfor %}
+{% set events = lectures.events %}
+{% include "components/events.njk" %}

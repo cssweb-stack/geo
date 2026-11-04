@@ -10,10 +10,10 @@
       "email": "hjiang@hawaii.edu"
     },
     {
-      "title": "General Education Advisor",
       "name": "Dawn Nishida",
       "photo": "/_media/staff/dawn-nishida.webp",
-      "email": "nishidad@hawaii.edu"
+      "email": "nishidad@hawaii.edu",
+      "role": "General Education Advisor"
     }
   ]
 }

@@ -6,91 +6,87 @@ description: Explore geography at UH Mānoa, from a GIS certificate to a doctora
 permalink: "/"
 hero: /_media/dev/hero.webp
 ---
-<div class="unit-home">
-<div class="home-welcome">
-<div class="home-introduction">
+<div class="grid-welcome grid-spaced">
+<div>
 <h1>Explore Our Changing World</h1>
-<p>Aloha and welcome to the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Explore how global change shapes communities and environments, and how local actions influence the world around us. Our faculty bring expertise in environmental geography, human geography, and geospatial information science, with a focus on Asia and the Pacific.</p>
-<p>Whether you are discovering geography for the first time or building a research career, find a path that connects your interests with the questions that matter to you.</p>
-{% from "components/mini-callout.njk" import miniCallout %}
-{% call miniCallout("emoji-smile", "gold") %}
-<p>UH Mānoa GEO <a href="https://www.hawaii.edu/news/2026/10/06/global-ranking-of-academic-subjects-2026/">ranks No. 14 in the U.S.</a> in 2026.</p>
-{% endcall %}
+<p class="intro">Aloha and welcome to the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Explore how global change shapes communities and environments, and how local actions influence the world around us. Our faculty bring expertise in environmental geography, human geography, and geospatial information science, with a focus on Asia and the Pacific. Whether you are discovering geography for the first time or building a research career, find a path that connects your interests with the questions that matter to you.</p>
+<p class="smile">
+{% include "icons/emoji-smile.svg" %}
+<span>UH Mānoa GEO <a href="https://www.hawaii.edu/news/2026/10/06/global-ranking-of-academic-subjects-2026/">ranks No. 14 in the U.S.</a> in 2026.</span>
+</p>
 </div>
-<aside class="callout callout-bronze highlights-callout" aria-labelledby="home-highlights-heading">
+<aside class="callout callout-bronze callout-flush" aria-labelledby="home-highlights-heading">
 <h2 id="home-highlights-heading">{{ home.title | escape }}</h2>
-{% for highlight in home.items %}
-{% if not loop.first %}
-{% include "components/divider-small.njk" %}
-{% endif %}
-<div class="home-highlight">
+{% for highlight in home.items -%}
 <h3>{{ highlight.title | escape }}</h3>
 <p>{{ highlight.text | escape }}{% if highlight.url %} <a href="{{ highlight.url | url }}">{{ highlight.linkText | escape }}</a>{% endif %}</p>
-</div>
-{% endfor %}
+{% endfor -%}
 </aside>
 </div>
-{% include "components/divider-medium.njk" %}
-<section class="home-section" aria-labelledby="home-programs-heading">
+
+<section aria-labelledby="home-programs-heading">
 <h2 id="home-programs-heading">Explore Our Academic Programs</h2>
-<p class="home-section-intro">In addition to an exciting selection of <a href="{{ '/about-geo/geo-courses.html' | url }}">GEO courses</a>, we offer academic programs ranging from an undergraduate certificate to a doctoral degree.</p>
-<div class="grid-five">
-<a class="program-tile tile tile-bronze" href="{{ '/undergraduate/gis-certificate.html' | url }}">
+<p>In addition to an exciting selection of <a href="{{ '/about-geo/geo-courses.html' | url }}">GEO courses</a>, we offer academic programs ranging from an undergraduate certificate to a doctoral degree.</p>
+<div class="grid-five grid-spaced">
+<a class="program-tile tile-style tile-bronze" href="{{ '/undergraduate/gis-certificate.html' | url }}">
 <span class="program-tile-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
 <span class="program-tile-title">GIS</span>
 <span class="program-tile-label">Certificate</span>
 </a>
-<a class="program-tile tile tile-purple" href="{{ '/undergraduate/minor.html' | url }}">
+<a class="program-tile tile-style tile-purple" href="{{ '/undergraduate/minor.html' | url }}">
 <span class="program-tile-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
 <span class="program-tile-title">Minor</span>
+<span class="program-tile-label" aria-hidden="true"></span>
 </a>
-<a class="program-tile tile tile-brown" href="{{ '/undergraduate/major-ba.html' | url }}">
+<a class="program-tile tile-style tile-brown" href="{{ '/undergraduate/major-ba.html' | url }}">
 <span class="program-tile-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
 <span class="program-tile-title">BA</span>
 <span class="program-tile-label">Major</span>
 </a>
-<a class="program-tile tile tile-teal" href="{{ '/graduate/master-ma.html' | url }}">
+<a class="program-tile tile-style tile-teal" href="{{ '/graduate/master-ma.html' | url }}">
 <span class="program-tile-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
 <span class="program-tile-title">MA</span>
 <span class="program-tile-label">Master of Arts</span>
 </a>
-<a class="program-tile tile tile-blue" href="{{ '/graduate/doctorate-phd.html' | url }}">
+<a class="program-tile tile-style tile-blue" href="{{ '/graduate/doctorate-phd.html' | url }}">
 <span class="program-tile-icon" aria-hidden="true">{% include "icons/mortarboard.svg" %}</span>
 <span class="program-tile-title">PhD</span>
 <span class="program-tile-label">Doctor of Philosophy</span>
 </a>
 </div>
-<div class="row gx-4">
-<div class="col-lg-6 d-flex flex-column">
-<p class="home-bam-intro">Our BA/MA pathways let you work toward both degrees while saving time.</p>
-<div class="button-grid flex-grow-1">
+<div class="grid-two grid-spaced">
+<div>
+<h3>BAM Pathways</h3>
+<p>Our BA/MA pathways let you work toward both degrees while saving time.</p>
+<div class="grid-two">
 <a class="button button-soft button-purple button-arrow" href="{{ '/undergraduate/geo-bam.html' | url }}">GEO BA/MA (BAM) <span aria-hidden="true">→</span></a>
 <a class="button button-soft button-purple button-arrow" href="{{ '/undergraduate/geo-sust-bam.html' | url }}">SUST BA/GEO MA (BAM) <span aria-hidden="true">→</span></a>
 </div>
 </div>
-<div class="col-lg-6 d-flex flex-column">
-<p class="home-bam-intro">We also participate in an interdisciplinary online degree and a graduate certificate.</p>
-<div class="button-grid flex-grow-1">
+<div>
+<h3>Interdisciplinary Programs</h3>
+<p>We also participate in an interdisciplinary online degree and a graduate certificate.</p>
+<div class="grid-two">
 <a class="button button-soft button-arrow button-blue" href="http://www.socialsciences.hawaii.edu/cssonline/oceans.html">Social Sciences of Oceans <span aria-hidden="true">→</span></a>
 <a class="button button-soft button-arrow button-blue" href="http://socialsciences.hawaii.edu/certificate/gopc/" aria-label="Ocean Policy Certificate (graduate)">Ocean Policy Certificate <span aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
 </section>
-{% include "components/divider-medium.njk" %}
-<section class="home-section" aria-labelledby="home-videos-heading">
+
+<section aria-labelledby="home-videos-heading">
 <h2 id="home-videos-heading">Discover GEO</h2>
-<div class="home-video-grid">
+<div class="grid-two">
 <div>
-<div class="home-video">
-<iframe id="home-video-left" width="560" height="315" src="https://www.youtube.com/embed/8fU3f_ACqRs?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+<iframe id="home-video-left" width="560" height="315" src="https://www.youtube.com/embed/8fU3f_ACqRs?enablejsapi=1&amp;rel=0&amp;enablejsapi=1" title="Department of Geography and Environment featured video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<p class="mt-3">Additional <a href="https://youtu.be/F9-06WQdg-s">Department Video</a></p>
+<p>Additional <a href="https://youtu.be/F9-06WQdg-s">Department Video</a></p>
 </div>
-<div class="home-video">
-<iframe id="home-video-right" width="560" height="315" src="https://www.youtube.com/embed/6ax5lF_qb9c?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div>
+<div class="ratio ratio-16x9">
+<iframe id="home-video-right" width="560" height="315" src="https://www.youtube.com/embed/6ax5lF_qb9c?enablejsapi=1&amp;rel=0&amp;enablejsapi=1" title="Department of Geography and Environment featured video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </div>
 </div>
 </section>
-</div>
-<!-- GA4 enhanced measurement can collect video_start, video_progress, and video_complete with enablejsapi=1. The site's Google tag and video engagement setting must be enabled. -->

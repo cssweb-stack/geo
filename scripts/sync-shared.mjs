@@ -6,7 +6,37 @@ import { execFileSync } from 'node:child_process';
 
 const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const managedFile = path.join(project, '.shared-state.json');
-const permitted = name => ['colors.css', 'typography.css', 'common.css', 'callouts.css', 'shell.css', '_data/university.json', 'assets/site.js', 'assets/bluesky-feed.js', '_media/other/contour-lines.svg'].includes(name) || ['_includes/components/', '_includes/layouts/', '_includes/icons/', '_media/branding/'].some(prefix => name.startsWith(prefix));
+const permitted = name => [
+'colors.css',
+'fonts.css',
+'typography.css',
+'special-text.css',
+'profile.css',
+'hero.css',
+'layout.css',
+'news.css',
+'images.css',
+'tiles.css',
+'common.css',
+'callouts.css',
+'buttons.css',
+'header.css',
+'footer.css',
+'_data/university.json',
+'assets/site.js',
+'assets/bluesky-feed.js',
+'_media/other/contour-lines.svg',
+'specialtype.css',
+'images-tiles.css',
+'shell.css'
+].includes(name) || [
+'_includes/components/',
+'_includes/layouts/',
+'_includes/icons/',
+'_media/branding/',
+'assets/fonts/',
+'assets/icons/'
+].some(prefix => name.startsWith(prefix));
 
 export function sharedSettings() {
 const config = JSON.parse(fs.readFileSync(path.join(project, 'shared.config.json'), 'utf8'));
@@ -54,7 +84,29 @@ files.push({ name, bytes: fs.readFileSync(path.join(dir, entry.name)) });
 }
 }
 scan(sourceDir);
-for (const required of ['colors.css', 'typography.css', 'common.css', 'callouts.css', 'shell.css', '_data/university.json', '_includes/layouts/base.njk', '_includes/components/footer.njk']) if (!files.some(file => file.name === required)) throw new Error(`Shared repository is incomplete: ${required}`);
+for (const required of [
+'colors.css',
+'fonts.css',
+'typography.css',
+'special-text.css',
+'profile.css',
+'hero.css',
+'layout.css',
+'news.css',
+'images.css',
+'tiles.css',
+'common.css',
+'callouts.css',
+'header.css',
+'footer.css',
+'_data/university.json',
+'_includes/layouts/base.njk',
+'_includes/components/footer.njk'
+]) {
+if (!files.some(file => file.name === required)) {
+throw new Error(`Shared repository is incomplete: ${required}`);
+}
+}
 const previous = fs.existsSync(managedFile) ? JSON.parse(fs.readFileSync(managedFile, 'utf8')) : { files: [] };
 if (!Array.isArray(previous.files) || previous.files.some(name => !safeRelative(name))) throw new Error('Invalid shared-file state.');
 const previousNames = new Set(previous.files);

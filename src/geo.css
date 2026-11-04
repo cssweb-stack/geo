@@ -1,4 +1,2 @@
-@import url("./callouts.css");
 /* GEO-specific overrides only.
-Shared components are controlled in common.css; the site shell in shell.css.
-GEO content, navigation, contacts and hero assignments stay in local data/pages. */
+Shared CSS is loaded through common.css by the build configuration. */
