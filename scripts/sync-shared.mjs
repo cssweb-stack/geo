@@ -97,6 +97,7 @@ for (const required of [
 'tiles.css',
 'common.css',
 'callouts.css',
+'buttons.css',
 'header.css',
 'footer.css',
 '_data/university.json',
