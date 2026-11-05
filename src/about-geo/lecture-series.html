@@ -1,9 +1,8 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 hidePageTitle: true
 title: Lecture Series
 permalink: "/about-geo/lecture-series.html"
-hero: /_media/dev/hero.webp
 ---
 <h1>{{ title | escape }}</h1>
 <p class="tagline">Hear New Ideas. Connect Through Geography</p>
@@ -19,4 +18,4 @@ hero: /_media/dev/hero.webp
 </section>
 
 {% set events = lectures.events %}
-{% include "components/events.njk" %}
+{% include "layouts/events/events.njk" %}

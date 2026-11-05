@@ -1,9 +1,8 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 title: Core Faculty
 hidePageTitle: true
 permalink: /faculty/
-hero: /_media/dev/hero.webp
 ---
 <header class="page-header">
 <h1>Core Faculty</h1>
@@ -13,6 +12,6 @@ hero: /_media/dev/hero.webp
 
 <div class="profile-directory">
 {% for person in faculty %}
-{% include "components/profile-card.njk" %}
+{% include "layouts/profiles/profile-card.njk" %}
 {% endfor %}
 </div>

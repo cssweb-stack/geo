@@ -1,10 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 title: GEO Bachelor of Arts (BA)
 hidePageTitle: true
 description: "Explore the GEO major at UH Mānoa: BA requirements, core courses, specialization options, and steps to declare and complete your major."
 permalink: "/undergraduate/major-ba.html"
-hero: /_media/heros/07-hero.webp
 ---
 <header class="page-header">
 <h1>GEO Bachelor of Arts (BA)</h1>
@@ -42,7 +41,7 @@ hero: /_media/heros/07-hero.webp
 <h2 id="specialization-courses">Upper Division Specialization Courses <span class="accent">(12 credits minimum)</span></h2>
 <p>Choose courses in human geography, environmental geography, or geospatial technology, or develop a specialization around your own interests. At least 6 credits must be at the 400 level. Courses listed below are 3 credits each unless marked as variable credits. Work with the Undergraduate Chair to plan a combination that supports your interests and meets the requirements.</p>
 <div class="grid-standard grid-spaced">
-<img class="photo-style grid-photo" src="{{ '/_media/undergraduate/07.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<img class="photo-style grid-photo" src="{{ '/media/undergraduate/07.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
 <section aria-labelledby="human-geography">
 <h3 id="human-geography">Human Geography</h3>
 <p>Investigate how culture, politics, economies, and social relationships shape places. Explore questions of development, tourism, food systems, cities, and the use of resources.</p>
@@ -64,7 +63,7 @@ hero: /_media/heros/07-hero.webp
 <li>GEO 453: Environment and Society in China</li>
 </ul>
 </section>
-<img class="photo-style grid-photo" src="{{ '/_media/undergraduate/08.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<img class="photo-style grid-photo" src="{{ '/media/undergraduate/08.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
 <section aria-labelledby="environmental-geography">
 <h3 id="environmental-geography">Environmental Geography</h3>
 <p>Study the Earth’s physical systems and the ways people change them. Examine climate, water, landforms, and ecosystems alongside approaches to conservation, environmental assessment, and resource management.</p>
@@ -89,7 +88,7 @@ hero: /_media/heros/07-hero.webp
 <li>GEO 415: Nature-Based Tourism Management</li>
 </ul>
 </section>
-<img class="photo-style grid-photo" src="{{ '/_media/undergraduate/06.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<img class="photo-style grid-photo" src="{{ '/media/undergraduate/06.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
 <section aria-labelledby="geospatial-information-science">
 <h3 id="geospatial-information-science">Geospatial Information Science</h3>
 <p>Build practical skills in collecting, analyzing, and communicating geographic information through GIS, cartography, aerial imagery, remote sensing, and spatial analysis.</p>
@@ -105,7 +104,7 @@ hero: /_media/heros/07-hero.webp
 </ul>
 </section>
 
-<img class="photo-style grid-photo" src="{{ '/_media/undergraduate/04.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<img class="photo-style grid-photo" src="{{ '/media/undergraduate/04.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
 <section aria-labelledby="regional-geography">
 <h3 id="regional-geography">Asia Pacific Region</h3>
 <p>Explore places across Asia and the Pacific, including Hawaiʻi and Honolulu, alongside a course on North America. Examine how environments, histories, cultures, and economies shape regional experiences.</p>
@@ -120,7 +119,7 @@ hero: /_media/heros/07-hero.webp
 <li>GEO 368: Geography of Hawaiʻi</li>
 </ul>
 </section>
-<img class="photo-style grid-photo" src="{{ '/_media/undergraduate/05.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
+<img class="photo-style grid-photo" src="{{ '/media/undergraduate/05.webp' | url }}" alt="" width="212" height="212" loading="lazy" decoding="async">
 <section aria-labelledby="directed-studies">
 <h3 id="directed-studies">Directed Studies</h3>
 <p>Explore a topic through reading, research, selected topics, or an applied field placement. Directed studies require approval and faculty supervision.</p>
@@ -139,13 +138,13 @@ hero: /_media/heros/07-hero.webp
 <h3>Exploring the Major?</h3>
 <p>Review the <a href="{{ '/undergraduate/student-learning-outcomes.html' | url }}">student learning outcomes</a> to see what you will learn. Contact the Undergraduate Chair to discuss your interests, review any GEO courses you have already completed, and see how the major fits your academic goals.</p>
 <h3>Ready to Declare?</h3>
-<p class="declaration-spacing">Use the university’s online declaration form to request the GEO major. Follow the instructions and complete any required approvals. Consult the <a href="https://manoa.hawaii.edu/registrar/student-records/undergraduate-declare-update-major-minor-certificate/">Registrar’s declaration guidance</a> for the process and effective dates. If you are adding GEO as an additional major, contact the appropriate college advising office for instructions.</p>
-<p class="declaration-spacing"><a class="button button-blue" href="https://hawaii.kualibuild.com/app/69db4abcd9309c0283e2b3af/page/69db4abcd9309c0283e2b3af/run">Declare a GEO Major</a> <span class="note">(UH login required)</span></p>
+<p class="declaration-spacing">Use the university’s online declaration form to request the GEO major. Follow the instructions and complete any required approvals. Consult the <a href="{{ common.links.declarationGuidance.url | escape }}">Registrar’s declaration guidance</a> for the process and effective dates. If you are adding GEO as an additional major, contact the appropriate college advising office for instructions.</p>
+<p class="declaration-spacing"><a class="button button-blue" href="{{ common.links.declareMajorMinor.url | escape }}">Declare a GEO Major</a> <span class="note">(UH login required)</span></p>
 <h3>Planning Your Specialization?</h3>
 <p>Work with the Undergraduate Chair to choose GEO courses that support your interests and satisfy the specialization requirements, including at least 6 credits at the 400 level. Check prerequisites and class availability before registering, and plan when to take the capstone seminar.</p>
 <h3>Getting Ready to Graduate?</h3>
 <p>Review your completed and remaining major requirements with the Undergraduate Chair. Meet with the General Education Advisor to review university and college degree requirements and confirm your graduation application steps and deadlines.</p>
 </section>
 
-{% include "components/undergraduate-advisors.njk" %}
-{% include "components/course-resources.njk" %}
+{% include "layouts/profiles/undergraduate-advisors.njk" %}
+{% include "layouts/content/course-resources.njk" %}

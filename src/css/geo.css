@@ -1,0 +1,4 @@
+/* GEO-specific design. Shared CSS is bundled first by Eleventy. */
+.tile-style {
+--tile-background: url("../media/backgrounds/contour-lines.svg");
+}

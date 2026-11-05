@@ -1,10 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 title: SUST BA/GEO MA (BAM)
 hidePageTitle: true
 description: Connect sustainability studies with geographic research through a combined Sustainability BA and Geography and Environment MA pathway at the University of Hawaiʻi at Mānoa.
 permalink: "/undergraduate/geo-sust-bam.html"
-hero: /_media/heros/08-hero.webp
 ---
 <header class="page-header">
 <h1>SUST BA/GEO MA (BAM)</h1>
@@ -39,7 +38,7 @@ hero: /_media/heros/08-hero.webp
 <p>The SUST/GEO BAM brings together an interdisciplinary sustainability BA and the research-focused Geography and Environment MA. Students first meet the gateway requirement, then complete approved shared courses that connect the two degrees. Plan these courses with your coordinators to confirm how each applies to your sustainability concentration and graduate requirements.</p>
 <div class="grid-compact grid-spaced">
 <div class="icon-tile tile-style tile-teal" aria-hidden="true">
-{% include "icons/mortarboard-white.svg" %}
+{% include "media/icons/mortarboard-white.svg" %}
 </div>
 <section aria-labelledby="bam-degree-credits">
 <h3 id="bam-degree-credits">Degree Credit Requirements</h3>
@@ -52,7 +51,7 @@ hero: /_media/heros/08-hero.webp
 <p>The sample plan also includes GEO 692: Faculty Seminar Series (1 credit), required for entering graduate students, including pathway students. This course counts toward the MA, but not toward the BA.</p>
 </section>
 <div class="icon-tile tile-style tile-blue" aria-hidden="true">
-{% include "icons/book-white.svg" %}
+{% include "media/icons/book-white.svg" %}
 </div>
 <section aria-labelledby="bam-gateway-shared">
 <h3 id="bam-gateway-shared">Gateway and Shared Courses</h3>
@@ -67,7 +66,7 @@ hero: /_media/heros/08-hero.webp
 </ul>
 </section>
 <div class="icon-tile tile-style tile-purple" aria-hidden="true">
-{% include "icons/layers-white.svg" %}
+{% include "media/icons/layers-white.svg" %}
 </div>
 <section aria-labelledby="bam-specialization">
 <h3 id="bam-specialization">Approved Specialization Courses</h3>
@@ -104,15 +103,15 @@ hero: /_media/heros/08-hero.webp
 <h3>Prepare to Apply</h3>
 <p class="date">Complete GEO 325/SUST 326 with a B or better before applying, then notify <a href="mailto:sustain@hawaii.edu">the Sustainability program</a> that you intend to pursue the BAM pathway. Students typically seek admission during their junior year. The application deadline for fall admission is <strong>March 15</strong>. Confirm the current deadline, eligibility requirements, and application materials with your coordinators before applying.</p>
 <h3>Submit Your Application</h3>
-<p>With your coordinators' guidance, submit the <a href="https://manoa.hawaii.edu/graduate/submitting-your-application/">UH Mānoa Graduate Division application</a>, application fee, and any department-required materials by the deadline. If admitted, follow university instructions for accepting admission and planning your shared courses. For Geography and Environment program questions, contact <a href="mailto:uhmgeo@hawaii.edu">uhmgeo@hawaii.edu</a>.</p>
+<p>With your coordinators' guidance, submit the <a href="{{ common.links.graduateApplication.url | escape }}">UH Mānoa Graduate Division application</a>, application fee, and any department-required materials by the deadline. If admitted, follow university instructions for accepting admission and planning your shared courses. For Geography and Environment program questions, contact <a href="mailto:uhmgeo@hawaii.edu">uhmgeo@hawaii.edu</a>.</p>
 </section>
 <div class="grid-compact grid-spaced">
 <div class="icon-tile tile-style tile-teal" aria-hidden="true">
-{% include "icons/signpost-white.svg" %}
+{% include "media/icons/signpost-white.svg" %}
 </div>
 <section aria-labelledby="bam-related-pathway">
 <h2 id="bam-related-pathway">Another Pathway to Explore</h2>
 <p>Interested in building directly on an undergraduate geography degree? Explore the <a href="{{ '/undergraduate/geo-bam.html' | url }}">GEO BA/MA (BAM) pathway</a>.</p>
 </section>
 </div>
-{% include "components/course-resources.njk" %}
+{% include "layouts/content/course-resources.njk" %}

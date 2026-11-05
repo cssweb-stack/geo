@@ -1,10 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 hidePageTitle: true
 title: Department News
 description: News, events, research, and updates from the Department of Geography and Environment at the University of Hawaiʻi at Mānoa.
 permalink: "/about-geo/department-news.html"
-hero: /_media/heros/16-hero.webp
 ---
 <header class="page-header">
 <h1>{{ title | escape }}</h1>
@@ -12,4 +11,4 @@ hero: /_media/heros/16-hero.webp
 </header>
 
 
-{% include "components/bluesky-feed.njk" %}
+{% include "layouts/social/bluesky-feed.njk" %}

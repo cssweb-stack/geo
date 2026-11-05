@@ -1,10 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 title: Contact
 hidePageTitle: true
 description: Contact the University of Hawaiʻi at Mānoa Department of Geography and Environment. Find office hours, location, directions, and departmental contacts.
 permalink: "/contact/"
-hero: /_media/heros/honolulu-oahu.webp
 ---
 <header class="page-header">
 <h1>Contact GEO</h1>
@@ -14,7 +13,7 @@ hero: /_media/heros/honolulu-oahu.webp
 
 <section class="grid-standard grid-spaced" aria-label="Department location and directions">
 <div>
-<img class="photo-style" src="{{ '/_media/other/saunders-hall.webp' | url }}" alt="Saunders Hall at the University of Hawaiʻi at Mānoa" width="400" height="400" decoding="async">
+<img class="photo-style" src="{{ '/media/other/saunders-hall.webp' | url }}" alt="Saunders Hall at the University of Hawaiʻi at Mānoa" width="400" height="400" decoding="async">
 <address>
 {% for line in site.address %}<p>{{ line | escape }}</p>{% endfor %}
 <p class="phone"><a href="{{ site.phone.href | escape }}"><span class="visually-hidden">Telephone: </span>{{ site.phone.label | escape }}</a></p>
@@ -26,7 +25,7 @@ hero: /_media/heros/honolulu-oahu.webp
 
 <section class="grid-four grid-centered grid-spaced" aria-label="Faculty contacts">
 <article aria-labelledby="qi-chen">
-<img class="photo-style" src="{{ '/_media/faculty/qi-chen.webp' | url }}" alt="Qi Chen" width="400" height="400" loading="lazy" decoding="async">
+<img class="photo-style" src="{{ '/media/faculty/qi-chen.webp' | url }}" alt="Qi Chen" width="400" height="400" loading="lazy" decoding="async">
 <h2 id="qi-chen">Qi Chen</h2>
 <p>Professor</p>
 <p>Department Chair</p>
@@ -37,7 +36,7 @@ hero: /_media/heros/honolulu-oahu.webp
 </address>
 </article>
 <article aria-labelledby="hong-jiang">
-<img class="photo-style" src="{{ '/_media/faculty/hong-jiang.webp' | url }}" alt="Hong Jiang" width="400" height="400" loading="lazy" decoding="async">
+<img class="photo-style" src="{{ '/media/faculty/hong-jiang.webp' | url }}" alt="Hong Jiang" width="400" height="400" loading="lazy" decoding="async">
 <h2 id="hong-jiang">Hong Jiang</h2>
 <p>Professor</p>
 <p>Undergraduate Chair</p>
@@ -47,7 +46,7 @@ hero: /_media/heros/honolulu-oahu.webp
 </address>
 </article>
 <article aria-labelledby="mary-mostafanezhad">
-<img class="photo-style" src="{{ '/_media/faculty/mary-mostafanezhad.webp' | url }}" alt="Mary Mostafanezhad" width="400" height="400" loading="lazy" decoding="async">
+<img class="photo-style" src="{{ '/media/faculty/mary-mostafanezhad.webp' | url }}" alt="Mary Mostafanezhad" width="400" height="400" loading="lazy" decoding="async">
 <h2 id="mary-mostafanezhad">Mary Mostafanezhad</h2>
 <p>Professor</p>
 <p>Graduate Chair</p>
@@ -59,7 +58,7 @@ hero: /_media/heros/honolulu-oahu.webp
 </section>
 <section class="grid-four grid-centered grid-spaced" aria-label="Staff contacts">
 <article aria-labelledby="david-olsen">
-<img class="photo-style" src="{{ '/_media/staff/david-olsen.webp' | url }}" alt="David Olsen" width="400" height="400" loading="lazy" decoding="async">
+<img class="photo-style" src="{{ '/media/staff/david-olsen.webp' | url }}" alt="David Olsen" width="400" height="400" loading="lazy" decoding="async">
 <h2 id="david-olsen">David Olsen</h2>
 <p>GIS Lab Coordinator</p>
 <address>
@@ -69,7 +68,7 @@ hero: /_media/heros/honolulu-oahu.webp
 </address>
 </article>
 <article aria-labelledby="elizabeth-tajima">
-<img class="photo-style" src="{{ '/_media/staff/elizabeth-tajima.webp' | url }}" alt="Elizabeth Tajima" width="400" height="400" loading="lazy" decoding="async">
+<img class="photo-style" src="{{ '/media/staff/elizabeth-tajima.webp' | url }}" alt="Elizabeth Tajima" width="400" height="400" loading="lazy" decoding="async">
 <h2 id="elizabeth-tajima">Elizabeth Tajima</h2>
 <p>Administrative Assistant</p>
 <address>
