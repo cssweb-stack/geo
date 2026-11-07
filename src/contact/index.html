@@ -11,19 +11,7 @@ permalink: "/contact/"
 <p class="intro">We are open Monday–Friday from 8:30 am to 4:30 pm. We are closed on weekends and all <a href="https://dhrd.hawaii.gov/state-observed-holidays/">state holidays</a>.</p>
 </header>
 
-<section class="row gx-4 gy-5 grid-spaced" aria-label="Department location and directions">
-<div class="col-12 col-md-2 text-break">
-<img class="photo-style" src="{{ '/media/shared/other/saunders-hall.webp' | url }}" alt="Saunders Hall at the University of Hawaiʻi at Mānoa" width="400" height="400" decoding="async">
-<address>
-{% for line in site.address %}<p>{{ line | escape }}</p>{% endfor %}
-<p class="phone"><span class="icon-text"><a href="{{ site.phone.href | escape }}"><span class="visually-hidden">Telephone: </span>{{ site.phone.label | escape }}</a></span></p>
-<p class="email"><span class="icon-text"><a href="{{ site.email.contactHref | default(site.email.href) | escape }}"><span class="visually-hidden">Email: </span>{{ site.email.label | escape }}</a></span></p>
-</address>
-</div>
-<div class="col-12 col-md-10">
-<iframe class="map-embed" title="Google Map showing Saunders Hall at UH Mānoa" src="https://www.google.com/maps?q=Saunders%20Hall%2C%202424%20Maile%20Way%2C%20Honolulu%2C%20HI%2096822&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-</div>
-</section>
+{% include "layouts/content/unit-contact.njk" %}
 
 <section class="grid-four grid-centered grid-spaced" aria-label="Faculty contacts">
 <article aria-labelledby="qi-chen">
