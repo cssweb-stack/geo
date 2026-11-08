@@ -1,7 +1,7 @@
 import { createRequire } from 'node:module';
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { build } from 'esbuild';
 import nunjucks from 'nunjucks';
 import { checkShared, loadUnit, loadUH, loadCommon } from './scripts/shared-source.mjs';
@@ -11,6 +11,10 @@ export default function(eleventyConfig) {
 const sharedRoot = checkShared();
 const sharedDir = path.join(sharedRoot, 'src');
 const sharedIncludes = path.join(sharedDir, 'includes');
+eleventyConfig.addPlugin(async config => {
+const { configurePrivacy } = await import(pathToFileURL(path.join(sharedRoot, 'scripts/unit-site/privacy.mjs')).href);
+configurePrivacy(config);
+});
 const environment = new nunjucks.Environment(new nunjucks.FileSystemLoader([sharedIncludes, sharedDir, path.join(sourceDir, 'includes')], { noCache: true }), { autoescape: false });
 eleventyConfig.setLibrary('njk', environment);
 const eventDate = createRequire(import.meta.url)(path.join(sharedIncludes, 'layouts/events/event-date.cjs'));
