@@ -31,7 +31,6 @@ googleTagId: records.analytics?.googleTagId || records.analytics?.ga4Measurement
 analyticsHostnames: records.analytics?.allowedHostnames || common.analytics?.allowedHostnames || [],
 searchConsoleVerificationToken: records.search_console?.verificationToken || "",
 defaultHero: records.heroes?.defaultHero,
-courseResources: [common.links.classAvailability, records.catalog_courses?.catalog, records.catalog_courses?.courseDescriptions].filter(Boolean)
 };
 for (const id of [common.analytics?.ga4MeasurementId, records.analytics?.ga4MeasurementId]) {
 if (id && !/^G-[A-Z0-9]+$/.test(id)) throw new Error('Invalid GA4 measurement ID. Expected G- followed by uppercase letters or digits.');
