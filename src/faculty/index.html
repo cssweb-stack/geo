@@ -1,15 +1,23 @@
 ---
-layout: base.njk
+layout: shell.njk
 title: "Core Faculty"
-hidePageTitle: true
 permalink: /faculty/
 description: "Department of Geography and Environment"
 ---
-<header class="page-header">
+<div class="page-section">
+<div class="container content-section">
+<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12">
 <h1>Core Faculty</h1>
-<p class="tagline">Meet Our Researchers and Educators</p>
 <p class="intro">Our faculty offers world-class geographic knowledge and expertise at local, national, and international scales, focusing on Asia and the Pacific.</p>
-</header>
+</div>
+</div>
+</div>
+</div>
 
+<div class="page-section page-section--gray">
+<div class="container content-section">
 {% set facultyDirectoryDetails = true %}
 {% include "layouts/profiles/faculty-directory.njk" %}
+</div>
+</div>
