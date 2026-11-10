@@ -21,6 +21,11 @@ const eventDate = createRequire(import.meta.url)(path.join(sharedIncludes, 'layo
 eleventyConfig.addFilter('eventDate', eventDate);
 eleventyConfig.addFilter('contactFaculty', people => people.filter(person => person.contactOrder).sort((a, b) => a.contactOrder - b.contactOrder));
 eleventyConfig.addFilter('telephone', value => String(value || '').replace(/[^\d+]/g, ''));
+eleventyConfig.addFilter('socialUrl', value => {
+const origin = (process.env.SITE_ORIGIN || loadUnit().site.url || '').replace(/\/$/, '');
+const prefix = (process.env.SITE_PATH_PREFIX || '/').replace(/\/$/, '');
+return origin + prefix + String(value || '');
+});
 eleventyConfig.addFilter('navIconColor', name => {
 const palette = { blue: 'var(--color-blue)', gold: 'var(--color-gold)', teal: 'var(--color-teal)', purple: 'var(--color-purple)', gray: 'var(--mid-gray)' };
 if (!palette[name]) throw new Error(`Unknown navigation icon color: ${name}`);
