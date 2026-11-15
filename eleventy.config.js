@@ -80,6 +80,11 @@ return { path: './' + relative + suffix, external: true };
 }]
 });
 });
+// Keep renamed page URLs working through the shared redirect generator.
+eleventyConfig.on('eleventy.after', async () => {
+const { generateRedirects } = await import(pathToFileURL(path.join(sharedRoot, 'scripts/unit-site/url-migration.mjs')).href);
+generateRedirects({ project, migration: loadUnit().url_migration, siteUrl: loadUnit().site.url, prefix: process.env.SITE_PATH_PREFIX || '/' });
+});
 // Publish images/fonts/scripts only; JSON, templates and helper modules stay private to the build.
 for (const root of [sharedDir, sourceDir]) {
 for (const folder of ['assets', 'media']) {
