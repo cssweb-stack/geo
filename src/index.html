@@ -1,33 +1,29 @@
 ---
-layout: base.njk
-title: "Explore Our Changing World"
+layout: shell.njk
+title: "Geography and Environment at UH Mānoa"
+seoTitle: "Geography and Environment (GEO) | UH Mānoa"
 hidePageTitle: true
 description: Explore geography at UH Mānoa, from a GIS certificate to a doctorate, with expertise in environmental geography, human geography, and geospatial information science across Asia and the Pacific.
 permalink: "/"
 ---
+<div class="page-section">
+<div class="container content-section">
 <div class="row grid-one">
 <div class="col-12">
-<div class="row grid-one">
-<div class="col-12">
-<div class="sidebar-right-large">
-<div>
-<h1>Explore Our Changing World</h1>
-<p>Aloha and welcome to the Department of Geography and Environment at the University of Hawaiʻi at Mānoa. Explore how global change shapes communities and environments, and how local actions influence the world around us. Our faculty bring expertise in environmental geography, human geography, and geospatial information science, with a focus on Asia and the Pacific. Whether you are discovering geography for the first time or building a research career, find a path that connects your interests with the questions that matter to you.</p>
+<h1>Geography and Environment at UH Mānoa</h1>
+<p>E komo mai — Welcome to the Department of Geography and Environment within the College of Social Sciences at the University of Hawaiʻi at Mānoa. Explore how global change shapes communities and environments, and how local actions influence the world around us. The faculty bring expertise in environmental geography, human geography, and geospatial information science, with a focus on Asia and the Pacific. Whether you are discovering geography for the first time or building a research career, find a path that connects your interests with the questions that matter to you.</p>
 <p class="smile">
 {% include "media/icons/emoji-smile.svg" %}
 <span>UH Mānoa GEO <a href="https://www.hawaii.edu/news/2026/10/06/global-ranking-of-academic-subjects-2026/">ranks No. 14 in the U.S.</a> in 2026.</span>
 </p>
 </div>
-<aside class="callout callout-bronze callout-flush" aria-labelledby="home-highlights-heading">
-<h2 id="home-highlights-heading">{{ home.title | escape }}</h2>
-{% for highlight in home.items -%}
-<h3>{{ highlight.title | escape }}</h3>
-<p>{{ highlight.text | escape }}{% if highlight.url %} <a href="{{ highlight.url | url }}">{{ highlight.linkText | escape }}</a>{% endif %}</p>
-{% endfor -%}
-</aside>
 </div>
 </div>
 </div>
+<div class="page-section page-section--gray">
+<div class="container content-section">
+<div class="row grid-one">
+<div class="col-12">
 <section aria-labelledby="home-programs-heading">
 <h2 id="home-programs-heading">Explore Our Academic Programs</h2>
 <p>In addition to an exciting selection of <a href="{{ '/courses.html' | url }}">GEO courses</a>, we offer academic programs ranging from an undergraduate certificate to a doctoral degree.</p>
@@ -58,6 +54,7 @@ permalink: "/"
 <span class="program-tile-label">Doctor of Philosophy</span>
 </a>
 </div>
+<hr>
 <div class="grid-two">
 <div>
 <h3>BAM Pathways</h3>
@@ -77,21 +74,27 @@ permalink: "/"
 </div>
 </div>
 </section>
-<section aria-labelledby="home-videos-heading">
-<h2 id="home-videos-heading">Discover GEO</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="page-section">
+<div class="container content-section">
+<div class="row grid-one">
+<div class="col-12">
 <div class="grid-two">
 <div>
 <div class="ratio ratio-16x9">
-<iframe id="home-video-left" width="560" height="315" src="https://www.youtube.com/embed/8fU3f_ACqRs?enablejsapi=1&amp;rel=0&amp;enablejsapi=1" title="Department of Geography and Environment featured video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="home-video-left" width="560" height="315" src="https://www.youtube.com/embed/8fU3f_ACqRs?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<p>Additional <a href="https://youtu.be/F9-06WQdg-s">Department Video</a></p>
 </div>
 <div>
 <div class="ratio ratio-16x9">
-<iframe id="home-video-right" width="560" height="315" src="https://www.youtube.com/embed/6ax5lF_qb9c?enablejsapi=1&amp;rel=0&amp;enablejsapi=1" title="Department of Geography and Environment featured video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="home-video-right" width="560" height="315" src="https://www.youtube.com/embed/6ax5lF_qb9c?enablejsapi=1&amp;rel=0" title="Department of Geography and Environment featured video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
 </div>
-</section>
+</div>
+</div>
 </div>
 </div>
