@@ -1,0 +1,4 @@
+/* GEO tile pattern. */
+.tile-style {
+--tile-background: var(--tile-pattern-contour);
+}
