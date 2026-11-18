@@ -1,22 +1,32 @@
 ---
-layout: base.njk
+layout: shell.njk
 hidePageTitle: true
-title: "Lecture Series"
+title: "Lecture Series Fall 2026"
 permalink: "/about/lecture-series.html"
 description: "Department of Geography and Environment"
 ---
-<h1>{{ title | escape }}</h1>
-<p class="tagline">Hear New Ideas. Connect Through Geography</p>
-<p class="intro">Explore research on people, places, and the environment with local, national, and international speakers. Our lecture series brings geography and related disciplines into conversation, offering opportunities to hear new ideas and ask questions. Contact the series organizer with questions about attending.</p>
-
-<section class="callout callout-teal" aria-labelledby="lecture-semester">
-<h2 id="lecture-semester">{{ lectures.semester | escape }}</h2>
+<div class="page-section">
+<div class="container content-section">
+<div class="row grid-one">
+<div class="col-12">
+<h1>Lecture Series {{ lectures.semester | escape }}</h1>
+<p>Explore research on people, places, and the environment with local, national, and international speakers. Our lecture series brings geography and related disciplines into conversation, offering opportunities to hear new ideas and ask questions. Contact the series organizer with questions about attending.</p>
 <ul>
 <li><strong>Schedule:</strong> {{ lectures.schedule | escape }}. See individual dates below.</li>
 <li><strong>Location:</strong> {{ lectures.location | escape }}</li>
 <li><strong>Contact:</strong> <a href="mailto:{{ lectures.contactEmail | escape }}">{{ lectures.contactName | escape }}</a>, GEO Professor</li>
 </ul>
-</section>
-
+</div>
+</div>
+</div>
+</div>
+<div class="page-section">
+<div class="container content-section">
+<div class="row grid-one">
+<div class="col-12">
 {% set events = lectures.events %}
 {% include "layouts/events/events.njk" %}
+</div>
+</div>
+</div>
+</div>

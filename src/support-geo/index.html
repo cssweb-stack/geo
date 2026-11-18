@@ -1,40 +1,41 @@
 ---
-layout: base.njk
+layout: shell.njk
 title: "Support GEO"
 hidePageTitle: true
 description: Give to the Geography Enrichment Fund at UH Mānoa to support student research, conference travel, teaching and research awards, and departmental events.
 permalink: "/support-geo/"
 ---
-
-<header class="page-header">
-<h1>Support GEO</h1>
-<p class="tagline">Support Student Research and Discovery</p>
-<p class="intro">Generous past donations to the Geography Enrichment Fund have been used to support undergraduate and graduate student research, award student teaching and research efforts, sponsor departmental events like our Annual Geography Symposium, and fund student travel to academic conferences.</p>
-</header>
-
-<div class="row gy-5 gx-0 gx-sm-5 gx-lg-5">
-<div class="col-12 col-md-2">
-<img src="{{ '/media/general/support.webp' | url }}" alt="Geography and Environment students" class="photo-style" width="212" height="212" loading="lazy" decoding="async">
+{% from "layouts/content/image-text-row.njk" import imageTextRow %}
+<div class="page-section">
+<div class="container content-section">
+<div class="row grid-one">
+<div class="col-12">
+{% call imageTextRow('/media/branding/logos/uhf.svg', 230, 59.33, 'University of Hawaiʻi Foundation', true, 'https://www.uhfoundation.org/', 'sidebar-media', sidebarClass="sidebar-right-med") %}
+<h1>Support Geography and Environment</h1>
+<p>Generous past donations to the <a href="https://giving.uhfoundation.org/funds/12181904">Geography Enrichment Fund</a> have been used to support undergraduate and graduate student research, award student teaching and research efforts, sponsor departmental events like our Annual Geography Symposium, and fund student travel to academic conferences.</p>
+<p class="appreciation"><span class="icon-text">Contributions of any size are sincerely appreciated.</span></p>
+{% endcall %}
 </div>
-<div class="col-12 col-md-10">
-<section aria-labelledby="enrichment-fund-title">
-<h2 id="enrichment-fund-title">Geography Enrichment Fund</h2>
-<p>Contributions of any size are sincerely appreciated.</p>
-<p><a class="button button-blue" href="https://give.uhfoundation.org/campaigns/63435/donations/new?utm_medium=redirect&designation_id=12181904&utm_campaign=appeal">Give to the Enrichment Fund</a></p>
-<img src="{{ '/media/branding/logos/uhf.svg' | url }}" alt="University of Hawaiʻi Foundation" width="212" loading="lazy" decoding="async">
-</section>
 </div>
-
-<!-- Draft giving message for review and approval by the department chair. -->
-
-<div class="col-12 col-md-2">
+</div>
+</div>
+<div class="page-section page-section--gray">
+<div class="container content-section">
+<div class="row grid-one">
+<div class="col-12">
+<div class="sidebar-left-med">
+<div>
 <img class="photo-style" src="{{ '/media/units/geo/faculty-staff/qi-chen.webp' | url }}" alt="Qi Chen" width="400" height="400" loading="lazy" decoding="async">
 </div>
-<div class="col-12 col-md-10">
-<section class="callout callout-gold callout-flush" aria-labelledby="chair-message">
+<div>
+<section aria-labelledby="chair-message">
 <h2 id="chair-message">A Message from the Chair</h2>
 <p>When you give to GEO, you support the work our students are doing now and the researchers they are becoming. Your generosity helps undergraduate and graduate students pursue research, present their findings at conferences, and exchange ideas through events such as our Annual Geography Symposium. These experiences are an important part of their education. Thank you for helping us create opportunities for our students and for being part of the GEO community.</p>
 <p><a href="{{ '/faculty/qi-chen.html' | url }}">Qi Chen</a><br>Professor and Department Chair</p>
 </section>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
